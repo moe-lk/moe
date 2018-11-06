@@ -1,0 +1,92 @@
+2018-10-17 03:39:12 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-17 03:39:18 :Phroute\Exception\HttpRouteNotFoundException: Route v2/reviews does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/reviews')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/reviews')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/reviews')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-17 03:39:18 :Phroute\Exception\HttpRouteNotFoundException: Route v2/commands does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/commands')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/commands')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/commands')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-17 03:39:27 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-17 03:39:33 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:39:46 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:39:47 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:40:58 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:41:28 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:41:29 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:42:08 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}
+2018-10-17 03:42:18 :Phroute\Exception\HttpMethodNotAllowedException: Allow: POST in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:169
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(137): Phroute\Dispatcher->checkFallbacks(Array, 'GET')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(117): Phroute\Dispatcher->dispatchStaticRoute('GET', 'v2/employees')
+#2 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#3 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#4 /var/www/html/index.php(12): include('/var/www/html/A...')
+#5 {main}

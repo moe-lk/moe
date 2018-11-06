@@ -1,0 +1,70 @@
+{
+  "_from": "ory-editor-plugins-slate@v0.4.4",
+  "_id": "ory-editor-plugins-slate@0.4.4",
+  "_inBundle": false,
+  "_integrity": "sha512-umoSLSCbWDAorauwnY91lSMEQa/06E6J9QShTlizK/OKEV0n4eO6Y4H/LcdHW1OsYvinYbs5nsNMbllqVloX+w==",
+  "_location": "/ory-editor-plugins-slate",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ory-editor-plugins-slate@v0.4.4",
+    "name": "ory-editor-plugins-slate",
+    "escapedName": "ory-editor-plugins-slate",
+    "rawSpec": "v0.4.4",
+    "saveSpec": null,
+    "fetchSpec": "v0.4.4"
+  },
+  "_requiredBy": [
+    "/ory-editor"
+  ],
+  "_resolved": "https://registry.npmjs.org/ory-editor-plugins-slate/-/ory-editor-plugins-slate-0.4.4.tgz",
+  "_shasum": "6b719b07ee4f6bb88b964dba24f49e736ac62d29",
+  "_spec": "ory-editor-plugins-slate@v0.4.4",
+  "_where": "/home/wso2/local/lsf/cs-hrm/node_modules/ory-editor",
+  "author": {
+    "name": "ORY GmbH"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "deep-rename-keys": "^0.2.1",
+    "immutable": "3.8.2",
+    "ory-editor-core": "^0.4.4",
+    "ory-editor-ui": "^0.4.4",
+    "parse5": "^3.0.2",
+    "ramda": "^0.24.1",
+    "react-portal": "4.1.5",
+    "redux-undo": "1.0.0-beta9-7",
+    "selection-position": "^1.0.0",
+    "slate": "^0.37.3",
+    "slate-edit-blockquote": "^0.6.1",
+    "slate-edit-list": "^0.12.0",
+    "slate-html-serializer": "0.6.21",
+    "slate-plain-serializer": "^0.5.30",
+    "slate-react": "^0.15.4"
+  },
+  "deprecated": false,
+  "gitHead": "1023ffbc19910e66c517a1fee79903a4ac320034",
+  "license": "GNU Lesser General Public License v3.0",
+  "main": "./lib/index.js",
+  "name": "ory-editor-plugins-slate",
+  "peerDependencies": {
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^2.0.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "scripts": {
+    "build": "npm-run-all --parallel build:lib build:css",
+    "build:css": "postcss -c ../../../../postcss.config.js --dir lib/ src/index.css",
+    "build:css:watch": "npm run build:css -- -w",
+    "build:lib": "babel ./src --source-maps --ignore test.js --out-dir ./lib",
+    "build:lib:watch": "npm run build:lib -- --watch",
+    "build:watch": "npm-run-all --parallel build:lib:watch build:css:watch",
+    "clean": "rimraf \"lib/*\"",
+    "docs": "documentation build ./src/**/*.js --format md --github -o ../../../../docs/api/plugins/slate.md",
+    "flow:generate": "flow-typed install  --flowVersion=0.79.1",
+    "prebuild": "npm run clean"
+  },
+  "version": "0.4.4"
+}

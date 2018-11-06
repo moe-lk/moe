@@ -1,0 +1,222 @@
+2018-10-16 03:59:08 :PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 25 OFFSET 0' at line 1 in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/MasterData.php(116): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/OptionsController.php(23): Models\MasterData->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(77): Controllers\OptionsController->get('table=Province_...')
+#5 [internal function]: {closure}('25', 'DESC', 'id', '0&filter=id%2C%...', 'table=Province_...')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/options?_en...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-16 04:40:12 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'institute_name' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/MasterData.php(116): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/OptionsController.php(23): Models\MasterData->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(77): Controllers\OptionsController->get('table=Designati...')
+#5 [internal function]: {closure}('25', 'DESC', 'id', '0&q=S', 'table=Designati...')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/options?_en...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-16 04:40:15 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'institute_name' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/MasterData.php(116): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/OptionsController.php(23): Models\MasterData->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(77): Controllers\OptionsController->get('table=Designati...')
+#5 [internal function]: {closure}('25', 'DESC', 'id', '0&q=A', 'table=Designati...')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/options?_en...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-16 14:50:28 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=30&_order=ASC&_sort=id&_start=20&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:51:31 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=30&_order=ASC&_sort=id&_start=20&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:51:41 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:52:43 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:52:45 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:53:04 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:53:46 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 14:54:31 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:03:55 :PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '&active=1' at line 1 in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/personalDetails.php(55): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/ApiController.php(66): Models\PersonalDetails->filter('10', 'ASC', 'id', '0&active=1', 'f_name=niza')
+#4 [internal function]: Controllers\ApiController->list('10', 'ASC', 'id', '0&active=1', 'f_name=niza')
+#5 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Array, Array)
+#6 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#7 /var/www/html/index.php(12): include('/var/www/html/A...')
+#8 {main}
+2018-10-16 15:06:39 :Phroute\Exception\HttpRouteNotFoundException: Route v2/reviews?_end=100&_order=DESC&_sort=date&_start=0&status=pending does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/reviews?_end...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/reviews?_end...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/reviews?_en...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:06:39 :Phroute\Exception\HttpRouteNotFoundException: Route v2/commands?_end=50&_order=DESC&_sort=date&_start=0&date_gte=2018-09-16T15%3A06%3A39.766Z does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/commands?_en...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/commands?_en...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/commands?_e...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:08:45 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:11:01 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:11:03 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:11:35 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:11:45 :Phroute\Exception\HttpRouteNotFoundException: Route v2/reviews?_end=100&_order=DESC&_sort=date&_start=0&status=pending does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/reviews?_end...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/reviews?_end...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/reviews?_en...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:11:45 :Phroute\Exception\HttpRouteNotFoundException: Route v2/commands?_end=50&_order=DESC&_sort=date&_start=0&date_gte=2018-09-16T15%3A11%3A45.113Z does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/commands?_en...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/commands?_en...')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('GET', '/v2/commands?_e...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:13:49 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(13): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:15:21 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:17:44 :Phroute\Exception\HttpRouteNotFoundException: Route v2/reviews does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/reviews')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/reviews')
+#2 /var/www/html/App/routes/index.php(15): Phroute\Dispatcher->dispatch('GET', '/v2/reviews')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:17:44 :Phroute\Exception\HttpRouteNotFoundException: Route v2/commands does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/commands')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/commands')
+#2 /var/www/html/App/routes/index.php(15): Phroute\Dispatcher->dispatch('GET', '/v2/commands')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:17:53 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees')
+#2 /var/www/html/App/routes/index.php(15): Phroute\Dispatcher->dispatch('GET', '/v2/employees')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:18:27 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:18:33 :Phroute\Exception\HttpRouteNotFoundException: Route v2/employees?_end=10&_order=ASC&_sort=id&_start=0&active=1 does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('GET', 'v2/employees?_e...')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('GET', 'v2/employees?_e...')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('GET', '/v2/employees?_...')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:19:04 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}
+2018-10-16 15:19:30 :Phroute\Exception\HttpRouteNotFoundException: Route v2/user/login does not exist in /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php:215
+Stack trace:
+#0 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(120): Phroute\Dispatcher->dispatchVariableRoute('POST', 'v2/user/login')
+#1 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(44): Phroute\Dispatcher->dispatchRoute('POST', 'v2/user/login')
+#2 /var/www/html/App/routes/index.php(14): Phroute\Dispatcher->dispatch('POST', '/v2/user/login')
+#3 /var/www/html/index.php(12): include('/var/www/html/A...')
+#4 {main}

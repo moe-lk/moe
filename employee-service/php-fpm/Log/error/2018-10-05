@@ -1,0 +1,269 @@
+2018-10-05 04:26:08 :PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AGAINST(nizar) LIMIT 10 OFFSET 0' at line 1 in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/service.php(40): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/ServicesController.php(16): Models\Service->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(130): Controllers\ServiceController->list()
+#5 [internal function]: {closure}('10', 'ASC', 'id', '0&active=1&nic=...', 'q=nizar')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/placement?_...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-05 04:27:01 :PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AGAINST(nizar) LIMIT 10 OFFSET 0' at line 1 in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/service.php(40): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/ServicesController.php(16): Models\Service->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(130): Controllers\ServiceController->list()
+#5 [internal function]: {closure}('10', 'ASC', 'id', '0&active=1&nic=...', 'q=nizar')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/placement?_...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-05 04:31:37 :PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/service.php(36): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/ServicesController.php(16): Models\Service->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(130): Controllers\ServiceController->list()
+#5 [internal function]: {closure}('10', 'ASC', 'id', '0&active=1', 'nic=633')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/placement?_...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-05 04:31:38 :PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/service.php(36): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/controllers/ServicesController.php(16): Models\Service->filter(Array)
+#4 /var/www/html/App/routes/user.route.php(130): Controllers\ServiceController->list()
+#5 [internal function]: {closure}('10', 'ASC', 'id', '0&active=1', 'nic=6334')
+#6 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#7 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/placement?_...')
+#8 /var/www/html/index.php(12): include('/var/www/html/A...')
+#9 {main}
+2018-10-05 15:12:00 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('313')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('313')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('313')
+#6 [internal function]: {closure}('313')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:14:11 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('313')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('313')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('313')
+#6 [internal function]: {closure}('313')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:14:34 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('313')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('313')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('313')
+#6 [internal function]: {closure}('313')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:15:16 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('313')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('313')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('313')
+#6 [internal function]: {closure}('313')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:16:29 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('313')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('313')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('313')
+#6 [internal function]: {closure}('313')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:16:58 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('345')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('345')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('345')
+#6 [internal function]: {closure}('345')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:18:03 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('345')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('345')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('345')
+#6 [internal function]: {closure}('345')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:18:22 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('345')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('345')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('345')
+#6 [internal function]: {closure}('345')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:19:40 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('316')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('316')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('316')
+#6 [internal function]: {closure}('316')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:21:02 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:21:36 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:23:50 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:24:21 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:24:57 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:25:44 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:26:14 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}
+2018-10-05 15:26:36 :PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_updated' in 'where clause' in /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php:144
+Stack trace:
+#0 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(144): PDO->prepare('SELECT * FROM `...')
+#1 /var/www/html/vendor/usmanhalalit/pixie/src/Pixie/QueryBuilder/QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT * FROM `...', Array)
+#2 /var/www/html/App/models/contactDetails.php(33): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 /var/www/html/App/Repositories/employeeRepository.php(244): Models\ContactDetails->findByPerson('341')
+#4 /var/www/html/App/controllers/UserController.php(39): Repositories\Employee->getEmployee('341')
+#5 /var/www/html/App/routes/user.route.php(56): Controllers\UserController->get('341')
+#6 [internal function]: {closure}('341')
+#7 /var/www/html/vendor/phroute/phroute/src/Phroute/Dispatcher.php(55): call_user_func_array(Object(Closure), Array)
+#8 /var/www/html/App/routes/index.php(12): Phroute\Dispatcher->dispatch('GET', '/v2/employees/3...')
+#9 /var/www/html/index.php(12): include('/var/www/html/A...')
+#10 {main}

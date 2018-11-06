@@ -1,0 +1,39 @@
+{
+    "name": "lsf/sleas-api",
+    "description": "SLEAS RestFull API for consume data for web application",
+    "type": "project",
+    "license": "Apache License",
+    "require": 
+        { 
+        "phroute/phroute": "1.*",
+        "lcobucci/jwt": "^3.2",
+        "zircote/swagger-php": "^3.0",
+        "usmanhalalit/pixie": "^2.0.0",
+        "rakit/validation": "^0.18.1",
+        "robmorgan/phinx": "^0.10.6",
+        "aws/aws-sdk-php": "^3.69"
+        } ,
+    "autoload": {
+            "psr-0": {
+                "Lib\\": "library/",
+                "Controllers\\":"App/controllers/",
+                "Models\\":"App/models/",
+                "Repositories\\":"App/Repositories/",
+                "Interfaces\\":"App/interfaces/",
+                "Tests\\":"Tests"
+            }
+    },
+    "authors": [
+        {
+            "name": "nizar",
+            "email": "nizarm@opensource.lk"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "guzzlehttp/guzzle": "^6.3",
+        "webthink/guzzle-jwt": "^0.4.0",
+        "brianium/paratest": "^2.0",
+        "fzaninotto/faker": "^1.8"
+    }
+}

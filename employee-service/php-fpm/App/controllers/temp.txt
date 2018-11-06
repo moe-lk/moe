@@ -1,0 +1,203 @@
+    $personal = $this->_inputs->Personal_Details;
+            $pmntContact = $this->_inputs->Permanent_Contact_Details;
+            $tmpContact = $this->_inputs->Temparary_Contact_Details;
+            $generalService =  $this->_inputs->General_Service;
+            $currentService = $this->_inputs->Current_Service;
+
+            $nicor = ($this->_inputs->ID);
+            $nic = strtoupper($nicor);
+            $title = ($personal->title);
+            $fname = ucfirst(($personal->f_name));
+            $mname = ucfirst(($personal->m_name));
+            $lname = ucfirst(($personal->l_name));
+            $inname = ucfirst(($personal->in_name));
+            $si_inname = ($personal->si_in_name);
+            $ta_inname = ($personal->ta_in_name);
+            $dob = ($personal->dob);
+            $ethnicity = ($personal->ethinicity);
+            $gender = ($personal->gender);
+            $civil_st = ($personal->civil_status);
+    
+            $address1 = $pmntContact->address_1;
+            $address2 = $pmntContact->address_2;
+            $address3 = $pmntContact->address_3;
+            $pocode = $pmntContact->postal_code;
+            $landp = $pmntContact->telephone;
+            $mobile = $pmntContact->mobile;
+            $email = $pmntContact->email;
+
+    
+            $addresstemp1 = $tmpContact->address_1;
+            $addresstemp2 = $tmpContact->address_2;
+            $addresstemp3 = $tmpContact->address_3;
+            $pocodetemp = $tmpContact->postal_code;
+            $landptemp =  $tmpContact->telephone;
+    
+            
+            $date_join = $generalService->date_join;
+            $way_joined =  $generalService->date_join;($this->_inputs['way_joined']);
+            $cadre =  $generalService->date_join;($this->_inputs['cadre']);
+            $cadre_supern =  $generalService->date_join;($this->_inputs['cadre_supern']);
+            $grade_special =  $generalService->date_join;($this->_inputs['grade_special']);
+            $grade_general =  $generalService->date_join;($this->_inputs['grade_general']);
+            $grade_supern =  $generalService->date_join; ($this->_inputs['grade_supern']);
+            $special_subject =  $generalService->date_join;($this->_inputs['special_subject']);
+            $medium_recruit =  $generalService->date_join; ($this->_inputs['medium_recruit']);
+            $confirm =  $generalService->date_join;($this->_inputs['confirm']);
+            $date_confirm =  $generalService->date_join;($this->_inputs['date_confirm']);
+            $date_f_appoint =  $generalService->date_join;($this->_inputs['date_f_appoint']);
+            $rank_entrance =  $generalService->date_join;($this->_inputs['rank_entrance']);
+    
+            $service_mood = ($this->_inputs['service_mood']);
+            $date_appoint = ($this->_inputs['date_appoint']);
+            $work_place = ($this->_inputs['work_place']);
+            $work_other = ($this->_inputs['work_other']);
+            $main_division = ($this->_inputs['main_division']);
+            $main_branch = ($this->_inputs['main_branch']);
+            $designation = ($this->_inputs['designation']);
+            $present_grade = ($this->_inputs['present_grade']);
+            $date_promoted = ($this->_inputs['date_promoted']);
+            $date_assumed = ($this->_inputs['date_assumed']);
+            $official_letter_no = ($this->_inputs['official_letter_no']);
+    
+            $province_office = ($this->_inputs['province_office']);
+    
+            $province = ($this->_inputs['province']);
+            $district = ($this->_inputs['district']);
+            $zonal_office = ($this->_inputs['zonal_office']);
+    
+            $zone = ($this->_inputs['zone']);
+            $divisional_office = ($this->_inputs['divisional_office']);
+    
+            $division = ($this->_inputs['division']);
+            $institute = ($this->_inputs['institute']);
+    
+            $salary_drawn = ($this->_inputs['salary_drawn']);
+    
+            $release_type = ($this->_inputs['release_type']);
+            $release_institute_name = ($this->_inputs['release_institute_name']);
+            $release_study_st_date = ($this->_inputs['release_study_st_date']);
+            $release_study_end_date = ($this->_inputs['release_study_end_date']);
+            $release_work_designation = ($this->_inputs['release_work_designation']);
+            $release_work_date_assumed = ($this->_inputs['release_work_date_assumed']);
+            $release_official_letter = ($this->_inputs['rel_official_letter_no']);
+            $release_place = ($this->_inputs['release_place']);
+            $release_salary_drawn = ($this->_inputs['release_salary_drawn']);
+
+            - value: 1
+              description:  Western Provincial Department of Education
+              type: provincial_office
+            - value: 2
+              description:  Central Provincial Department of Education
+              type: provincial_office
+            - value: 3
+              description:  Southern Provincial Department of Education
+              type: provincial_office
+            - value: 4
+              description:  Northern Provincial Department of Education
+              type: provincial_office
+            - value:  5
+              description: Eastern Provincial Department of Education
+              type: provincial_office
+            - value:  6
+              description:  North Western Provincial Department of Education
+              type: provincial_office
+            - value:  7
+              description:  North Central Provincial Department of Education
+              type: provincial_office 
+            - value:  8
+              description:  Uva Provincial Department of Education
+              type: provincial_office 
+            - value:  9
+              description: Sabaragamuwa Provincial Department of Education
+              type: provincial_office
+            - value:  10
+              description:  Western Provincial Ministry of Education
+              type: provincial_office 
+            - value:  11
+              description:  Central Provincial Ministry of Education
+              type: provincial_office
+            - value:  12
+              description:  Southern Provincial Ministry of Education
+              type: provincial_office
+            - value:  13
+              description:  Northern Provincial Ministry of Education
+              type: provincial_office
+            - value:  14
+              description:  Eastern Provincial Ministry of Education
+              type: provincial_office 
+            - value:  15
+              description:  Eastern Provincial Ministry of Education
+              type: provincial_office 
+            - value:  16
+              description: North Central Provincial Ministry of Education
+              type: provincial_office
+            - value:  17
+              description:  Uva Provincial Ministry of Education
+              type: provincial_office 
+            - value:  18
+              description:  Sabaragamuwa Provincial Ministry of Education
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office 
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office 
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office 
+            - value:  
+              description: 
+              type: provincial_office
+            - value:  
+              description:
+              type: provincial_office 
+            - value:  
+              description:
+              type: provincial_office

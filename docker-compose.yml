@@ -1,0 +1,50 @@
+# ./docker-compose.yml
+
+version: '2'
+
+services:
+  employee-db:
+    build: ./employee-service/database
+    environment:
+      MYSQL_ROOT_PASSWORD: my_secret_pw_shh
+      MYSQL_DATABASE: edu
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: devpass
+    ports:
+      - "9906:3306"
+    command: --max_allowed_packet=32505856    
+  employee-service:
+    build: ./employee-service/php-fpm
+    volumes:
+      - ./employee-service/php-fpm:/var/www/html
+    ports:
+      - 80  
+    links:
+      - employee-db
+    depends_on:
+      - employee-db
+    restart: always
+  hrm-web:
+    build: ./hrm-web
+    hostname: www
+    domainname: hrm-web.dev
+    volumes:
+      - './hrm-web:/usr/app'
+    ports:
+      - 3000:3000
+    links:
+      - employee-service
+    environment:
+      - NODE_ENV=development
+
+  sleas-swagger:
+    image: swaggerapi/swagger-ui
+    environment:
+      - SWAGGER_JSON=./sleas-api/www/swagger.json
+      - API_URL=http://localhost/v2
+    restart: always
+    ports:   ["1337:8080"]
+  
+
+  # ## By default this config uses default local driver,
+  # ## For custom volumes replace with volume driver configuration.

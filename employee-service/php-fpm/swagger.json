@@ -1,0 +1,1568 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "This is the CS-HRM api server. Here you find all APIs related to the system. The api can be find on github",
+    "version": "1.0.0",
+    "title": "CS-HRM",
+    "termsOfService": "",
+    "contact": {
+      "email": "nizarm@opensource.lk"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "tags": [
+    {
+      "name": "Employee",
+      "description": "Operations on employees in the system",
+      "externalDocs": {
+        "description": "Find out more about our project on git",
+        "url": "https://github.com/LankaSoftwareFoundation/MoE-SLEAS-HRM"
+      }
+    },
+    {
+      "name": "User",
+      "description": "User related operations in the System",
+      "externalDocs": {
+        "description": "Find out more about our project on git",
+        "url": "https://github.com/LankaSoftwareFoundation/MoE-SLEAS-HRM"
+      }
+    }
+  ],
+  "paths": {
+    "/employee": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Create an Employee",
+        "description": "This can only be done by the logged in user with permission for create employees.",
+        "operationId": "createUser",
+        "security": [
+          {
+            "cs_auth": [
+              "write:employee",
+              "read:employee"
+            ]
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "description": "Created user object",
+          "required": true
+        }
+      }
+    },
+    "/employee/{Id}": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Get an Employee",
+        "description": "This can only be done by the logged in user with permission for Get User data employees.",
+        "operationId": "getEmployee",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "default": "1"
+            }
+          }
+        ],
+        "security": [
+          {
+            "cs_auth": [
+              "write:employee",
+              "read:employee"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/employee/createWithArray": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Creates list of Employees with given input array",
+        "description": "",
+        "operationId": "createUsersWithArrayInput",
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UserArray"
+        }
+      }
+    },
+    "/employee/createWithList": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Creates list of Employees with given input array",
+        "description": "",
+        "operationId": "createUsersWithListInput",
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/UserArray"
+        }
+      }
+    },
+    "/employee/list/{pageId}": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "list of users with given page as pagination",
+        "description": "",
+        "operationId": "listEmployees",
+        "parameters": [
+          {
+            "name": "pageId",
+            "in": "path",
+            "description": "The page id should be provided",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Personal_Details"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Personal_Details"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ]
+      }
+    },
+    "/employee/employeeAttachments": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "uploads Employee related files",
+        "description": "",
+        "operationId": "uploadFile",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/uploadAttachements"
+        }
+      },
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Read Employee related files",
+        "description": "",
+        "operationId": "readFile",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of user to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Update Employee related files",
+        "description": "",
+        "operationId": "uploadFile",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of user to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/uploadAttachements"
+        }
+      },
+      "delete": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Update Employee related files",
+        "description": "",
+        "operationId": "deleteFile",
+        "parameters": [
+          {
+            "name": "fileInfo",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "userId": {
+                    "type": "integer"
+                  },
+                  "fileId": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ]
+      }
+    },
+    "/employee/statusUpdate": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Status  update",
+        "description": "Activate and deactivate an Employee",
+        "operationId": "statusUpdate",
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "person_id": {
+                    "type": "integer"
+                  },
+                  "service_status": {
+                    "type": "string",
+                    "enum": [
+                      "Active",
+                      "Inactive"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "description": "Status update user object",
+          "required": true
+        }
+      }
+    },
+    "/employee/approveReject": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Status  update",
+        "description": "Activate and deactivate an Employee",
+        "operationId": "approveReject",
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ID": {
+                    "type": "integer"
+                  },
+                  "approved": {
+                    "type": "integer",
+                    "enum": [
+                      0,
+                      1
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "description": "Status update user object",
+          "required": true
+        }
+      }
+    },
+    "/user/register": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Register a user",
+        "description": "This can only be done by anyone with IDM-Gov",
+        "operationId": "registerUser",
+        "responses": {
+          "400": {
+            "description": "Invalid user supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "description": "Updated user object",
+          "required": true
+        }
+      }
+    },
+    "/user": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Get user data",
+        "description": "",
+        "operationId": "getUserByName",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid username supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Updated user",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "updateUser",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "description": "name that need to be updated",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid user supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "description": "Updated user object",
+          "required": true
+        }
+      },
+      "delete": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Delete user",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "deleteUser",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "description": "The name that needs to be deleted",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid username supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ]
+      }
+    },
+    "/user/login": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Logs user into the system",
+        "description": "",
+        "operationId": "loginUser",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "headers": {
+              "X-Rate-Limit": {
+                "description": "calls per hour allowed by the user",
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "X-Expires-After": {
+                "description": "date in UTC when token expires",
+                "schema": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            },
+            "content": {
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid username/password supplied"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "description": "The user name for login",
+                    "type": "string"
+                  },
+                  "password": {
+                    "description": "The password for login in clear text",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user/logout": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Logs out current logged in user session",
+        "description": "",
+        "operationId": "logoutUser",
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ]
+      }
+    },
+    "/user/uploadpic/{userId}": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "uploads an image",
+        "description": "",
+        "operationId": "uploadImage",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of user to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "cs_auth": [
+              "write:user",
+              "read:user"
+            ]
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/uploadAttachements"
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "cs_auth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "requestBodies": {
+      "UserArray": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "description": "List of user object",
+        "required": true
+      },
+      "uploadAttachements": {
+        "content": {
+          "multipart/form-data": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "additionalMetadata": {
+                  "description": "Additional data to pass to server",
+                  "type": "string"
+                },
+                "file": {
+                  "description": "file to upload",
+                  "type": "string",
+                  "format": "binary"
+                },
+                "userId": {
+                  "description": "Employee id",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "Account_Details": {
+            "$ref": "#/components/schemas/Account_Details"
+          },
+          "Personal_Details": {
+            "$ref": "#/components/schemas/Personal_Details"
+          },
+          "Permanent_Contact_Details": {
+            "$ref": "#/components/schemas/Contact_Details"
+          },
+          "Temparary_Contact_Details": {
+            "$ref": "#/components/schemas/Contact_Details"
+          },
+          "General_Service": {
+            "$ref": "#/components/schemas/General_Service"
+          },
+          "Current_Service": {
+            "$ref": "#/components/schemas/Current_Service"
+          }
+        }
+      },
+      "Account_Details": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "user_name": {
+            "description": "Username of the Employee for login to the HR system",
+            "type": "string",
+            "example": "user1"
+          },
+          "name": {
+            "type": "string",
+            "example": "Nizar"
+          },
+          "passwd": {
+            "type": "string",
+            "description": "Password of the Employee for login to the HR system",
+            "example": "123456"
+          },
+          "level": {
+            "type": "string"
+          },
+          "workplace_id": {
+            "type": "integer"
+          },
+          "sub_location_id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20,
+            "example": 2
+          },
+          "person_id": {
+            "type": "integer"
+          }
+        }
+      },
+      "Personal_Details": {
+        "type": "object",
+        "required": [
+          "NIC",
+          "title",
+          "f_name",
+          "l_name",
+          "in_name",
+          "dob",
+          "ethinicity",
+          "gender",
+          "civil_status"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "NIC": {
+            "type": "string",
+            "example": "123456789V"
+          },
+          "title": {
+            "type": "string",
+            "enum": [
+              "Rev",
+              "Mr",
+              "Mrs",
+              "Rev. Dr.",
+              "Dr",
+              "Dr. (Ms)",
+              "Dr. (Mrs)"
+            ]
+          },
+          "f_name": {
+            "type": "string",
+            "description": "First Name of the Employee",
+            "example": "Rathnayaka Mudalige"
+          },
+          "l_name": {
+            "type": "string",
+            "description": "Last Name of the Employee",
+            "example": "Rathnayaka"
+          },
+          "m_name": {
+            "type": "string",
+            "description": "Middle Name of the Employe",
+            "example": "Pajapathi Dananjana"
+          },
+          "in_name": {
+            "type": "string",
+            "description": "Name with Initials  of the Employee",
+            "example": "R.M.P.M.Rathnayaka"
+          },
+          "si_in_name": {
+            "type": "string",
+            "description": "Fullname  of the Employee in Sinhala",
+            "example": "ආර්. එම්. පී. එම්. රත්නායක"
+          },
+          "ta_in_name": {
+            "type": "string",
+            "description": "Fullname  of the Employee in Tamil",
+            "example": "ஆர்.எம்.பி.எம்.ரத்நாயக்க"
+          },
+          "dob": {
+            "type": "integer",
+            "format": "date",
+            "example": "1963-09-19"
+          },
+          "ethinicity": {
+            "type": "string",
+            "enum": [
+              "Sinhala",
+              "Sri Lankan Tamil",
+              "Indian Tamil",
+              "Muslim",
+              "Burger",
+              "Malay",
+              "Other"
+            ]
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "Male",
+              "Female"
+            ]
+          },
+          "civil_status": {
+            "type": "string",
+            "enum": [
+              "Married",
+              "Single",
+              "Divorced",
+              "Widowed"
+            ]
+          },
+          "f_appoint_date": {
+            "type": "integer",
+            "format": "date",
+            "example": "2012-12-12"
+          },
+          "f_appoint_type": {
+            "type": "string",
+            "enum": [
+              "Permanant",
+              "Temperary"
+            ]
+          },
+          "active": {
+            "type": "integer",
+            "enum": [
+              1,
+              0
+            ]
+          },
+          "profile_pic": {
+            "type": "string",
+            "format": "uri"
+          },
+          "approved": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "Contact_Details": {
+        "type": "object",
+        "required": [
+          "address_type",
+          "address_1",
+          "address_2",
+          "postal_code",
+          "mobile",
+          "email"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "address_type": {
+            "type": "string",
+            "enum": [
+              "Permanant",
+              "Temperary"
+            ]
+          },
+          "address_1": {
+            "type": "string",
+            "example": "50/A/11 6th lane"
+          },
+          "address_2": {
+            "type": "string",
+            "example": "Hansagiri Road"
+          },
+          "address_3": {
+            "type": "string",
+            "example": "Gampaha"
+          },
+          "postal_code": {
+            "type": "integer",
+            "example": 8600
+          },
+          "mobile": {
+            "type": "integer",
+            "example": 1234567890
+          },
+          "telephone": {
+            "type": "integer",
+            "example": 1234567890
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          }
+        }
+      },
+      "General_Service": {
+        "type": "object",
+        "required": [
+          "date_join",
+          "way_join",
+          "cadre",
+          "grade_join"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "date_join": {
+            "type": "string",
+            "format": "date",
+            "example": "2016-01-12"
+          },
+          "way_join": {
+            "type": "string",
+            "description": "Way of join to MoE",
+            "enum": [
+              "Open",
+              "Limited",
+              "Merit",
+              "Super Numeral (PVC)"
+            ]
+          },
+          "cadre": {
+            "type": "string",
+            "enum": [
+              "General Cadre",
+              "Special Cadre",
+              "Not Specified"
+            ]
+          },
+          "grade_join": {
+            "type": "string",
+            "enum": [
+              "Special",
+              "Grade I",
+              "Grade II",
+              "Grade III"
+            ]
+          },
+          "entrance_exam_rank": {
+            "type": "integer"
+          },
+          "grade": {
+            "type": "string",
+            "enum": [
+              "Special",
+              "Grade I",
+              "Grade II",
+              "Grade III"
+            ]
+          },
+          "subject": {
+            "type": "integer"
+          },
+          "medium": {
+            "type": "string",
+            "enum": [
+              "Sinhala",
+              "Tamil",
+              "English"
+            ]
+          },
+          "confirm": {
+            "type": "string",
+            "enum": [
+              "Yes",
+              "No"
+            ]
+          },
+          "confirm_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2012-12-12"
+          },
+          "promotion_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2013-12-12"
+          },
+          "f_appoint_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2011-12-12"
+          },
+          "eb_1_pass": {
+            "type": "string",
+            "format": "date",
+            "example": "2013-12-12"
+          },
+          "eb_2_pass": {
+            "type": "string",
+            "format": "date",
+            "example": "2014-12-12"
+          },
+          "eb_3_pass": {
+            "type": "string",
+            "format": "date",
+            "example": "2015-12-12"
+          },
+          "pg_dip_pass": {
+            "type": "string",
+            "format": "date",
+            "example": "2009-10-12"
+          },
+          "pg_deg_pass": {
+            "type": "string",
+            "format": "date",
+            "example": "2010-08-12"
+          },
+          "cb_1_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2014-08-12"
+          },
+          "cb_2_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2015-08-12"
+          },
+          "cb_3_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2014-08-12"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "Active",
+              "Inactive"
+            ]
+          },
+          "deactivate_type_id": {
+            "type": "integer"
+          },
+          "deactivate_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2018-08-12"
+          }
+        }
+      },
+      "Current_Service": {
+        "type": "object",
+        "required": [
+          "servics_sector",
+          "service_mode"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "person_id": {
+            "type": "integer"
+          },
+          "service_sector": {
+            "type": "string",
+            "enum": [
+              "sleas",
+              "sltes",
+              "slps",
+              "slts",
+              "cs",
+              "ncs"
+            ]
+          },
+          "service_mode": {
+            "type": "integer",
+            "enum": [
+              "First appointment",
+              "Promotion",
+              "Transfer",
+              "Promotion / Transfer",
+              "Attachment",
+              "Secondment",
+              "Releasement",
+              "Acting Duty",
+              "Performing Duty",
+              "Placement"
+            ]
+          },
+          "service_status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          },
+          "work_place_id": {
+            "type": "integer",
+            "enum": [
+              {
+                "value": 1,
+                "description": "Ministry of Education"
+              },
+              {
+                "value": 2,
+                "description": "Department of Examinations"
+              },
+              {
+                "value": 3,
+                "description": "Department of Education Publication"
+              },
+              {
+                "value": 4,
+                "description": "National Institute of Education"
+              },
+              {
+                "value": 5,
+                "description": "Provincial Department of Education"
+              },
+              {
+                "value": 6,
+                "description": "Provincial Ministry of Education"
+              },
+              {
+                "value": 7,
+                "description": "Zonal Education Office"
+              },
+              {
+                "value": 8,
+                "description": "Divisional Education Office"
+              },
+              {
+                "value": 9,
+                "description": "National College of Education"
+              },
+              {
+                "value": 10,
+                "description": "Teacher Training College"
+              },
+              {
+                "value": 11,
+                "description": "Teacher Centers"
+              },
+              {
+                "value": 12,
+                "description": "Provincial ICT Education Centre (PICTEC)"
+              },
+              {
+                "value": 13,
+                "description": "Zonal ICT Education Centre (ZICTEC/CRC)"
+              },
+              {
+                "value": 14,
+                "description": "Education Resource Centre"
+              },
+              {
+                "value": 15,
+                "description": "Provincial Education Development Center"
+              },
+              {
+                "value": 16,
+                "description": "National School"
+              },
+              {
+                "value": 17,
+                "description": "Provincial School"
+              },
+              {
+                "value": 18,
+                "description": "Provinces"
+              }
+            ],
+            "example": 2
+          },
+          "sub_location_id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20,
+            "example": 2
+          },
+          "work_branch_id": {
+            "type": "integer",
+            "enum": [
+              {
+                "value": 1,
+                "description": "National Operation Room"
+              }
+            ],
+            "example": 2
+          },
+          "work_division_id": {
+            "type": "integer",
+            "enum": [
+              {
+                "value": 1,
+                "description": "Educational Quality Development"
+              },
+              {
+                "value": 2,
+                "description": "Policy Planning & Performance Review"
+              },
+              {
+                "value": 3,
+                "description": "Education Services Establishment"
+              },
+              {
+                "value": 4,
+                "description": "Procurement & Construction"
+              },
+              {
+                "value": 5,
+                "description": "School Affairs"
+              },
+              {
+                "value": 6,
+                "description": "Administration and Finance"
+              },
+              {
+                "value": 7,
+                "description": "Languages, Humanities & Social Sciences"
+              },
+              {
+                "value": 8,
+                "description": "Science & Technology"
+              },
+              {
+                "value": 9,
+                "description": "Education Leadership, Development Management"
+              },
+              {
+                "value": 10,
+                "description": "Alternative Education & Teacher Education"
+              },
+              {
+                "value": 11,
+                "description": "Administration, Finance & Support Services"
+              },
+              {
+                "value": 12,
+                "description": "Production & Distribution"
+              },
+              {
+                "value": 12,
+                "description": "Development"
+              },
+              {
+                "value": 14,
+                "description": "School Examination Testing Service"
+              },
+              {
+                "value": 15,
+                "description": "Agency Examination Testing Service"
+              },
+              {
+                "value": 16,
+                "description": "Orientation Programme"
+              },
+              {
+                "value": 17,
+                "description": "Education Services Establishment"
+              }
+            ],
+            "example": 2
+          },
+          "designation_id": {
+            "type": "integer",
+            "enum": [
+              {
+                "value": 1,
+                "description": "Additional Secretary of the Ministry of Education"
+              },
+              {
+                "value": 2,
+                "description": "Commissioner General of Examinations"
+              },
+              {
+                "value": 3,
+                "description": "Commissioner General of Educational Publications"
+              },
+              {
+                "value": 4,
+                "description": "Chief Commissioner (Teacher Education)"
+              },
+              {
+                "value": 5,
+                "description": "Director of Education"
+              },
+              {
+                "value": 6,
+                "description": "Deputy Director of Education"
+              },
+              {
+                "value": 7,
+                "description": "Assistant Director of Education"
+              },
+              {
+                "value": 8,
+                "description": "Additional Director of Education"
+              },
+              {
+                "value": 9,
+                "description": "Commissioner of Examinations"
+              },
+              {
+                "value": 10,
+                "description": "Deputy Commissioner of Examinations"
+              },
+              {
+                "value": 11,
+                "description": "Assistant Commissioner of Examinations"
+              },
+              {
+                "value": 12,
+                "description": "Commissioner of Educational Publications"
+              },
+              {
+                "value": 13,
+                "description": "Commissioner of Educational Publications"
+              },
+              {
+                "value": 14,
+                "description": "Assistant Commissioner of Educational Publications"
+              },
+              {
+                "value": 15,
+                "description": "Principal"
+              },
+              {
+                "value": 16,
+                "description": "Deputy Principal"
+              }
+            ],
+            "example": 2
+          },
+          "appoint_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2012-05-08"
+          },
+          "duty_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2012-05-08"
+          },
+          "duty_date_terminate": {
+            "type": "string",
+            "format": "date",
+            "example": "2011-05-08"
+          },
+          "off_letter_no": {
+            "type": "string",
+            "example": "ED/4/58/25/3/G/"
+          },
+          "grade": {
+            "type": "string",
+            "enum": [
+              "Special",
+              "Grade I",
+              "Grade II",
+              "Grade III"
+            ]
+          },
+          "date_promoted": {
+            "type": "string",
+            "format": "date",
+            "example": "2011-05-08"
+          },
+          "salary_drawned": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "integer",
+            "example": 54456445664
+          },
+          "user_updated": {
+            "type": "integer",
+            "example": "user1"
+          }
+        }
+      },
+      "ApiResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  },
+  "servers": [
+    {
+      "url": "https://localhost/v2"
+    },
+    {
+      "url": "http://localhost/v2"
+    }
+  ]
+}
