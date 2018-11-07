@@ -1,3 +1,13 @@
-To run the project close the repo and run the  `build.sh` script in bash
+# Dev Dependencies
 
-`sudo bash build.sh`
+* docker
+* docker-composer
+
+# Start working 
+
+* git clone git@github.com:moe-lk/moe.git && cd moe
+* docker-compose build && docker-compose up
+
+# Run migration
+* docker exec -it moe_employee-service_1  php ./vendor/bin/phinx migrate -e development
+

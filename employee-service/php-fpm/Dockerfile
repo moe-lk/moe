@@ -7,14 +7,13 @@ RUN apk add --no-cache php7.2-sodium   php7.2-intl php7.2-pdo_mysql \
 RUN apk add --no-cache phpunit
 RUN apk add --no-cache composer
 
-COPY . /var/www/html
+ADD . /var/www/html
+
 WORKDIR /var/www/html
 
-RUN echo $(ls /var/www/html)
-
 RUN composer install
-RUN composer dumpautoload -o
+RUN composer dump-autoload -o
 
-# CMD [ "php","" ]
+RUN chmod -R 777 Log/
 
 EXPOSE 80

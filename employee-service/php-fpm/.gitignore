@@ -1,2 +1,5 @@
 vendor/*
 Tests/token
+composer.lock
+Log/info/*
+Log/error/*

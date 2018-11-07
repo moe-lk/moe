@@ -18,12 +18,12 @@ services:
     volumes:
       - ./employee-service/php-fpm:/var/www/html
     ports:
-      - 80  
+      - 80
     links:
       - employee-db
     depends_on:
       - employee-db
-    restart: always
+    restart: on-failure
   hrm-web:
     build: ./hrm-web
     hostname: www
@@ -36,7 +36,7 @@ services:
       - employee-service
     environment:
       - NODE_ENV=development
-
+    restart: always 
   sleas-swagger:
     image: swaggerapi/swagger-ui
     environment:

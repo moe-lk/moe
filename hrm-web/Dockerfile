@@ -4,14 +4,12 @@ FROM node:9.6.1
 RUN mkdir /usr/app
 WORKDIR /usr/app
 
-# add `/usr/src/app/node_modules/.bin` to $PATH
-# ENV PATH /usr/app/node_modules/.bin:$PATH
-RUN echo $(ls /usr/app)
-# install and cache app dependencies
-RUN npm install 
+COPY package.json /usr/app/package.json
+COPY package-lock.json /usr/app/package-lock.json
+
 RUN npm install  ngx -g 
 RUN npm install react-scripts@1.1.1 -g 
 
-# start app
-CMD ["npm", "install"]
-CMD ["npm", "start"]
+CMD [ "npm","install" ]
+
+CMD [ "npm", "start" ]
