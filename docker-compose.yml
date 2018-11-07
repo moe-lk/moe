@@ -18,16 +18,17 @@ services:
     volumes:
       - ./employee-service/php-fpm:/var/www/html
     ports:
-      - 80
+      - 80:80
     links:
       - employee-db
     depends_on:
       - employee-db
-    restart: on-failure
+    restart: always
   hrm-web:
     build: ./hrm-web
     hostname: www
     domainname: hrm-web.dev
+    working_dir: /usr/app
     volumes:
       - './hrm-web:/usr/app'
     ports:

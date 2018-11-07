@@ -11,9 +11,6 @@ ADD . /var/www/html
 
 WORKDIR /var/www/html
 
-RUN composer install
-RUN composer dump-autoload -o
-
 RUN chmod -R 777 Log/
 
 EXPOSE 80

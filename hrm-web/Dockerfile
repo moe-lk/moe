@@ -10,6 +10,4 @@ COPY package-lock.json /usr/app/package-lock.json
 RUN npm install  ngx -g 
 RUN npm install react-scripts@1.1.1 -g 
 
-CMD [ "npm","install" ]
-
 CMD [ "npm", "start" ]
