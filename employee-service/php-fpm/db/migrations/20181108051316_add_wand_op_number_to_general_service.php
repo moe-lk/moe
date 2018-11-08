@@ -2,9 +2,8 @@
 
 
 use Phinx\Migration\AbstractMigration;
-use Phinx\Db\Adapter\MysqlAdapter;
 
-class AddApprovedColumn extends AbstractMigration
+class AddWandOpNumberToGeneralService extends AbstractMigration
 {
     /**
      * Change Method.
@@ -33,18 +32,14 @@ class AddApprovedColumn extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('Personal_Details');
-        $table->addColumn('approved',   'integer', ['after'=> 'user_updated', 'limit' => MysqlAdapter::INT_TINY,'default'=> 0]);
-        $table->save();
+        $table = $this->table('General_Service');
+        $table->addColumn('w_and_op', 'string',['limit'=>15]);
+        $table->update();
     }
-
-    /**
-     * Migrate Down.
-     */
     public function down()
     {
-        $table = $this->table('Personal_Details');
-        $table->removeColumn('approved')
-              ->save();
+        $table = $this->table('General_Service');
+        $table->removeColumn('w_and_op');
+        $table->update();
     }
 }
