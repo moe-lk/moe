@@ -22,6 +22,7 @@ import {
     SelectInput,
     SimpleFormIterator,
     TextInput,
+    required
 } from 'react-admin';
 
 import data from '../data';
@@ -32,8 +33,10 @@ const styles = theme => ({
     right: { display: 'inline-block', marginRight: 36 },
 });
 
-const validatePhoneno = [ number()];
+/*Form Validations*--START*/
+const validatePhoneno = [required(), number('Must be a number'),maxLength(10,'Must be 10 Digits'),minLength(10,'Must be 10 Digits')];
 const validateNIC = [ minLength(10), maxLength(12)];
+/*Form Validations*--END*/
 
 class FamilyInfoForm extends Component {
 
