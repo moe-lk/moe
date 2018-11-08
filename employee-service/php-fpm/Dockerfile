@@ -11,6 +11,6 @@ ADD . /var/www/html
 
 WORKDIR /var/www/html
 
-RUN chmod -R 777 Log/
+RUN sed -ri 's/^www-data:x:82:82:/www-data:x:1000:50:/' /etc/passwd
 
 EXPOSE 80

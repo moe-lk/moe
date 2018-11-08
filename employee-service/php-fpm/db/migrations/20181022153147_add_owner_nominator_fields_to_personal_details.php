@@ -32,9 +32,9 @@ class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
     public function up()
     {
         $table = $this->table('Personal_Details');
-        // $table->addColumn('owner', 'integer');
-        // $table->addForeignKey('owner', 'Personal_Details', ['id']);
-        // $table->addColumn('nominators', 'json');
+        $table->addColumn('owner', 'integer',['null' => true]);
+        $table->addForeignKey('owner', 'Personal_Details','id');
+        $table->addColumn('nominators', 'json');
         $table->update();
     }
 
