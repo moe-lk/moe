@@ -9,12 +9,20 @@ import {
     required,
     SelectInput,
     TextInput,
+    regex,
+    minLength,
+    maxLength
 } from 'react-admin';
 
 import ReactDropzone from 'react-dropzone'
 
 import data from '../data';
 import { upload } from '../dataProvider/imageUpload';
+
+/*Form Validations--START*/
+const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
+
+/*Form Validations--END*/
 
 const { Provider, Consumer } = createContext();
 
@@ -141,7 +149,7 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.NIC"
                             label="NIC Number"
-                            validate={required()}
+                            validate={validateNIC}
                         />
                     </Grid>
                     <Grid item xs={3}>

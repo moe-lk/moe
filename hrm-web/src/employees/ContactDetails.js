@@ -17,7 +17,7 @@ import data from '../data';
 const validatePostalcode = [required(),number('Must be number'), minLength(5,'Must be 5 Digits'),regex(/^\d{5}$/,'Must be 5 Digits')];
 const validateEmail = email();
 const validatePhoneno = [required(),number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
-const validateNIC = [ minLength(10), maxLength(12)];
+
 
 /*Form Validations*--END*/
 
