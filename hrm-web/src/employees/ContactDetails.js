@@ -14,9 +14,10 @@ import { ArrayInput, email, number,maxLength,minLength, NumberInput, required, S
 import data from '../data';
 
 /*Form Validations*--START*/
-const validatePostalcode = [required(), number('Must be a number')];
+const validatePostalcode = [required()];
 const validateEmail = email();
-const validatePhoneno = [required(), number('Must be a number'),maxLength(10,'Must be 10 Digits'),minLength(10,'Must be 10 Digits')];
+const validatePhoneno = [required(),number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
+
 /*Form Validations*--END*/
 
 const styles = theme => ({

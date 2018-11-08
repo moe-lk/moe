@@ -22,7 +22,8 @@ import {
     SelectInput,
     SimpleFormIterator,
     TextInput,
-    required
+    required,
+    regex
 } from 'react-admin';
 
 import data from '../data';
@@ -34,7 +35,7 @@ const styles = theme => ({
 });
 
 /*Form Validations*--START*/
-const validatePhoneno = [required(), number('Must be a number'),maxLength(10,'Must be 10 Digits'),minLength(10,'Must be 10 Digits')];
+const validatePhoneno = [required(),number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
 const validateNIC = [ minLength(10), maxLength(12)];
 /*Form Validations*--END*/
 
