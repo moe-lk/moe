@@ -1,8 +1,9 @@
 <?php
 
+
 use Phinx\Migration\AbstractMigration;
 
-class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
+class AddWandOpNumberToGeneralService extends AbstractMigration
 {
     /**
      * Change Method.
@@ -31,21 +32,14 @@ class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('Personal_Details');
-        // $table->addColumn('owner', 'integer');
-        // $table->addForeignKey('owner', 'Personal_Details', ['id']);
-        // $table->addColumn('nominators', 'json');
+        $table = $this->table('General_Service');
+        $table->addColumn('w_and_op', 'string',['limit'=>15]);
         $table->update();
     }
-
-    /**
-     * Migrate Down.
-     */
     public function down()
     {
-        $table = $this->table('Personal_Details');
-        $table->dropForeignKey('owner');
-        $table->removeColumn('nominators');
+        $table = $this->table('General_Service');
+        $table->removeColumn('w_and_op');
         $table->update();
     }
 }

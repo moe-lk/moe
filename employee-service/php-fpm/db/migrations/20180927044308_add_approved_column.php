@@ -34,7 +34,7 @@ class AddApprovedColumn extends AbstractMigration
     public function up()
     {
         $table = $this->table('Personal_Details');
-        $table->addColumn('approved',   'integer', ['after'=> 'user_updated', 'limit' => MysqlAdapter::INT_TINY]);
+        $table->addColumn('approved',   'integer', ['after'=> 'user_updated', 'limit' => MysqlAdapter::INT_TINY,'default'=> 0]);
         $table->save();
     }
 
