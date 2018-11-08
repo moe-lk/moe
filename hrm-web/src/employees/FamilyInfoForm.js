@@ -37,6 +37,7 @@ const styles = theme => ({
 /*Form Validations*--START*/
 const validatePhoneno = [required(),number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
 const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format : "9 Digits with V or 12 Digits"')];
+const checkCharacter=[required(),regex(/^[a-zA-Z]$/,'Must be letters')];
 /*Form Validations*--END*/
 
 class FamilyInfoForm extends Component {
@@ -55,22 +56,26 @@ class FamilyInfoForm extends Component {
                     source="Spouse_Details.f_name"
                     label="First Name"
                     formClassName={this.props.classes.left}
+                    validate={checkCharacter}
                    
                 />
                 <TextInput
                     source="Spouse_Details.m_name"
                     label="Middle Name"
                     formClassName={this.props.classes.right}
+                    validate={checkCharacter}
                 />
                 <TextInput
                     source="Spouse_Details.l_name"
                     label="Last Name"
                     formClassName={this.props.classes.left}
+                    validate={checkCharacter}
                 />
                 <TextInput
                     source="Spouse_Details.in_name"
                     label="Name with Initials in English"
                     formClassName={this.props.classes.left}
+                    validate={checkCharacter}
                    
                 />
                 <TextInput
@@ -110,6 +115,7 @@ class FamilyInfoForm extends Component {
                     source="Spouse_Details.occupation"
                     label="Occupation"
                     formClassName={this.props.classes.left}
+
                 />
 
                 <TextInput
@@ -130,6 +136,7 @@ class FamilyInfoForm extends Component {
                             source="name"
                             label="Child Name"
                             formClassName={this.props.classes.left}
+                            validate={checkCharacter}
                         />
                         <DateInput
                             source="dob"

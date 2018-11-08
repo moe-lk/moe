@@ -21,6 +21,7 @@ import { upload } from '../dataProvider/imageUpload';
 
 /*Form Validations--START*/
 const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
+const checkCharacter=[required(),regex(/^[a-zA-Z]$/,'Must be letters')];
 
 /*Form Validations--END*/
 
@@ -91,20 +92,21 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.f_name"
                             label="First Name"
-                            validate={required()}
+                            validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.m_name"
                             label="Middle Name"
+                            validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.l_name"
                             label="Last Name"
-                            validate={required()}
+                            validate={checkCharacter}
                         />
                     </Grid>
                 </Grid>
@@ -117,7 +119,7 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.in_name"
                             label="Name with Initials in English"
-                            validate={required()}
+                            validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
