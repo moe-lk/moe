@@ -1,4 +1,6 @@
 import { Grid, withStyles } from '@material-ui/core';
+
+
 import React, { Component, createContext } from 'react';
 import {
     BooleanInput,
@@ -11,7 +13,8 @@ import {
     TextInput,
     regex,
     minLength,
-    maxLength
+    maxLength,
+    
 } from 'react-admin';
 
 import ReactDropzone from 'react-dropzone'
@@ -22,17 +25,21 @@ import { upload } from '../dataProvider/imageUpload';
 /*Form Validations--START*/
 const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
 const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
-var today = new Date();
 
-
-
-const birthdateValidation = (value) => {
-    if (value>=today) {
-        return 'Invalid Birthdate';
-    }
-    
-    return [];
-}
+// const birthdateValidation = (values) => {
+//     const errors = {};
+//     var dob =values.Personal_Details.dob;
+//     var year = Number(dob.substr(0, 4));
+//     var today = new Date();
+//     var age = today.getFullYear() - year;
+//     if (!values.Personal_Details.dob) {
+//         errors.Personal_Details.dob = ['DOB is required'];
+//     }
+//     if (age>18) {
+//         errors.Personal_Details.dob = ['Invalid DOB'];
+//     } 
+//     return errors
+// };
 
 /*Form Validations--END*/
 
@@ -149,7 +156,7 @@ class PersonalDetails extends Component {
                         <DateInput
                             source="Personal_Details.dob"
                             label="Date of Birth"
-                            validate={birthdateValidation}
+                            validate={required()}
                         />
                     </Grid>
                 </Grid>
