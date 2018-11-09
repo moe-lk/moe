@@ -240,7 +240,7 @@ class UserController extends ApiController
 
                 $account_details['user_name'] = substr(str_replace(' ', '', strtolower($this->personal_details->l_name)), 0, 5) . rand(1, 3);
                 $account_details['passwd'] = password_hash(randomPassword(), PASSWORD_DEFAULT) ;
-
+                $account_details['name'] = $this->personal_details->f_name.' '.$this->personal_details->l_name;
                 $validator = new Validator;
                 $validator->addValidator('unique', new UniqueRule());
 

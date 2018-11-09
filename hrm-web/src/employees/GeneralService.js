@@ -81,6 +81,15 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                     choices={data.cadre} />
             </Grid>
             <Grid item xs={3}>
+                <SelectInput
+                    source="General_Service.grade_join"
+                    formClassName={classes.left}
+                    maxWidth={true}
+                    alignItems="row"
+                    label="Grade Join"
+                    choices={data.grade} />
+            </Grid>
+            <Grid item xs={3}>
                 <RadioButtonGroupInput
                     source="General_Service.confirm"
                     formClassName={classes.radio}

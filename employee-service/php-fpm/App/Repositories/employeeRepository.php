@@ -247,6 +247,7 @@ class Employee extends Model
                 $this->qualifications->_data = setValues($this->qualifications->_data, 'person_id', $person_id);
             }
             $this->generalService->_data->person_id = $person_id;
+            $this->user->_data['person_id'] = $person_id;
             if ($this->spouse->_data !== null) {
                 $this->spouse->_data['person_id'] = $person_id;
             }
