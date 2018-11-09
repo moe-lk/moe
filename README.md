@@ -20,4 +20,3 @@
 # Loge in to the DB on 
 bash in to the container
 * `docker exec -it  moe_employee-db_1 /bin/sh`
-* `mysql -uroot -p` and endter the docker ssh pw
