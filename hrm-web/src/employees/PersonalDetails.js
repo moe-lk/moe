@@ -21,7 +21,18 @@ import { upload } from '../dataProvider/imageUpload';
 
 /*Form Validations--START*/
 const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
-const checkCharacter=[required(),regex(/^[a-zA-Z]$/,'Must be letters')];
+const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
+var today = new Date();
+
+
+
+const birthdateValidation = (value) => {
+    if (value>=today) {
+        return 'Invalid Birthdate';
+    }
+    
+    return [];
+}
 
 /*Form Validations--END*/
 
@@ -138,7 +149,7 @@ class PersonalDetails extends Component {
                         <DateInput
                             source="Personal_Details.dob"
                             label="Date of Birth"
-                            validate={required()}
+                            validate={birthdateValidation}
                         />
                     </Grid>
                 </Grid>

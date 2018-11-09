@@ -37,7 +37,7 @@ const styles = theme => ({
 /*Form Validations*--START*/
 const validatePhoneno = [required(),number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
 const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format : "9 Digits with V or 12 Digits"')];
-const checkCharacter=[required(),regex(/^[a-zA-Z]$/,'Must be letters')];
+const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
 /*Form Validations*--END*/
 
 class FamilyInfoForm extends Component {
