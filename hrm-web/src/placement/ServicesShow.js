@@ -21,6 +21,13 @@ class LetterShow extends Component {
         };
     }
 
+    componentWill() {
+        if (this.props.location !== undefined) {
+            this.state = this.props.location.state
+        }
+        console.log(this)
+    }
+
     render() {
         return (
             <Show {...this.props}  >
