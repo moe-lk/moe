@@ -23,8 +23,9 @@ import data from '../data';
 import { upload } from '../dataProvider/imageUpload';
 
 /*Form Validations--START*/
-const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
-const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
+// const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
+// const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
+// const checkCharacter1=[regex(/^[a-zA-Z]*$/,'Must be letters')];
 
 // const birthdateValidation = (values) => {
 //     const errors = {};
@@ -110,21 +111,21 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.f_name"
                             label="First Name"
-                            validate={checkCharacter}
+                            // validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.m_name"
                             label="Middle Name"
-                            validate={checkCharacter}
+                            // validate={checkCharacter1}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.l_name"
                             label="Last Name"
-                            validate={checkCharacter}
+                            // validate={checkCharacter}
                         />
                     </Grid>
                 </Grid>
@@ -137,7 +138,7 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.in_name"
                             label="Name with Initials in English"
-                            validate={checkCharacter}
+                            // validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -156,7 +157,7 @@ class PersonalDetails extends Component {
                         <DateInput
                             source="Personal_Details.dob"
                             label="Date of Birth"
-                            validate={required()}
+                            // validate={required()}
                         />
                     </Grid>
                 </Grid>
@@ -169,7 +170,7 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.NIC"
                             label="NIC Number"
-                            validate={validateNIC}
+                            // validate={validateNIC}
                         />
                     </Grid>
                     <Grid item xs={3}>

@@ -152,8 +152,8 @@ export default {
         { id: 'Special Cadre', name: 'Special Cadre' }
     ],
     confirm: [
-        { id: 0, name: 'Yes' },
-        { id: 1, name: 'No' },
+        { id: '0', name: 'Yes' },
+        { id: '1', name: 'No' },
     ],
     approve: [
         { id: 0, name: 'No' },

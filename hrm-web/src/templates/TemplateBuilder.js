@@ -30,7 +30,7 @@ import nameInTa from './plugins/lables/nameInTa';
 import fullNameInSi from './plugins/fullNameInSi';
 import fullNameInTa from './plugins/fullNameInTa';
 import fullNameInEn from './plugins/fullNameInEn';
-
+import PCSLetterNo from './plugins/PSCLetterNo';
 // import { Inline } from 
 require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
 
@@ -57,7 +57,8 @@ const plugins = {
         nameInSi,
         nameInTa,
         Header,
-        Footer
+        Footer,
+        PCSLetterNo
 
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() }),
