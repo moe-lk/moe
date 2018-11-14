@@ -1,4 +1,6 @@
 import { Grid, withStyles } from '@material-ui/core';
+
+
 import React, { Component, createContext } from 'react';
 import {
     BooleanInput,
@@ -9,12 +11,37 @@ import {
     required,
     SelectInput,
     TextInput,
+    regex,
+    minLength,
+    maxLength,
+    
 } from 'react-admin';
 
 import ReactDropzone from 'react-dropzone'
 
 import data from '../data';
 import { upload } from '../dataProvider/imageUpload';
+
+/*Form Validations--START*/
+const validateNIC=[required(),regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format :"9 Digits with V or 12 Digits"')];
+const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
+
+// const birthdateValidation = (values) => {
+//     const errors = {};
+//     var dob =values.Personal_Details.dob;
+//     var year = Number(dob.substr(0, 4));
+//     var today = new Date();
+//     var age = today.getFullYear() - year;
+//     if (!values.Personal_Details.dob) {
+//         errors.Personal_Details.dob = ['DOB is required'];
+//     }
+//     if (age>18) {
+//         errors.Personal_Details.dob = ['Invalid DOB'];
+//     } 
+//     return errors
+// };
+
+/*Form Validations--END*/
 
 const { Provider, Consumer } = createContext();
 
@@ -83,20 +110,21 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.f_name"
                             label="First Name"
-                            validate={required()}
+                            validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.m_name"
                             label="Middle Name"
+                            validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.l_name"
                             label="Last Name"
-                            validate={required()}
+                            validate={checkCharacter}
                         />
                     </Grid>
                 </Grid>
@@ -109,7 +137,7 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.in_name"
                             label="Name with Initials in English"
-                            validate={required()}
+                            validate={checkCharacter}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -141,7 +169,7 @@ class PersonalDetails extends Component {
                         <TextInput
                             source="Personal_Details.NIC"
                             label="NIC Number"
-                            validate={required()}
+                            validate={validateNIC}
                         />
                     </Grid>
                     <Grid item xs={3}>

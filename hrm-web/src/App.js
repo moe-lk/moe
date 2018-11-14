@@ -64,7 +64,7 @@ class App extends Component {
                 // customReducers={{ tree }}
                 customRoutes={customRoutes}
             >
-                {permissions => [
+                {/* {permissions => [
                     permissions ? <Resource name="employees"  {...Employee} /> : null,
                     permissions ? <Resource name="placement"  {...Placement} /> : null,
                     permissions ? <Resource   {...Placement} /> : null,
@@ -76,10 +76,22 @@ class App extends Component {
                     <Resource name="province" />,
                     <Resource name="options" />,
                     <Resource name="upload" />,
-                    <Resource name="templates" {...TemplateBuilder} />
-
                     // permissions ? <Resource name="employees"  {...Dashboard} /> : null
-                ]}
+                    <Resource name="templates" {...TemplateBuilder} /> */
+                
+                }
+                    <Resource name="employees"  {...Employee} /> 
+                    <Resource name="placement"  {...Placement} /> 
+                    <Resource name="workplace" />
+                    <Resource name="worklocation" />
+                    <Resource name="workbranch" />
+                    <Resource name="qualification" />
+                    <Resource name="designation" />
+                    <Resource name="province" />
+                    <Resource name="options" />
+                    <Resource name="upload" />
+                    <Resource name="templates" {...TemplateBuilder} />
+                
             </Admin>
         )
 
