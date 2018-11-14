@@ -86,8 +86,7 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                     formClassName={classes.left}
                     maxWidth={true}
                     alignItems="row"
-                    label="Grade Join
-                    "
+                    label="Grade Join"
                     choices={data.grade} />
             </Grid>
             <Grid item xs={3}>
