@@ -67,6 +67,7 @@ class App extends Component {
                 {/* {permissions => [
                     permissions ? <Resource name="employees"  {...Employee} /> : null,
                     permissions ? <Resource name="placement"  {...Placement} /> : null,
+                    permissions ? <Resource   {...Placement} /> : null,
                     <Resource name="workplace" />,
                     <Resource name="worklocation" />,
                     <Resource name="workbranch" />,
