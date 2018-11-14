@@ -322,7 +322,7 @@ export default {
         {id:88,  office_branch:'Administrator & Investigation'},
         {id:89, office_branch:'Evaluation'},
         {id:90,office_branch:'Confidential & Organization Evaluation Results'},
-        {id:91,  office_branch:'Not Applicable'};
+        {id:91,  office_branch:'Not Applicable'}
 
       
        
