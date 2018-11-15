@@ -6,73 +6,62 @@ import { func } from 'prop-types';
 
 class Workingplace extends Component {
 
-    state = {
-        placement: {
-            work_place_id: 'Work Place',
-            servicesector: 'Service Sector'
-            
-        }
-    };
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            placement: {
+                work_place_id: 'Work Place',
+                service_sector: 'Service Sector'
+
+            }
+        };
+    }
 
 
-    componentWillReceiveProps() {
+    componentWillMount() {
         console.log(this);
         var placement = localStorage.getItem('placement');
         console.log(placement);
-        if (placement !== undefined) {
+        if (placement !== null) {
             this.state.placement = cloneDeep(JSON.parse(placement));
-        }else{
-          
-
         }
     }
 
 
-   
-
-
-    // data.working_places.filter(function(){
-    //    working_places.id= this.state.placement.work_place_id
-    //    return working_places.name;
-
-    // })
-
-
-    filterPlaces  (sectorData){
-        sectorData.filter(function(data){
+    filterPlaces(sectorData) {
+        return sectorData.filter(function (data) {
             var placement = localStorage.getItem('placement');
-        //  return  data.id = JSON.pa
-            // return data.name;
-
-    })
+            return data.id = JSON.parse(placement).id
+        })
     }
-   
-    renderSwitch(service_sector) {
-        
-        switch(service_sector) {
-          case 'sleas':
-            return  filterPlaces(data.working_places.sleas)[0].name
 
-            // return data.working_places.sleas[this.state.placement.work_place_id].name;
-          case 'sltes':
-            return data.working_places.sltes[this.state.placement.work_place_id].name;
-          case 'cs':
-            return data.working_places.cs[this.state.placement.work_place_id].name;
-          case 'ncs':
-            return data.working_places.ncs[this.state.placement.work_place_id].name;  
-          default:
-            return 'Service Sector Invalid';
+    renderSwitch(service_sector) {
+        console.log(service_sector);
+        switch (service_sector) {
+            case 'sleas':
+                return this.filterPlaces(data.working_places.sleas)[0].name
+            case 'sltes':
+                return this.filterPlaces(data.working_places.sltes)[0].name
+            case 'cs':
+                return this.filterPlaces(data.working_places.cs)[0].name
+            case 'slps':
+                //TODO : school name from the db;
+            case 'slts':
+                //TODO : school from name   
+            case 'ncs':
+                return this.filterPlaces(data.working_places.ncs)[0].name
+            default:
+                return 'Service Sector Invalid';
         }
 
-      }
-      
-      
+    }
+
+
     render() {
-        var service_sector = this.state.placement.service_sector;
-        console.log(this.state.placement.work_place_id);
         return (
-           typeof (this.state.placement.work_place_id) == 'number' ? this.renderSwitch(service_sector) : this.state.placement.work_place_id
-           
+            typeof (this.state.placement.work_place_id) == 'number' ? this.renderSwitch(this.state.placement.service_sector) : this.state.placement.work_place_id
+
         )
     }
 
