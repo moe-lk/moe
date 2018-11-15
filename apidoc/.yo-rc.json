@@ -1,0 +1,11 @@
+{
+  "generator-openapi-repo": {
+    "importExistingSpec": true,
+    "importedSpec": "swagger.yml",
+    "name": "Moe-HRM",
+    "repo": ":moe-lk/moe",
+    "splitSpec": true,
+    "samples": true,
+    "installSwaggerUI": true
+  }
+}

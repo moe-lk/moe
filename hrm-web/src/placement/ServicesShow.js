@@ -22,7 +22,6 @@ class LetterShow extends Component {
         };
     }
 
-
     // updateProps(data) {
     //     if (data !== undefined) {
     //         dataProvider(GET_ONE, 'templates', { id: data.template })
