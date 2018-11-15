@@ -44,7 +44,7 @@ class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
     public function down()
     {
         $table = $this->table('Personal_Details');
-        // $table->removeColumn('owner');
+        $table->removeColumn('owner');
         $table->dropForeignKey('owner');
         $table->removeColumn('nominators');
         $table->update();
