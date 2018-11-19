@@ -1,8 +1,10 @@
 <?php
 
-use Phinx\Migration\AbstractMigration;
 
-class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
+use Phinx\Migration\AbstractMigration;
+use Phinx\Db\Adapter\MysqlAdapter;
+
+class MakeActiveBoolen extends AbstractMigration
 {
     /**
      * Change Method.
@@ -32,10 +34,8 @@ class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
     public function up()
     {
         $table = $this->table('Personal_Details');
-        $table->addColumn('owner', 'integer',['null' => true]);
-        $table->addForeignKey('owner', 'Personal_Details','id');
-        $table->addColumn('nominators', 'json',['null' => true]);
-        $table->update();
+        $table->changeColumn('active', 'string',['default' => 'false','limit'=>6])
+        ->save();
     }
 
     /**
@@ -44,9 +44,8 @@ class AddOwnerNominatorFieldsToPersonalDetails extends AbstractMigration
     public function down()
     {
         $table = $this->table('Personal_Details');
-        $table->removeColumn('owner');
-        $table->dropForeignKey('owner');
-        $table->removeColumn('nominators');
-        $table->update();
+        $table->changeColumn('active',  'integer', ['limit' => MysqlAdapter::INT_TINY])
+        ->save();
     }
+
 }

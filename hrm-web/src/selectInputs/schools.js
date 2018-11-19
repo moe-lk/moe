@@ -31,7 +31,7 @@ class SchoolSelectInput extends Component {
 
     switchSector = (props) => {
         if (props.service_sector == 'slps' || props.service_sector == 'slts') {
-            this.state.props = props
+            // this.state.props = props
             return true
         } else {
             return false
@@ -91,7 +91,7 @@ class SchoolSelectInput extends Component {
                             {({ formData, ...rest }) =>
                                 formData ? formData.district &&
                                     <ReferenceInput label="Zone" source="zone" reference="options" filter={{ table: 'Zone_List', filter: ['dist_id,=,' + formData.district] }}>
-                                        <SelectInput optionText="zone" {...rest} />
+                                        <SelectInput optionText="zone" optionValue="zone_id" {...rest} />
                                     </ReferenceInput>
                                     : ''
                             }
@@ -104,7 +104,7 @@ class SchoolSelectInput extends Component {
                             {({ formData, ...rest }) =>
                                 formData ? formData.zone &&
                                     <ReferenceInput label="Division" source="division" reference="options" filter={{ table: 'Division_List', filter: ['zone_id,=,' + formData.zone] }}>
-                                        <SelectInput optionText="division_name" {...rest} />
+                                        <SelectInput optionText="division_name" optionValue="div_id"  {...rest} />
                                     </ReferenceInput>
                                     : ''
                             }
@@ -120,13 +120,13 @@ class SchoolSelectInput extends Component {
                                         label="School"
                                         source="work_branch_id"
                                         reference="options"
-                                        filter={
+                                        filter={    
                                             {
                                                 table: 'Institute',
                                                 filter: ['div_id,=,' + formData.division],
-                                                work_place: ['workplace_id,=,' + formData.working_place_id]
+                                                work_place: ['workplace_id,=,' + formData.work_place_id]
                                             }
-                                        }><SelectInput optionText="institute_name" {...rest} />
+                                        }><AutocompleteInput optionText="institute_name" {...rest} />
                                     </ReferenceInput>
                                     : ''
                             }

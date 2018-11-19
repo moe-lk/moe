@@ -9,15 +9,18 @@
  */
 import { Grid, withStyles } from '@material-ui/core';
 import React from 'react';
-import { ArrayInput, email, number,maxLength,minLength, NumberInput, required, SelectInput, SimpleFormIterator, TextInput } from 'react-admin';
+import { ArrayInput, email, number,maxLength,minLength, NumberInput, required, SelectInput, SimpleFormIterator, TextInput,regex } from 'react-admin';
 
 import data from '../data';
 
+/*Form Validations*--START*/
+// const validatePostalcode = [required(),number('Must be number'), minLength(5,'Must be 5 Digits'),regex(/^\d{5}$/,'Must be 5 Digits')];
+// const validateEmail = email();
+// const validatePhoneno = [required(),number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
+// const checkCharacter=[required(),regex(/^[a-zA-Z]*$/,'Must be letters')];
 
-const validatePostalcode = [required(), number()];
-const validateEmail = email();
-const validatePhoneno = [required(), number(),maxLength(10),minLength(10)];
 
+/*Form Validations*--END*/
 
 const styles = theme => ({
     left: { display: 'inline-block', marginRight: 36 },
@@ -50,30 +53,31 @@ const ContactDetails = ({ permissions, ...props, classes }) => (
                     source="address_3"
                     formClassName={classes.left}
                     label="City" />
-                <NumberInput
+                <TextInput
                     source="postal_code"
                     label="Postal Code"
                     formClassName={classes.left}
-                    validate={validatePostalcode}
+                    // validate={validatePostalcode}
                 />
                 <TextInput
                     source="mobile"
                     label="Mobile Number"
                     formClassName={classes.left}
-                    validate={validatePhoneno}
+                    // validate={validatePhoneno}
                 />
                 <TextInput
                     source="telephone"
                     label="Telephone Number"
                     formClassName={classes.left}
-                    validate={validatePhoneno}
+                    // validate={validatePhoneno}
                 />
                 <TextInput
                     source="email"
                     label="Email Address"
                     formClassName={classes.left}
                     type="email"
-                    validate={validateEmail} />
+                    // validate={validateEmail} 
+                    />
 
             </SimpleFormIterator>
         </ArrayInput>
