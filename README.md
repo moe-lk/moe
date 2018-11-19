@@ -17,3 +17,6 @@
 # Run migration
 * docker exec -it moe_employee-service_1  php ./vendor/bin/phinx migrate -e development
 
+# Run Seeder
+* docker exec -it moe_employee-service_1 php ./vendor/bin/phinx seed:run -e development
+
