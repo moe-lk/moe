@@ -25,9 +25,9 @@
 # Loge in to the DB on 
 bash in to the container
 * `docker exec -it  moe_employee-db_1 /bin/sh`
-* 'mysql -uroot -p'
-* 'pw:  my_secret_pw_shh'
-* 'use edu'
+* mysql -uroot -p
+* pw:  my_secret_pw_shh
+* use edu
 
 # Create Migration
 * docker exec -it moe_employee-service_1 php ./vendor/bin/phinx create #name
