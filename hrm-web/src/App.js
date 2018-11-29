@@ -77,6 +77,9 @@ class App extends Component {
                     <Resource name="options" />,
                     <Resource name="upload" />,
                     // permissions ? <Resource name="employees"  {...Dashboard} /> : null
+
+                ]}
+
                     <Resource name="templates" {...TemplateBuilder} /> */
                 
                 }
@@ -92,6 +95,7 @@ class App extends Component {
                     <Resource name="upload" />
                     <Resource name="templates" {...TemplateBuilder} />
                 
+
             </Admin>
         )
 

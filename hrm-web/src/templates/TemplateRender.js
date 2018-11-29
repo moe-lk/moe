@@ -27,9 +27,11 @@ import lastName from './plugins/lastName';
 import Native from './plugins/Native';
 import newSlate from './plugins/ory-slate/src';
 import PCSLetterInput from './plugins/pcsLetterDate';
-import PCSLetterNo from './plugins/PSCLetterNo';
 import WorkingPlace from './plugins/workingplace';
-import WorkingBranch from './plugins/workingbranch';
+import Designation from './plugins/designation';
+import WorkingBranch from './plugins/workingBranch';
+import respectiveLetterNo from './plugins/respectiveLetterNo';
+
 
 // Load some exemplary plugins:
 // import black from './Layout/black';
@@ -53,9 +55,10 @@ const EditorPlugins = {
         nameInTa,
         Header,
         Footer,
-        PCSLetterNo,
         WorkingPlace,
-        WorkingBranch
+        Designation,
+        WorkingBranch,
+        respectiveLetterNo,
         // black
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() })], // Define plugins for layout cells

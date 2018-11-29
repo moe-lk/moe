@@ -49,8 +49,16 @@ export default {
         ]
     },
     designations: {
-        sleas: [
 
+        sleas: [
+            
+                { id: 1, name: 'Additional Secretary of the Ministry of Education' },
+                { id: 2, name: 'Commissioner General of Examinations' },
+                { id: 3, name: 'Commissioner General of Educational Publications' },
+                { id: 4, name: 'Chief Commissioner (Teacher Education)' },
+                { id: 5, name: 'Director of Education' },
+                { id: 6, name: 'Deputy Director of Education' },
+            
         ],
         sltes: [
             { id: 1, name: 'President of College of Education' },
@@ -229,6 +237,106 @@ export default {
         { id: 2, name: 'G.C.E. O/L Tamil' },
         { id: 3, name: 'Diploma' },
         { id: 4, name: 'Degree' }
+<<<<<<< HEAD
+
+
+    ],
+    working_branches: [
+        {id:1,office_branch:'National Operation Room'},
+        {id:2,office_branch:'Aesthetic Education'},
+        {id:3,office_branch:'Bilingual Education'},
+        {id:4,office_branch:'Commerce & Business Studies'},
+        {id:5,office_branch:'Colleges of Education'},
+        {id:6,office_branch:'Education Development'},
+        {id:7,office_branch:'English and Foreign Languages'},
+        {id:8,office_branch:'Mathematics'},
+        {id:9,office_branch:'National Languages and Humanities Education Unit'},
+        {id:10,office_branch:'National Schools'},
+        {id:11,office_branch:'Piriven Education'},
+        {id:12,office_branch:'Oriental Studies Society'},
+        {id:13,office_branch:'Religious and Value Education'},
+        {id:14,office_branch:'School Activities'},
+        {id:15,office_branch:'Health & Nutrition'},
+        {id:16,office_branch: 'Science'},
+        {id:17,office_branch:'Teacher Education Administration'},
+        {id:18,office_branch: 'Teacher Transfer Unit'},
+        {id:19,office_branch:'School Works'},
+        {id:20,office_branch:'School Supplies'},
+        {id:21,office_branch:'Monitoring and Performance Review'},
+        {id:22,office_branch:'Policy and Planning'},
+        {id:23,office_branch:'Education for All'},
+        {id:24,office_branch:'Data Management'},
+        {id:25,office_branch:'School Library Development'},
+        {id:26,office_branch:'Management and Quality Assurance'},
+        {id:27,office_branch:'Educational Publications Advisory Board'},
+        {id:28,office_branch:'Private Schools'},
+        {id:29,office_branch:'Research and Development Unit'},
+        {id:30,office_branch:'Education Services Establishment Division'},
+        {id:31,office_branch:'Teacher Educators  Service'},
+        {id:32,office_branch:'Principals'},
+        {id:33,office_branch:'Teacher Establishment'},
+        {id:34,office_branch:'Thousand Secondary Schools Development'},
+        {id:35,office_branch:'Foreign Agencies and Foreign Affairs'},
+        {id:36,office_branch:'Muslim School Development'},
+        {id:37,office_branch:'Tamil Schools Development'},
+        {id:38,office_branch:'Sports & Physical Education'},
+        {id:39,office_branch:'Non-formal and Special Education'},
+        {id:40,office_branch:'Co-curricular Activities, Guidance and Counseling'},
+        {id:41,office_branch:'Plantation Schools Development '},
+        {id:42,office_branch:'Human Resource Development'},
+        {id:43,office_branch:'Primary Education'},
+        {id:44,office_branch:'Technical Education'},
+        {id:45,office_branch:'Agriculture and Environmental Education'},
+        {id:46,office_branch:'Information & Communication Technology'},
+        {id:47,office_branch:'e-Learning and Nenasa Educational Unit'},
+        {id:48,office_branch:'Early Child Hood Dev. & Primary Education '},
+        {id:49,office_branch:'Sinhala'},
+        {id:50,office_branch:'Tamil'},
+        {id:51,office_branch:'English'},
+        {id:52,office_branch:'Aesthetics'},
+        {id:53,office_branch:'Religion'},
+        {id:54,office_branch:'Social Science'},
+        {id:55,office_branch:'Science'},
+        {id:56,office_branch:'Mathematics'},
+        {id:57,office_branch:'Technical Education'},
+        {id:58,office_branch:'Commerce'},
+        {id:59,office_branch:'Information Technology & Education Management Information System'},
+        {id:60,office_branch:'Health &Physical Education '},
+        {id:61,office_branch:'Printing & Publication'},
+        {id:62,office_branch:'Planning Evaluation '},
+        {id:63,office_branch:'Research &Development'},
+        {id:64,office_branch:'Professional Development & Educational Management'},
+        {id:65,office_branch:'Educational Administration & Development'},
+        {id:66,office_branch:'Foreign Courses Unit'},
+        {id:67,office_branch:'Inclusive Education'},
+        {id:68,office_branch:'Classical /Foreign Languages & Bilingual Education'},
+        {id:69,office_branch:'Electronic Dissemination'},
+        {id:70,office_branch:'Guidance & Counseling '},
+        {id:71,office_branch:' Open School '},
+        {id:72,office_branch:'Teacher Education'},
+        {id:73,office_branch:'Institutional Development'},
+        {id:74,office_branch:'Administration'},
+        {id:75,office_branch:'Engineering Services & Maintenance'},
+        {id:76,office_branch:'Library Museum '},
+        {id:77,office_branch:'Transport'},
+        {id:78,office_branch:'Distribution'},
+        {id:79,office_branch:'Production'},
+        {id:80,office_branch:'Publication'},
+        {id:81,office_branch:'Sinhala '},
+        {id:82,office_branch:'Tamil'},
+        {id:83,office_branch:'English'},
+        {id:84,office_branch:'Research & Development'},
+        {id:85,office_branch:'School Organization & Results'},
+        {id:86,office_branch:'Technology'},
+        {id:87,office_branch:'Confidential'},
+        {id:88,office_branch:'Administrator & Investigation'},
+        {id:89,office_branch:'Evaluation'},
+        {id:90,office_branch:'Confidential & Organization Evaluation Results'},
+        {id:91,office_branch:'Not Applicable'}
+      
+       
+
+=======
     ],
     working_branches: [
 
@@ -326,6 +434,7 @@ export default {
 
       
        
+>>>>>>> development
     ]
 
     

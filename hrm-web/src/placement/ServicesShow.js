@@ -22,16 +22,6 @@ class LetterShow extends Component {
         };
     }
 
-    // updateProps(data) {
-    //     if (data !== undefined) {
-    //         dataProvider(GET_ONE, 'templates', { id: data.template })
-    //             .then(response => response.data.body)
-    //             .then(template => {
-    //                 this.state.template = JSON.parse(template)
-    //             })
-    //     }
-    // }
-
     componentWillMount() {
         dataProvider(GET_ONE, 'placement', { id: this.props.id })
             .then(response => response.data)
