@@ -40,6 +40,9 @@ class Service extends BaseModel
         if (key_exists('service_mode', $filter)) {
             $results->where('service_mode', '=', $filter['service_mode']);
         }
+        if (key_exists('appoint_date', $filter)) {
+            $results->where('appoint_date', '=', $filter['appoint_date']);
+        }
 
         $this->count = $results->count();
         $this->results = $results->get();
