@@ -4,7 +4,7 @@ import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextFie
 
 import data from '../data';
 import TemplateRender from '../templates/TemplateRender';
-import dataProvider from '../dataProvider';
+import dataProvider from '../dataProvider'
 
 const styles = theme => ({
     left: { display: 'inline-block', marginRight: 36, minWidth: 192 },
@@ -35,7 +35,6 @@ class LetterShow extends Component {
                 console.log(d);
             })
     }
-    
 
     render() {
         return (
