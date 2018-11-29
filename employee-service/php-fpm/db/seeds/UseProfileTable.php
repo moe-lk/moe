@@ -20,7 +20,7 @@ class UseProfileTable extends AbstractSeed
         $this->faker = Factory::create('en_US');
         $this->faker_si = Factory::create('en_US');
         $data = [];
-        for ($i=0; $i < 10000 ; $i++) { 
+        for ($i=0; $i < 50 ; $i++) { 
             # code...
             $data[] = [
                 'NIC' => $this->faker->numberBetween(800000000,999999999),
@@ -39,7 +39,7 @@ class UseProfileTable extends AbstractSeed
                 'f_appoint_type' => $this->faker->numberBetween(1,10),
                 'active' => $this->faker->numberBetween(0,1),
                 'profile_pic' => 'string',
-                'user_updated'=>'subc2'
+                'user_updated'=>'piumi2'
             ];
             
         }
