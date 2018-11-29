@@ -37,8 +37,8 @@ class Service extends BaseModel
             $results->where($filters[0], $filters[1], $filters[2]);
         }
 
-        if (key_exists('nic', $filter)) {
-            $results->where('NIC', 'LIKE', '%'.$filter['nic'].'%');
+        if (key_exists('service_mode', $filter)) {
+            $results->where('service_mode', '=', $filter['service_mode']);
         }
 
         $this->count = $results->count();
