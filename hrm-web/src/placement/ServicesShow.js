@@ -1,9 +1,10 @@
 import { withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
-import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField } from 'react-admin';
+import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField , GET_ONE } from 'react-admin';
 
 import data from '../data';
 import TemplateRender from '../templates/TemplateRender';
+import dataProvider from '../dataProvider';
 
 const styles = theme => ({
     left: { display: 'inline-block', marginRight: 36, minWidth: 192 },
@@ -20,6 +21,21 @@ class LetterShow extends Component {
             data: null
         };
     }
+
+    componentWillMount() {
+        dataProvider(GET_ONE, 'placement', { id: this.props.id })
+            .then(response => response.data)
+            .then(placement => {
+                this.setState({
+                    data: placement
+                })
+                localStorage.removeItem('placement')
+                localStorage.setItem('placement', JSON.stringify(placement));
+                var d = localStorage.getItem('placement');
+                console.log(d);
+            })
+    }
+    
 
     render() {
         return (

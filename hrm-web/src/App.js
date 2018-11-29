@@ -79,6 +79,7 @@ class App extends Component {
 
                     // permissions ? <Resource name="employees"  {...Dashboard} /> : null
                 ]}
+>>>>>>> Stashed changes
             </Admin>
         )
 
