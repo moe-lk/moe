@@ -93,6 +93,10 @@ $router->group( ['prefix'=>'v2'],  function($router){
             $controller = new Controllers\WorkPlaceController();
             return $controller->listByIds();
         })
+        ->get('v2/institutes?id_like={ids}?', function ($ids) {
+            $controller = new Controllers\MasterDataController();
+            return $controller->get('Institutes');
+        })
         ->get('v2/worklocation?_end={end}?&_order={range}?&_sort={sort}?&_start={start}?', function ($option) {
             $controller = new Controllers\MasterDataController();
             return $controller->get('worklocation');

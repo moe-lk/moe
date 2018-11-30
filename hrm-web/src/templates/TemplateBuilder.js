@@ -30,18 +30,14 @@ import nameInTa from './plugins/lables/nameInTa';
 import fullNameInSi from './plugins/fullNameInSi';
 import fullNameInTa from './plugins/fullNameInTa';
 import fullNameInEn from './plugins/fullNameInEn';
-<<<<<<< HEAD
-import WorkingPlace from './plugins/workingplace';
+import WorkingPlace from './plugins/workingPlace';
 import Designation from './plugins/designation';
 import WorkingBranch from './plugins/workingBranch';
 import respectiveLetterNoLable from './plugins/lables/respectiveLetterNoLable';
 import respectiveLetterNo from './plugins/respectiveLetterNo';
-=======
-import PCSLetterNo from './plugins/PSCLetterNo';
-import WorkingPlace from './plugins/workingplace';
-import WorkingBranch from './plugins/workingbranch';
-
->>>>>>> development
+import nicNo from './plugins/nic';
+import grade from './plugins/grade';
+import title from './plugins/title';
 
 // import { Inline } from 
 require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
@@ -70,18 +66,14 @@ const plugins = {
         nameInTa,
         Header,
         Footer,
-<<<<<<< HEAD
         WorkingPlace,
         Designation,
         respectiveLetterNoLable,
         respectiveLetterNo,
         WorkingBranch,
-
-=======
-        PCSLetterNo,
-        WorkingPlace,
-        WorkingBranch
->>>>>>> development
+        nicNo,
+        grade,
+        title,
 
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() }),
