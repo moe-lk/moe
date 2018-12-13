@@ -43,6 +43,14 @@ class Service extends BaseModel
         if (key_exists('appoint_date', $filter)) {
             $results->where('appoint_date', '=', $filter['appoint_date']);
         }
+        if (key_exists('service_status', $filter)) {
+            $results->where('service_status', '=', $filter['service_status']);
+        }
+       
+
+        if (key_exists('nic', $filter)) {
+            $results->where('NIC', 'LIKE', '%'.$filter['nic'].'%');
+        }
 
         $this->count = $results->count();
         $this->results = $results->get();
