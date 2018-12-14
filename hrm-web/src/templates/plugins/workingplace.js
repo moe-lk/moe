@@ -1,25 +1,15 @@
 import cloneDeep from 'clone-deep';
 import { actions } from 'ory-editor-core/lib/actions';
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import data from '../../data';
 import { func } from 'prop-types';
 class Workingplace extends Component {
-=======
-import data from './../../data';
-import { func } from 'prop-types';
-
-class Workingplace extends Component {
-
-
->>>>>>> development
     constructor(props) {
         super(props)
         this.state = {
             placement: {
                 work_place_id: 'Work Place',
                 service_sector: 'Service Sector'
-<<<<<<< HEAD
             }
         };
     }
@@ -27,37 +17,16 @@ class Workingplace extends Component {
         console.log(this);
         var placement = localStorage.getItem('placement');
         console.log(placement); 
-=======
-
-            }
-        };
-    }
-
-
-    componentWillMount() {
-        console.log(this);
-        var placement = localStorage.getItem('placement');
-        console.log(placement);
->>>>>>> development
         if (placement !== null) {
             this.state.placement = cloneDeep(JSON.parse(placement));
         }
     }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> development
     filterPlaces(sectorData) {
         return sectorData.filter(function (data) {
             var placement = localStorage.getItem('placement');
             return data.id = JSON.parse(placement).id
         })
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> development
     renderSwitch(service_sector) {
         console.log(service_sector);
         switch (service_sector) {
@@ -76,7 +45,6 @@ class Workingplace extends Component {
             default:
                 return 'Service Sector Invalid';
         }
-<<<<<<< HEAD
     }
     render() {
         return (
@@ -84,23 +52,6 @@ class Workingplace extends Component {
         )
     }
 }
-=======
-
-    }
-
-
-    render() {
-        return (
-            typeof (this.state.placement.work_place_id) == 'number' ? this.renderSwitch(this.state.placement.service_sector) : this.state.placement.work_place_id
-
-        )
-    }
-
-
-}
-
-
->>>>>>> development
 export default {
     Component: Workingplace,
     isInlineable: true,
@@ -108,8 +59,4 @@ export default {
     version: '0.0.1',
     text: 'Working Place',
     description: 'Working Place'
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> development
