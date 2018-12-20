@@ -15,6 +15,7 @@ class AddPrefixData extends AbstractSeed
      */
     public function run()
     {
+
            
         $this->table('Province_List')->update(['prifix'=>'WP'])->where('id','=','P01')->save();
         $this->table('Province_List')->update(['prifix'=>'CP'])->where('id','=','P02')->save();
