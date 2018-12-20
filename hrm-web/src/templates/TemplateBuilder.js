@@ -30,9 +30,12 @@ import nameInTa from './plugins/lables/nameInTa';
 import fullNameInSi from './plugins/fullNameInSi';
 import fullNameInTa from './plugins/fullNameInTa';
 import fullNameInEn from './plugins/fullNameInEn';
-import PCSLetterNo from './plugins/PSCLetterNo';
 import WorkingPlace from './plugins/workingplace';
-import WorkingBranch from './plugins/workingbranch';
+import Designation from './plugins/designation';
+import WorkingBranch from './plugins/workingBranch';
+import respectiveLetterNoLable from './plugins/lables/respectiveLetterNoLable';
+import respectiveLetterNo from './plugins/respectiveLetterNo';
+import  PCSLetterNo from './plugins/PSCLetterNo';
 
 
 // import { Inline } from 
@@ -62,9 +65,14 @@ const plugins = {
         nameInTa,
         Header,
         Footer,
-        PCSLetterNo,
         WorkingPlace,
-        WorkingBranch
+        Designation,
+        respectiveLetterNoLable,
+        respectiveLetterNo,
+        WorkingBranch,
+        PCSLetterNo
+       
+       
 
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() }),

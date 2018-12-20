@@ -37,6 +37,17 @@ class Service extends BaseModel
             $results->where($filters[0], $filters[1], $filters[2]);
         }
 
+        if (key_exists('service_mode', $filter)) {
+            $results->where('service_mode', '=', $filter['service_mode']);
+        }
+        if (key_exists('appoint_date', $filter)) {
+            $results->where('appoint_date', '=', $filter['appoint_date']);
+        }
+        if (key_exists('service_status', $filter)) {
+            $results->where('service_status', '=', $filter['service_status']);
+        }
+       
+
         if (key_exists('nic', $filter)) {
             $results->where('NIC', 'LIKE', '%'.$filter['nic'].'%');
         }
