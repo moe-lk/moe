@@ -48,14 +48,6 @@ const CreateAddPlacements = ({ permissions, classes, formData, ...props }) => (
                 />
             </Grid>
             <Grid item xs={3}>
-            <DateInput
-                    source="psc_letter_date"
-                    label="PSC Letter Date"
-                    validate={required()}
-                />
-                </Grid>
-            <Grid item xs={3}>
-               
                 <DesignationsSelectInput></DesignationsSelectInput>
             </Grid>
         </Grid>
@@ -85,15 +77,7 @@ const CreateAddPlacements = ({ permissions, classes, formData, ...props }) => (
             <Grid item xs={3}>
                 <TextInput
                     source="off_letter_no"
-                    label="Officer Reference No"
-                    validate={required()}
-                    formClassName={classes.left}
-                ></TextInput>
-            </Grid>
-            <Grid item xs={3}>
-                <TextInput
-                    source="psc_letter_no"
-                    label="PSC Letter No"
+                    label="Offer Letter No"
                     validate={required()}
                     formClassName={classes.left}
                 ></TextInput>
