@@ -147,11 +147,13 @@ export default {
     way_of_join: [
         { id: 1, name: 'Open' },
         { id: 2, name: 'Limited' },
-        { id: 3, name: 'Exam' },
+        { id: 3, name: 'Merit'},
         { id: 4, name: 'Supper Numeral(PVC)' },
         { id: 5, name: 'Interview' },
         { id: 6, name: 'Graduate' },
         { id: 7, name: 'Teacher Training College' },
+
+        
 
     ],
     medium: [
@@ -237,6 +239,7 @@ export default {
         { id: 2, name: 'G.C.E. O/L Tamil' },
         { id: 3, name: 'Diploma' },
         { id: 4, name: 'Degree' },
+        { id: 5, name: 'Post Graduate Programmes'}
 
 
     ],

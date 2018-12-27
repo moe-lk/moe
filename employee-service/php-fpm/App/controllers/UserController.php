@@ -507,38 +507,50 @@ class UserController extends ApiController
 
     private function setSpouseDetails()
     {
+
         if (array_key_exists('Spouse_Details', (array) $this->_inputs)) {
             $spouse_details = $this->_inputs['Spouse_Details'];
             $validator = new Validator;
-            $validation = $validator->make((array) $spouse_details, [
-                'nic' => 'required|min:10|alpha_num',
-                'f_name' => 'required|min:2',
-                'l_name' => 'required|min:2',
-                'm_name' => 'min:2',
-                'in_name' => 'min:2',
-                'si_in_name' => 'min:2',
-                'ta_in_name' => 'min:2',
-                'dob' => 'required|date:Y-d-m',
-                'ethinicity' => 'required|numeric',
-                'gender' => ['required'
-                , $validator('in', ['M', 'F'])],
-            ]);
-            $validation->validate();
+            if (count($spouse_details) > 0) {
+                foreach ($spouse_details as $key => $spouse) {
+                    $validation = $validator->make((array) $spouse, [
+                        'nic' => 'required|min:10|alpha_num',
+                        'f_name' => 'required|min:2',
+                        'l_name' => 'required|min:2',
+                        'm_name' => 'min:2',
+                        'in_name' => 'min:2',
+                        'si_in_name' => 'min:2',
+                        'ta_in_name' => 'min:2',
+                        'dob' => 'required|date:Y-d-m',
+                        'address' => 'required',
+                        'occupation' => 'required',
+                        'office_address' => 'required',
+                        'telephone' => 'required|numeric',
+                        'ethinicity' => 'required|numeric',
+                        'gender' => ['required'
+                        , $validator('in', ['M', 'F'])],
+                    ]);
+                    $validation->validate();
 
-            if ($validation->fails()) {
-                $errors = $validation->errors();
-                $this->_error['Spouse_Details'] = $errors->firstOfAll();
-            } else {
-                $this->spouse_details = (array) $spouse_details;
+                    if ($validation->fails()) {
+                        $errors = $validation->errors();
+                        $this->_error['Spouse_Details'][$key] = $errors->firstOfAll();
+                    } else {
+                        $this->Spouse_Details[$key] = (array) $spouse;
+                    }
+                }
             }
+
         } else {
             $this->_error['Spouse_Details'] = 'Spouse Details Required';
+
         }
+       
     }
 
     private function getSpouseDetails()
     {
-        return $this->children_details;
+        return $this->Spouse_Details;
     }
 
     public function put()
