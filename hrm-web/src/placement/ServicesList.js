@@ -38,7 +38,6 @@ const ServicesFilter = ({ permissions, ...props }) => (
             label="Mode of Service"
             choices={data.service_mode}
         />
-       
         <SelectInput
             source="service_status"
             label="Service Status"

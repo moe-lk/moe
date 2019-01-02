@@ -22,12 +22,20 @@ class Workingbranch extends Component {
         }
     }
 
+    filterPlaces(sectorData) {
+        return sectorData.filter(function (data) {
+            var placement = localStorage.getItem('placement');
+            return data.id == JSON.parse(placement).work_branch_id
+        })
+    }
+
     render() {
         const {
             placement
         } = this.state;
         return (
-            data.working_branches[this.state.placement.work_branch_id].office_branch
+            typeof (this.state.placement.work_branch_id) == 'number' ? (this.filterPlaces(data.working_branches)[0].office_branch) : this.state.placement.work_branch_id
+
         )
     }
 

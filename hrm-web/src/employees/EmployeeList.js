@@ -33,16 +33,18 @@ export const UserIcon = PeopleIcon;
 const EmployeeFilter = ({ permissions, ...props }) => (
     <Filter {...props}>
         <SearchInput source="q" alwaysOn />
-        
+        <SelectInput
+            source="active"
+            label="Type of Qualifications"
+            choices={[
+                { id: 0, name: 'Inactive' },
+                { id: 1, name: 'Active' }
+            ]}
+        />
         <TextInput source="f_name" label="First Name" />
         <TextInput source="l_name" label="Last Name" />
         <TextInput source="NIC" label="National Identity Card" />
-        <SelectInput
-            source="service_status"
-            label="Service Status"
-            choices={data.active}
-        />
-        {permissions === 'admin' ? <TextInput source="role" /> : null}
+        {/* {permissions === 'admin' ? <TextInput source="role" /> : null} */}
     </Filter>
 );
 
@@ -100,7 +102,7 @@ const EmployeeList = ({ permissions, ...props }) => (
                     />
                     <SelectField
                         source="approved"
-                        label="Approv"
+                        label="Approved"
                         choices={data.approve}
                     />
                     {/* {permissions === 'admin' && <TextField />} */}

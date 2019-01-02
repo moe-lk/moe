@@ -1,34 +1,37 @@
-
-import cloneDeep from 'clone-deep';
-import { actions } from 'ory-editor-core/lib/actions';
 import React, { Component } from 'react';
+import dataProvider from '../../dataProvider';
+import Institute from '@material-ui/icons/Place'
+import { GET_ONE }  from 'react-admin';
 
 class NationalSchool extends Component {
 
 
     state = {
-        employee: {
-            Personal_Details: {
-                in_name: 'Name in English'
-            }
-        }
+        schools: 'School Name'
+        
     };
 
     componentWillReceiveProps() {
-        console.log(this);
-        var employee = localStorage.getItem('employee');
-        console.log(employee);
-        if (employee !== undefined) {
-            this.state.employee = cloneDeep(JSON.parse(employee));
+        var placement = localStorage.getItem('placement');
+        let school_data = JSON.parse(placement).school_data
+        console.log(school_data)
+        if(school_data != null){
+            dataProvider(GET_ONE, 'schools', { id:school_data.institute_id })
+            .then(response => response.data)
+            .then(school => {
+                this.setState({
+                    school: school
+                })
+            })
         }
     }
 
     render() {
         const {
-            employee
+            school
         } = this.state;
         return (
-            employee ? employee.Personal_Details.in_name : ''
+            school ? school.institute_name : ''
         )
     }
 
@@ -37,11 +40,11 @@ class NationalSchool extends Component {
 
 
 export default {
-    Component: NameInEnglish,
+    Component: NationalSchool,
     isInlineable: true,
-    IconComponent: <PeopleIcon />,
-    name: 'example/content/NameInEnglish',
+    IconComponent: <Institute />,
+    name: 'plugin/content/NationalSchool',
     version: '0.0.1',
-    text: 'Name in English',
-    description: 'Name of the Employee in English'
+    text: 'National School',
+    description: 'National School'
 }

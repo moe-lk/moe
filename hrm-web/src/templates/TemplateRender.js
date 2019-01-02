@@ -27,6 +27,7 @@ import lastName from './plugins/lastName';
 import Native from './plugins/Native';
 import newSlate from './plugins/ory-slate/src';
 import PCSLetterInput from './plugins/pcsLetterDate';
+<<<<<<< Updated upstream
 import WorkingPlace from './plugins/workingPlace';
 import Designation from './plugins/designation';
 import WorkingBranch from './plugins/workingBranch';
@@ -35,6 +36,16 @@ import nicNo from './plugins/nic';
 import grade from './plugins/grade';
 import title from './plugins/title';
 
+=======
+import PCSLetterNo from './plugins/PSCLetterNo';
+import WorkingPlace from './plugins/workingplace';
+import WorkingBranch from './plugins/workingbranch';
+import nationalschool from './plugins/nationalschool';
+import schoolProvince from './plugins/schoolProvince';
+import schoolDistrict from './plugins/schoolDistrict';
+import schoolDivision from './plugins/schoolDivision';
+import schoolZone from './plugins/schoolZone';
+>>>>>>> Stashed changes
 
 // Load some exemplary plugins:
 // import black from './Layout/black';
@@ -58,13 +69,18 @@ const EditorPlugins = {
         nameInTa,
         Header,
         Footer,
+        PCSLetterNo,
         WorkingPlace,
-        Designation,
         WorkingBranch,
         respectiveLetterNo,
         nicNo,
         grade,
         title,
+        nationalschool,
+        schoolProvince,
+        schoolDistrict,
+        schoolDivision,
+        schoolZone
         // black
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() })], // Define plugins for layout cells

@@ -156,6 +156,14 @@ $router->group( ['prefix'=>'v2'],  function($router){
         ->post('v2/placement', function () {
             $controller = new Controllers\ServiceController();
             return $controller->post();
+        })
+        ->put('v2/placement/{id}', function () {
+            $controller = new Controllers\ServiceController();
+            return $controller->put();
+        })
+        ->get('v2/schools/{id}', function ($id) {
+            $schools = new Controllers\InstituteController();
+            return $schools->get($id);
         });
     });
 

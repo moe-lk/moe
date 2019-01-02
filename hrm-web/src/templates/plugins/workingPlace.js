@@ -1,35 +1,48 @@
 import cloneDeep from 'clone-deep';
 import { actions } from 'ory-editor-core/lib/actions';
 import React, { Component } from 'react';
-import data from '../../data';
+import data from './../../data';
 import { func } from 'prop-types';
+<<<<<<< Updated upstream:hrm-web/src/templates/plugins/workingPlace.js
 // import dataProvider from '../dataProvider';
 import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField, GET_ONE } from 'react-admin';
+=======
+
+>>>>>>> Stashed changes:hrm-web/src/templates/plugins/workingplace.js
 class Workingplace extends Component {
+
+
     constructor(props) {
         super(props)
         this.state = {
             placement: {
                 work_place_id: 'Work Place',
                 service_sector: 'Service Sector'
+
             }
         };
     }
+
+
     componentWillMount() {
         console.log(this);
         var placement = localStorage.getItem('placement');
-        console.log(placement); 
+        console.log(placement);
         if (placement !== null) {
             this.state.placement = cloneDeep(JSON.parse(placement));
         }
     }
+
+
     filterPlaces(sectorData) {
         return sectorData.filter(function (data) {
             var placement = localStorage.getItem('placement');
-            return data.id = JSON.parse(placement).id
+            console.log(JSON.parse(placement).id);
+            return data.id == JSON.parse(placement).work_place_id
         })
     }
 
+<<<<<<< Updated upstream:hrm-web/src/templates/plugins/workingPlace.js
     
     // setInstitutes(){
     //     dataProvider(GET_ONE, 'institutes', { id_like: this.props.id })
@@ -41,6 +54,8 @@ class Workingplace extends Component {
     //     console.log(this.state.institutes)
     // }
 
+=======
+>>>>>>> Stashed changes:hrm-web/src/templates/plugins/workingplace.js
     renderSwitch(service_sector) {
         console.log(service_sector);
         switch (service_sector) {
@@ -59,13 +74,21 @@ class Workingplace extends Component {
             default:
                 return 'Service Sector Invalid';
         }
+
     }
+
+
     render() {
         return (
             typeof (this.state.placement.work_place_id) == 'number' ? this.renderSwitch(this.state.placement.service_sector) : this.state.placement.work_place_id
+
         )
     }
+
+
 }
+
+
 export default {
     Component: Workingplace,
     isInlineable: true,

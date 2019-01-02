@@ -3,7 +3,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class ProvincePrefix extends AbstractMigration
+class AddSchooDataFieldToServiceDetails extends AbstractMigration
 {
     /**
      * Change Method.
@@ -30,19 +30,18 @@ class ProvincePrefix extends AbstractMigration
      * Remember to call "create()" or "update()" and NOT "save()" when working
      * with the Table class.
      */
-
     public function up()
     {
-        $table = $this->table('Province_List');
-        $table->addColumn('prefix', 'string',['limit'=>3]);
+        $table = $this->table('Service');
+        $table->addColumn('school_data', 'json');
         $table->update();
        
 
     }
     public function down()
     {
-        $table = $this->table('Province_List');
-        $table->removeColumn('prefix');
+        $table = $this->table('Service');
+        $table->removeColumn('school_data');
         $table->update();
 
     }
