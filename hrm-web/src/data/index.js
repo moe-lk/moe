@@ -238,7 +238,6 @@ export default {
         { id: 3, name: 'Diploma' },
         { id: 4, name: 'Degree' }
 
-
     ],
     working_branches: [
         {id:1,office_branch:'National Operation Room'},
