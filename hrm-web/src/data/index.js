@@ -229,10 +229,6 @@ export default {
         { id: 2, name: 'G.C.E. O/L Tamil' },
         { id: 3, name: 'Diploma' },
         { id: 4, name: 'Degree' }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     ],
     working_branches: [
 

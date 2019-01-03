@@ -1,0 +1,12 @@
+2018-12-19 11:15:52 Notice: Notice (8): Undefined offset: 0 in [/var/www/myapp/src/Shell/PasswordShell.php, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Shell\PasswordShell::main() - APP/Shell/PasswordShell.php, line 15
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
