@@ -14,7 +14,7 @@ class UserController extends ApiController
     public $_error = [];
     public $personal_details;
     public $permanent_contact_details;
-    public $temperary_contact_details;
+    public $contact_details;
     public $account_details;
     public $general_service;
     public $current_service;
@@ -413,6 +413,7 @@ class UserController extends ApiController
                 'status' => 'alpha',
                 'deactivate_type_id' => 'numeric',
                 'deactivate_date' => 'date:Y-m-d',
+                'w_and_op' => 'required'
             ]);
 
             $validation->setAliases([

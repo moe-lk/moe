@@ -3213,3 +3213,188 @@ Stack Trace:
 #14 {main}
 
 
+2019-01-04 03:46:44 Warning: Warning (2): mkdir(): File exists in [/var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 71]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+mkdir - [internal], line ??
+Migrations\Command\Seed::getConfig() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 71
+Phinx\Console\Command\AbstractCommand::bootstrap() - ROOT/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php, line 91
+Migrations\Command\Seed::bootstrap() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 206
+Migrations\Command\Seed::execute() - ROOT/vendor/cakephp/migrations/src/Command/Seed.php, line 69
+Symfony\Component\Console\Command\Command::run() - ROOT/vendor/symfony/console/Command/Command.php, line 264
+Symfony\Component\Console\Application::doRunCommand() - ROOT/vendor/symfony/console/Application.php, line 835
+Symfony\Component\Console\Application::doRun() - ROOT/vendor/symfony/console/Application.php, line 200
+Symfony\Component\Console\Application::run() - ROOT/vendor/symfony/console/Application.php, line 124
+Migrations\Shell\MigrationsShell::main() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Migrations\Shell\MigrationsShell::runCommand() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 156
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2019-01-04 03:46:44 Warning: Warning (2): mkdir(): File exists in [/var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 75]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+mkdir - [internal], line ??
+Migrations\Command\Seed::getConfig() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 75
+Phinx\Console\Command\AbstractCommand::bootstrap() - ROOT/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php, line 91
+Migrations\Command\Seed::bootstrap() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 206
+Migrations\Command\Seed::execute() - ROOT/vendor/cakephp/migrations/src/Command/Seed.php, line 69
+Symfony\Component\Console\Command\Command::run() - ROOT/vendor/symfony/console/Command/Command.php, line 264
+Symfony\Component\Console\Application::doRunCommand() - ROOT/vendor/symfony/console/Application.php, line 835
+Symfony\Component\Console\Application::doRun() - ROOT/vendor/symfony/console/Application.php, line 200
+Symfony\Component\Console\Application::run() - ROOT/vendor/symfony/console/Application.php, line 124
+Migrations\Shell\MigrationsShell::main() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Migrations\Shell\MigrationsShell::runCommand() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 156
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2019-01-04 03:47:12 Error: [Symfony\Component\Console\Exception\RuntimeException] Too many arguments, expected arguments "command".
+Stack Trace:
+#0 /var/www/myapp/vendor/symfony/console/Input/ArgvInput.php(88): Symfony\Component\Console\Input\ArgvInput->parseArgument('../config/Migra...')
+#1 /var/www/myapp/vendor/symfony/console/Input/Input.php(63): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 /var/www/myapp/vendor/symfony/console/Command/Command.php(222): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#3 /var/www/myapp/vendor/symfony/console/Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/myapp/vendor/symfony/console/Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/myapp/vendor/symfony/console/Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate', '../config/Migra...')
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/Console/Shell.php(472): call_user_func_array(Array, Array)
+#9 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /var/www/myapp/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2019-01-04 03:47:39 Warning: Warning (2): mkdir(): File exists in [/var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 71]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+mkdir - [internal], line ??
+Migrations\Command\Migrate::getConfig() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 71
+Phinx\Console\Command\AbstractCommand::bootstrap() - ROOT/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php, line 91
+Migrations\Command\Migrate::bootstrap() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 206
+Phinx\Console\Command\Migrate::execute() - ROOT/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php, line 72
+Migrations\Command\Migrate::parentExecute() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 165
+Migrations\Command\Migrate::execute() - ROOT/vendor/cakephp/migrations/src/Command/Migrate.php, line 64
+Symfony\Component\Console\Command\Command::run() - ROOT/vendor/symfony/console/Command/Command.php, line 264
+Symfony\Component\Console\Application::doRunCommand() - ROOT/vendor/symfony/console/Application.php, line 835
+Symfony\Component\Console\Application::doRun() - ROOT/vendor/symfony/console/Application.php, line 200
+Symfony\Component\Console\Application::run() - ROOT/vendor/symfony/console/Application.php, line 124
+Migrations\Shell\MigrationsShell::main() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Migrations\Shell\MigrationsShell::runCommand() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 156
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2019-01-04 03:47:39 Warning: Warning (2): mkdir(): File exists in [/var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 75]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+mkdir - [internal], line ??
+Migrations\Command\Migrate::getConfig() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 75
+Phinx\Console\Command\AbstractCommand::bootstrap() - ROOT/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php, line 91
+Migrations\Command\Migrate::bootstrap() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 206
+Phinx\Console\Command\Migrate::execute() - ROOT/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php, line 72
+Migrations\Command\Migrate::parentExecute() - ROOT/vendor/cakephp/migrations/src/ConfigurationTrait.php, line 165
+Migrations\Command\Migrate::execute() - ROOT/vendor/cakephp/migrations/src/Command/Migrate.php, line 64
+Symfony\Component\Console\Command\Command::run() - ROOT/vendor/symfony/console/Command/Command.php, line 264
+Symfony\Component\Console\Application::doRunCommand() - ROOT/vendor/symfony/console/Application.php, line 835
+Symfony\Component\Console\Application::doRun() - ROOT/vendor/symfony/console/Application.php, line 200
+Symfony\Component\Console\Application::run() - ROOT/vendor/symfony/console/Application.php, line 124
+Migrations\Shell\MigrationsShell::main() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Migrations\Shell\MigrationsShell::runCommand() - ROOT/vendor/cakephp/migrations/src/Shell/MigrationsShell.php, line 156
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2019-01-04 04:01:24 Error: [InvalidArgumentException] Could not find class "themes" in file "/var/www/myapp/config/../config/Snapshot/lsf/themes.php"
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/migrations/src/CakeManager.php(350): Phinx\Migration\Manager->getSeeds()
+#1 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(437): Migrations\CakeManager->getSeeds()
+#2 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Console/Command/SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#3 /var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/myapp/vendor/cakephp/migrations/src/Command/Seed.php(71): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/myapp/vendor/symfony/console/Command/Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/myapp/vendor/symfony/console/Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/myapp/vendor/symfony/console/Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/myapp/vendor/symfony/console/Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/Console/Shell.php(472): call_user_func_array(Array, Array)
+#12 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 /var/www/myapp/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2019-01-04 04:02:15 Error: [Error] Call to a member function read() on null
+Stack Trace:
+#0 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(152): ThemesSeed->run()
+#1 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(356): Phinx\Migration\Manager\Environment->executeSeed(Object(ThemesSeed))
+#2 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(443): Phinx\Migration\Manager->executeSeed('default', Object(ThemesSeed))
+#3 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Console/Command/SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#4 /var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/myapp/vendor/cakephp/migrations/src/Command/Seed.php(71): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/myapp/vendor/symfony/console/Command/Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/myapp/vendor/symfony/console/Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/myapp/vendor/symfony/console/Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/myapp/vendor/symfony/console/Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#12 /var/www/myapp/vendor/cakephp/cakephp/src/Console/Shell.php(472): call_user_func_array(Array, Array)
+#13 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#17 /var/www/myapp/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2019-01-04 04:12:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(389): PDOStatement->execute(Array)
+#1 /var/www/myapp/vendor/cakephp/migrations/src/CakeAdapter.php(379): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(653): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(641): Phinx\Db\Table->saveData()
+#4 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(667): Phinx\Db\Table->update()
+#5 /var/www/myapp/config/Snapshot/3.11.0/Seeds/AbsenceTypesSeed.php(40): Phinx\Db\Table->save()
+#6 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(152): AbsenceTypesSeed->run()
+#7 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(356): Phinx\Migration\Manager\Environment->executeSeed(Object(AbsenceTypesSeed))
+#8 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(443): Phinx\Migration\Manager->executeSeed('default', Object(AbsenceTypesSeed))
+#9 /var/www/myapp/vendor/robmorgan/phinx/src/Phinx/Console/Command/SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#10 /var/www/myapp/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /var/www/myapp/vendor/cakephp/migrations/src/Command/Seed.php(71): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /var/www/myapp/vendor/symfony/console/Command/Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /var/www/myapp/vendor/symfony/console/Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /var/www/myapp/vendor/symfony/console/Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/myapp/vendor/symfony/console/Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Console/Shell.php(472): call_user_func_array(Array, Array)
+#19 /var/www/myapp/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /var/www/myapp/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+

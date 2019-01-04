@@ -683,3 +683,134 @@ Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line
 
 
 End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+2019-01-04 04:14:37 Notice: Notice (8): Undefined index: ASSIGNED in [/var/www/myapp/plugins/Institution/src/Model/Table/StaffTable.php, line 141]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Institution\Model\Table\StaffTable::initialize() - ROOT/plugins/Institution/src/Model/Table/StaffTable.php, line 141
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 290
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 212
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 179
+Cake\ORM\TableRegistry::get() - CORE/src/ORM/TableRegistry.php, line 110
+App\Shell\InactiveRoleRemovalShell::main() - APP/Shell/InactiveRoleRemovalShell.php, line 18
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2019-01-04 04:14:37 Notice: Notice (8): Undefined index: END_OF_ASSIGNMENT in [/var/www/myapp/plugins/Institution/src/Model/Table/StaffTable.php, line 142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Institution\Model\Table\StaffTable::initialize() - ROOT/plugins/Institution/src/Model/Table/StaffTable.php, line 142
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 290
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 212
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 179
+Cake\ORM\TableRegistry::get() - CORE/src/ORM/TableRegistry.php, line 110
+App\Shell\InactiveRoleRemovalShell::main() - APP/Shell/InactiveRoleRemovalShell.php, line 18
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+2019-01-04 04:15:31 Notice: Notice (8): Undefined index: ASSIGNED in [/var/www/myapp/plugins/Institution/src/Model/Table/StaffTable.php, line 141]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Institution\Model\Table\StaffTable::initialize() - ROOT/plugins/Institution/src/Model/Table/StaffTable.php, line 141
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 290
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 212
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 179
+Cake\ORM\TableRegistry::get() - CORE/src/ORM/TableRegistry.php, line 110
+App\Shell\InactiveRoleRemovalShell::main() - APP/Shell/InactiveRoleRemovalShell.php, line 18
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2019-01-04 04:15:31 Notice: Notice (8): Undefined index: END_OF_ASSIGNMENT in [/var/www/myapp/plugins/Institution/src/Model/Table/StaffTable.php, line 142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Institution\Model\Table\StaffTable::initialize() - ROOT/plugins/Institution/src/Model/Table/StaffTable.php, line 142
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 290
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 212
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 179
+Cake\ORM\TableRegistry::get() - CORE/src/ORM/TableRegistry.php, line 110
+App\Shell\InactiveRoleRemovalShell::main() - APP/Shell/InactiveRoleRemovalShell.php, line 18
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 472
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+End Processing Inactive Role Removal
+
+Welcome to CakePHP v3.3.16 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/myapp/src/
+PHP : 7.1.25-1+ubuntu16.04.1+deb.sury.org+1
+---------------------------------------------------------------
+Initialize Inactive Role Removal Shell ...
+End Processing Inactive Role Removal

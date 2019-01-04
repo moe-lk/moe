@@ -43,7 +43,6 @@ class Employee extends Model
     public function saveEmployee($data)
     {
         $this->setEmployee($data);
-        $this->setNIC();
         $this->res = 0;
         try {
             QB::transaction(function ($qb) {
@@ -183,28 +182,34 @@ class Employee extends Model
     public function updateEmployee($data)
     {
         $this->setEmployee($data);
-        $this->setNIC();
         $this->res = 0;
         try {
             QB::transaction(function ($qb) {
                 $person_id = $this->person->update();
                 $this->setPersonId($person_id);
                 $this->generalService->update();
+                log_message('info','spouse:'. json_encode($this->generalService->_data));
+
                 if ($this->spouse->_data !== null) {
                     $this->spouse->update();
+                    log_message('info','spouse:'. json_encode($this->spouse->_data));
                 }
                 if ($this->children->_data !== null) {
                     $this->children->updateMultiple();
+                    log_message('info','children:'. json_encode($this->children->_data));
                 }
                 if ($this->qualifications->_data !== null) {
                     $this->qualifications->updateMultiple();
+                    log_message('info','qualification:'. json_encode($this->qualifications->_data));
                 }
                 if ($this->contact->_data !== null) {
                     $this->contact->updateMultiple();
+                    log_message('info','contact:'. json_encode($this->qualifications->_data));
                 }
                 $this->res = $person_id;
                 $qb->commit();
             });
+            
 
             return $this->res;
         } catch (Exception $e) {
@@ -219,34 +224,32 @@ class Employee extends Model
     {
         $this->person->_data = $data->personal_details;
         $this->contact->_data = $data->contact_details;
-        $this->children->_data = $data->children_details;
         $this->qualifications->_data = $data->qualifications;
         $this->spouse->_data = $data->spouse_details;
         $this->generalService->_data = $data->general_service;
         $this->user->_data = $data->account_details;
-
-    }
-
-    private function setNIC()
-    {
-        $NIC = $this->person->_data->NIC;
-        $this->generalService->_data->NIC = $NIC;
-        $this->contact->_data = setValues($this->contact->_data, 'NIC', $NIC);
+        $this->children->_data = $data->children_details;
     }
 
     private function setPersonId($person_id)
     {
         try {
+            $NIC = $this->person->_data->NIC;
+            log_message('info', json_encode($this->contact));
             if ($this->contact->_data !== null) {
                 $this->contact->_data = setValues($this->contact->_data, 'person_id', $person_id);
+                $this->contact->_data = setValues($this->contact->_data, 'NIC', $NIC);
             }
+            log_message('info', 'chliders:' . json_encode($this->children));
             if ($this->children->_data !== null) {
                 $this->children->_data = setValues($this->children->_data, 'person_id', $person_id);
             }
             if ($this->qualifications->_data !== null) {
                 $this->qualifications->_data = setValues($this->qualifications->_data, 'person_id', $person_id);
+                $this->qualifications->_data = setValues($this->qualifications->_data, 'NIC', $NIC);
             }
             $this->generalService->_data->person_id = $person_id;
+            $this->generalService->_data->NIC = $NIC;
             $this->user->_data['person_id'] = $person_id;
             if ($this->spouse->_data !== null) {
                 $this->spouse->_data['person_id'] = $person_id;

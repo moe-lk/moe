@@ -198,6 +198,7 @@ class AppController extends Controller
 
     public function getTheme()
     {
+        Cache::clear();
         $themes = Cache::read('themes');
         if (!$themes) {
             $folder = new Folder();

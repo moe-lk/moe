@@ -1,4 +1,4 @@
-    <?php
+<?php
 namespace Institution\Model\Table;
 
 use DateTime;

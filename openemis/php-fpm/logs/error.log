@@ -6528,3 +6528,2262 @@ Stack Trace:
 #26 {main}
 
 
+2019-01-03 05:43:54 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:43:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:43:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:44:05 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:44:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:44:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:44:47 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:44:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:44:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:45:00 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:45:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:45:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:45:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 05:45:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/Login
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:29 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:29 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:29 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:41 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:49 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-03 08:45:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:30 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:34 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:41 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:43 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:52 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:54 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:54 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:29:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:40:46 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:40:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:40:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:41:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:41:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:41:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:41:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:41:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:13 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:24 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:42:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:50 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:54 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 03:47:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:03:24 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:03:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:03:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:04:57 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:04:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:04:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:04:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:04:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:05:01 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:05:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:05:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Network/Session.php, line 563]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Network\Session::renew() - CORE/src/Network/Session.php, line 563
+Cake\Auth\Storage\SessionStorage::write() - CORE/src/Auth/Storage/SessionStorage.php, line 102
+Cake\Controller\Component\AuthComponent::setUser() - CORE/src/Controller/Component/AuthComponent.php, line 646
+User\Controller\UsersController::postLogin() - ROOT/plugins/User/src/Controller/UsersController.php, line 152
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 121
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 95
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 62
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 90
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (2): session_regenerate_id() [<a href='http://php.net/function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent in [/var/www/myapp/vendor/cakephp/cakephp/src/Network/Session.php, line 567]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+session_regenerate_id - [internal], line ??
+Cake\Network\Session::renew() - CORE/src/Network/Session.php, line 567
+Cake\Auth\Storage\SessionStorage::write() - CORE/src/Auth/Storage/SessionStorage.php, line 102
+Cake\Controller\Component\AuthComponent::setUser() - CORE/src/Controller/Component/AuthComponent.php, line 646
+User\Controller\UsersController::postLogin() - ROOT/plugins/User/src/Controller/UsersController.php, line 152
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 121
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 95
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 62
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 90
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:14:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:19 Error: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(246): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(129): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#12 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#15 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#16 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#17 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#18 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#19 [internal function]: Restful\Controller\RestfulController->index()
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#31 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+Next Cake\Database\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:131
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+2019-01-04 04:15:19 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist
+Request URL: /restful/v2/Institution-StaffAppraisals.json?_finder=workbench&_limit=1&_page=1
+Referer URL: http://localhost:8180/Dashboard
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2019-01-04 04:15:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Network/Session.php, line 563]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Network\Session::renew() - CORE/src/Network/Session.php, line 563
+Cake\Auth\Storage\SessionStorage::write() - CORE/src/Auth/Storage/SessionStorage.php, line 102
+Cake\Controller\Component\AuthComponent::setUser() - CORE/src/Controller/Component/AuthComponent.php, line 646
+User\Controller\UsersController::postLogin() - ROOT/plugins/User/src/Controller/UsersController.php, line 152
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 121
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 95
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 62
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 90
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:31 Warning: Warning (2): session_regenerate_id() [<a href='http://php.net/function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent in [/var/www/myapp/vendor/cakephp/cakephp/src/Network/Session.php, line 567]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+session_regenerate_id - [internal], line ??
+Cake\Network\Session::renew() - CORE/src/Network/Session.php, line 567
+Cake\Auth\Storage\SessionStorage::write() - CORE/src/Auth/Storage/SessionStorage.php, line 102
+Cake\Controller\Component\AuthComponent::setUser() - CORE/src/Controller/Component/AuthComponent.php, line 646
+User\Controller\UsersController::postLogin() - ROOT/plugins/User/src/Controller/UsersController.php, line 152
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 435
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 121
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 95
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 62
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 90
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:31 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=754 in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 145]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 145
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 173]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 173
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:15:31 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/myapp/vendor/cakephp/cakephp/src/Error/Debugger.php:754) in [/var/www/myapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 227]
+Request URL: /Users/postLogin
+Referer URL: http://localhost:8180/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+setcookie - [internal], line ??
+Cake\Http\ResponseEmitter::emitCookies() - CORE/src/Http/ResponseEmitter.php, line 227
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 164
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 116
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-04 04:17:56 Error: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(246): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(129): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#12 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#15 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#16 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#17 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#18 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#19 [internal function]: Restful\Controller\RestfulController->index()
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#31 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+Next Cake\Database\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:131
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+2019-01-04 04:17:56 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist
+Request URL: /restful/v2/Institution-StaffAppraisals.json?_finder=workbench&_limit=1&_page=1
+Referer URL: http://localhost:8180/Dashboard
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2019-01-04 04:18:04 Error: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(246): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(129): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#12 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#15 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#16 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#17 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#18 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#19 [internal function]: Restful\Controller\RestfulController->index()
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#31 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+Next Cake\Database\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:131
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+2019-01-04 04:18:04 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist
+Request URL: /restful/v2/Institution-StaffAppraisals.json?_finder=workbench&_limit=1&_page=1
+Referer URL: http://localhost:8180/Dashboard
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2019-01-04 04:19:21 Error: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(246): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(129): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#12 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#15 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#16 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#17 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#18 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#19 [internal function]: Restful\Controller\RestfulController->index()
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#31 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+Next Cake\Database\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:131
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+2019-01-04 04:19:21 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist
+Request URL: /restful/v2/Institution-StaffAppraisals.json?_finder=workbench&_limit=1&_page=1
+Referer URL: http://localhost:8180/Dashboard
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2019-01-04 04:20:09 Error: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(246): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(129): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#12 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#15 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#16 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#17 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#18 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#19 [internal function]: Restful\Controller\RestfulController->index()
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#31 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+Next Cake\Database\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:131
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+2019-01-04 04:20:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist
+Request URL: /restful/v2/Institution-StaffAppraisals.json?_finder=workbench&_limit=1&_page=1
+Referer URL: http://localhost:8180/Dashboard
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2019-01-04 04:22:41 Error: [Error] Call to undefined function App\Controller\clear()
+Request URL: /
+Referer URL: http://localhost:8180/Profiles/Profiles/Profiles/view/eyJpZCI6MSwiNWMzYTA5YmYyMmUxMjQxMWI2YWY0OGRmZTBiODVjMmQ5ZDExODFjZDM5MWUwODk1NzRjOGNmM2NhMWU1ZTRhZCI6IjhrcDB2a2pmbGtkYjhzODZsNjBzOWY5MTRpIn0.MWE0NzlhZWVmOWM1NmYzOGM4NzJiYzFjMzI4NjcwZmQxNjdiMTk2NjUzMTVjMTlhMjYxMTc1MjgzZmZlN2U1Yw
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/src/Controller/AppController.php(117): App\Controller\AppController->getTheme()
+#1 /var/www/myapp/plugins/User/src/Controller/UsersController.php(20): App\Controller\AppController->initialize()
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(262): User\Controller\UsersController->initialize()
+#3 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Users')
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(79): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Users')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(92): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-01-04 04:26:37 Error: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(246): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(129): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#9 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#10 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#11 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#12 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#15 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#16 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#17 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#18 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#19 [internal function]: Restful\Controller\RestfulController->index()
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#31 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+Next Cake\Database\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:131
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+2019-01-04 04:26:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'openemis.appraisal_types' doesn't exist
+Request URL: /restful/v2/Institution-StaffAppraisals.json?_finder=workbench&_limit=1&_page=1
+Referer URL: http://localhost:8180/Dashboard
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'appraisal_types', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('appraisal_types', Array)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('appraisal_types')
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(517): Cake\ORM\Table->schema()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(390): Cake\ORM\Table->primaryKey()
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(367): Cake\ORM\Query->_addAssociationsToTypeMap(Object(Institution\Model\Table\StaffAppraisalsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/myapp/plugins/Institution/src/Model/Table/StaffAppraisalsTable.php(458): Cake\ORM\Query->contain(Array)
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(1940): Institution\Model\Table\StaffAppraisalsTable->findWorkbench(Object(Cake\ORM\Query), Array)
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(1039): Cake\ORM\Table->callFinder('workbench', Object(Cake\ORM\Query), Array)
+#9 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(540): Cake\ORM\Query->find('workbench', Array)
+#10 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(830): Restful\Controller\Component\RestfulV2Component->_finder(Object(Cake\ORM\Query), 'workbench', Object(ArrayObject))
+#11 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/Component/RestfulV2Component.php(278): Restful\Controller\Component\RestfulV2Component->processRequestQueries(Object(Cake\ORM\Query), Object(ArrayObject))
+#12 /var/www/myapp/vendor/korditpteltd/kd-cakephp-restful/src/Controller/RestfulController.php(94): Restful\Controller\Component\RestfulV2Component->index()
+#13 [internal function]: Restful\Controller\RestfulController->index()
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RestfulController))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2019-01-04 04:36:12 Error: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'openemis.Institutions.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+Stack trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(276): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Query.php(190): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(957): Cake\Database\Query->execute()
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(905): Cake\ORM\Query->_all()
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(293): Cake\ORM\Query->all()
+#9 /var/www/myapp/plugins/Institution/src/Model/Table/InstitutionsTable.php(635): Cake\ORM\Query->toArray()
+#10 [internal function]: Institution\Model\Table\InstitutionsTable->getNumberOfInstitutionsByModel(Array)
+#11 /var/www/myapp/src/Model/Behavior/HighChartBehavior.php(55): call_user_func_array(Array, Array)
+#12 [internal function]: App\Model\Behavior\HighChartBehavior->getDonutChart('institutions', Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php(237): call_user_func_array(Array, Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(2030): Cake\ORM\BehaviorRegistry->call('getdonutchart', Array)
+#15 /var/www/myapp/plugins/Institution/src/Model/Table/InstitutionsTable.php(586): Cake\ORM\Table->__call('getDonutChart', Array)
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Event/EventManager.php(424): Institution\Model\Table\InstitutionsTable->afterAction(Object(Cake\Event\Event), Object(ArrayObject))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 /var/www/myapp/plugins/ControllerAction/src/Model/Traits/ControllerActionV4Trait.php(255): Cake\ORM\Table->dispatchEvent('ControllerActio...', Array, Object(ControllerAction\Controller\Component\ControllerActionComponent))
+#20 /var/www/myapp/plugins/Institution/src/Controller/InstitutionsController.php(199): ControllerAction\Controller\Component\ControllerActionComponent->process(Array)
+#21 [internal function]: Institution\Controller\InstitutionsController->Institutions('index')
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(Institution\Controller\InstitutionsController))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#31 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#32 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#33 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#34 {main}
+2019-01-04 04:36:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'openemis.Institutions.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /Institutions/Institutions/index
+Referer URL: http://localhost:8180/Profiles/Profiles/Nationalities/index?queryString=eyJzZWN1cml0eV91c2VyX2lkIjoxLCI1YzNhMDliZjIyZTEyNDExYjZhZjQ4ZGZlMGI4NWMyZDlkMTE4MWNkMzkxZTA4OTU3NGM4Y2YzY2ExZTVlNGFkIjoiaGM0dmwxaDk5a3NkM2Rnc2lhb2FnaWFubW4ifQ.Mjg5NmMwZjdiNjMyM2E1ZmRiOGQyNTExODg2OTlkNTg0OTgxNjFmZTllNWM1NTYwMWM3ZTNiMjc2OWQ3NDQwOQ
+Client IP: 172.18.0.1
+Stack Trace:
+#0 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Connection.php(276): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/myapp/vendor/cakephp/cakephp/src/Database/Query.php(190): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(957): Cake\Database\Query->execute()
+#6 /var/www/myapp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#7 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Query.php(905): Cake\ORM\Query->_all()
+#8 /var/www/myapp/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(293): Cake\ORM\Query->all()
+#9 /var/www/myapp/plugins/Institution/src/Model/Table/InstitutionsTable.php(635): Cake\ORM\Query->toArray()
+#10 [internal function]: Institution\Model\Table\InstitutionsTable->getNumberOfInstitutionsByModel(Array)
+#11 /var/www/myapp/src/Model/Behavior/HighChartBehavior.php(55): call_user_func_array(Array, Array)
+#12 [internal function]: App\Model\Behavior\HighChartBehavior->getDonutChart('institutions', Array)
+#13 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php(237): call_user_func_array(Array, Array)
+#14 /var/www/myapp/vendor/cakephp/cakephp/src/ORM/Table.php(2030): Cake\ORM\BehaviorRegistry->call('getdonutchart', Array)
+#15 /var/www/myapp/plugins/Institution/src/Model/Table/InstitutionsTable.php(586): Cake\ORM\Table->__call('getDonutChart', Array)
+#16 /var/www/myapp/vendor/cakephp/cakephp/src/Event/EventManager.php(424): Institution\Model\Table\InstitutionsTable->afterAction(Object(Cake\Event\Event), Object(ArrayObject))
+#17 /var/www/myapp/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 /var/www/myapp/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 /var/www/myapp/plugins/ControllerAction/src/Model/Traits/ControllerActionV4Trait.php(255): Cake\ORM\Table->dispatchEvent('ControllerActio...', Array, Object(ControllerAction\Controller\Component\ControllerActionComponent))
+#20 /var/www/myapp/plugins/Institution/src/Controller/InstitutionsController.php(199): ControllerAction\Controller\Component\ControllerActionComponent->process(Array)
+#21 [internal function]: Institution\Controller\InstitutionsController->Institutions('index')
+#22 /var/www/myapp/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#23 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#24 /var/www/myapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(Institution\Controller\InstitutionsController))
+#25 /var/www/myapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#26 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#29 /var/www/myapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#31 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#32 /var/www/myapp/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#33 /var/www/myapp/webroot/index.php(40): Cake\Http\Server->run()
+#34 {main}
+
+
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.date_opened.ruleCompare
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.code.ruleCustomCode
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.postal_code.ruleCustomPostalCode
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.telephone.ruleCustomTelephone
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.fax.ruleCustomFax
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.area_id.ruleConfiguredArea
+2019-01-04 04:38:14 Error: MessagesTrait Message Not Found: Institution.Institutions.area_administrative_id.ruleConfiguredAreaAdministrative
