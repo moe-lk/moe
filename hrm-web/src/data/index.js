@@ -1,8 +1,4 @@
 export default {
-
-
-
-
     working_places: {
         sleas: [
             { id: 3, name: 'Department of Education Publication' },
@@ -253,12 +249,21 @@ export default {
         {id:7,office_branch:'English and Foreign Languages'},
         {id:8,office_branch:'Mathematics'},
         {id:9,office_branch:'National Languages and Humanities Education Unit'},
+
         {id:10,office_branch:'National Schools'},
         {id:11,office_branch:'Piriven Education'},
         {id:12,office_branch:'Oriental Studies Society'},
         {id:13,office_branch:'Religious and Value Education'},
         {id:14,office_branch:'School Activities'},
         {id:15,office_branch:'Health & Nutrition'},
+
+        {id:10,office_branch: 'National Schools'},
+        {id:11,office_branch: 'Piriven Education'},
+        {id:12,office_branch: 'Oriental Studies Society'},
+        {id:13,office_branch: 'Religious and Value Education'},
+        {id:14,office_branch: 'School Activities'},
+        {id:15,office_branch: 'Health & Nutrition'},
+
         {id:16,office_branch: 'Science'},
         {id:17,office_branch:'Teacher Education Administration'},
         {id:18,office_branch: 'Teacher Transfer Unit'},
@@ -339,6 +344,4 @@ export default {
        
 
     ]
-
-    
 }

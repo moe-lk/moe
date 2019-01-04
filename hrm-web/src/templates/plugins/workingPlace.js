@@ -3,8 +3,6 @@ import { actions } from 'ory-editor-core/lib/actions';
 import React, { Component } from 'react';
 import data from '../../data';
 import { func } from 'prop-types';
-// import dataProvider from '../dataProvider';
-import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField, GET_ONE } from 'react-admin';
 class Workingplace extends Component {
     constructor(props) {
         super(props)
@@ -29,18 +27,6 @@ class Workingplace extends Component {
             return data.id = JSON.parse(placement).id
         })
     }
-
-    
-    // setInstitutes(){
-    //     dataProvider(GET_ONE, 'institutes', { id_like: this.props.id })
-    //     .then(response => response.data)
-    //     .then(institutes => {
-    //         // this.state = employee;
-    //         this.setState({ institutes })
-    //     })
-    //     console.log(this.state.institutes)
-    // }
-
     renderSwitch(service_sector) {
         console.log(service_sector);
         switch (service_sector) {
