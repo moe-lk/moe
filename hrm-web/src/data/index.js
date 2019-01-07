@@ -149,8 +149,6 @@ export default {
         { id: 6, name: 'Graduate' },
         { id: 7, name: 'Teacher Training College' },
 
-        
-
     ],
     medium: [
         { id: 1, name: 'Sinhala' },
@@ -181,6 +179,17 @@ export default {
         { id: 'slts', name: 'SLTS' },
         { id: 'cs', name: 'CS' },
         { id: 'non-cs', name: 'Non-CS' },
+
+    ],
+    service:[
+        { id: 'ict_service', name:'ICT Service'},
+        { id: 'translators_service', name:'Translators’ Service'},
+        { id: 'librarians_service', name:'Librarians Service '},
+        { id: 'development_service', name:'Development Officers’ '},
+        { id: 'pma_service', name:'Public Management Assistant Service'},
+        { id: 'drivers_service', name:'Drivers’ Service'},
+        { id: 'off_emp_service', name:'Office Employee Service'},
+
     ],
     service_mode: [
         { id: 1, name: 'First appointment' },
