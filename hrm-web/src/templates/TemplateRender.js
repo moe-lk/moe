@@ -27,25 +27,18 @@ import lastName from './plugins/lastName';
 import Native from './plugins/Native';
 import newSlate from './plugins/ory-slate/src';
 import PCSLetterInput from './plugins/pcsLetterDate';
-<<<<<<< Updated upstream
 import WorkingPlace from './plugins/workingPlace';
-import Designation from './plugins/designation';
-import WorkingBranch from './plugins/workingBranch';
-import respectiveLetterNo from './plugins/respectiveLetterNo';
+import WorkingBranch from './plugins/workingbranch';
 import nicNo from './plugins/nic';
 import grade from './plugins/grade';
 import title from './plugins/title';
 
-=======
 import PCSLetterNo from './plugins/PSCLetterNo';
-import WorkingPlace from './plugins/workingplace';
-import WorkingBranch from './plugins/workingbranch';
 import nationalschool from './plugins/nationalschool';
 import schoolProvince from './plugins/schoolProvince';
 import schoolDistrict from './plugins/schoolDistrict';
 import schoolDivision from './plugins/schoolDivision';
 import schoolZone from './plugins/schoolZone';
->>>>>>> Stashed changes
 
 // Load some exemplary plugins:
 // import black from './Layout/black';
@@ -72,10 +65,11 @@ const EditorPlugins = {
         PCSLetterNo,
         WorkingPlace,
         WorkingBranch,
-        respectiveLetterNo,
+
         nicNo,
         grade,
         title,
+        // Designation,
         nationalschool,
         schoolProvince,
         schoolDistrict,
