@@ -1,7 +1,6 @@
 import { withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
-import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField, GET_ONE } from 'react-admin';
-
+import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField , GET_ONE } from 'react-admin';
 import data from '../data';
 import TemplateRender from '../templates/TemplateRender';
 import dataProvider from '../dataProvider'
@@ -46,6 +45,7 @@ class LetterShow extends Component {
                 console.log(d);
             })
     }
+    
 
     render() {
         return (

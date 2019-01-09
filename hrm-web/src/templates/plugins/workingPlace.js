@@ -3,12 +3,8 @@ import { actions } from 'ory-editor-core/lib/actions';
 import React, { Component } from 'react';
 import data from './../../data';
 import { func } from 'prop-types';
-<<<<<<< Updated upstream:hrm-web/src/templates/plugins/workingPlace.js
 // import dataProvider from '../dataProvider';
 import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField, GET_ONE } from 'react-admin';
-=======
-
->>>>>>> Stashed changes:hrm-web/src/templates/plugins/workingplace.js
 class Workingplace extends Component {
 
 
@@ -41,8 +37,6 @@ class Workingplace extends Component {
             return data.id == JSON.parse(placement).work_place_id
         })
     }
-
-<<<<<<< Updated upstream:hrm-web/src/templates/plugins/workingPlace.js
     
     // setInstitutes(){
     //     dataProvider(GET_ONE, 'institutes', { id_like: this.props.id })
@@ -54,8 +48,6 @@ class Workingplace extends Component {
     //     console.log(this.state.institutes)
     // }
 
-=======
->>>>>>> Stashed changes:hrm-web/src/templates/plugins/workingplace.js
     renderSwitch(service_sector) {
         console.log(service_sector);
         switch (service_sector) {
