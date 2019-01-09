@@ -202,6 +202,12 @@ export default {
         { id: 8, name: 'Acting Duty' },
         { id: 9, name: 'Performing Duty' }
     ],
+    class:[
+        { id: 'one', name: '1' },
+        { id: 'two', name: '2' },
+        { id: 'three', name: '3' }
+
+    ],
     grade: [
         { id: 'Special', name: 'Special' },
         { id: 'Grade III', name: 'Grade III' },

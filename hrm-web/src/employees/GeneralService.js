@@ -93,6 +93,15 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
             </Grid>
             <Grid item xs={3}>
                 <SelectInput
+                    source="General_Service.class"
+                    formClassName={classes.left}
+                    maxWidth={true}
+                    alignItems="row"
+                    label="Class"
+                    choices={data.class} />
+            </Grid>
+            <Grid item xs={3}>
+                <SelectInput
                     source="General_Service.grade_join"
                     formClassName={classes.left}
                     maxWidth={true}
