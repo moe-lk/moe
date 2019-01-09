@@ -91,6 +91,7 @@ class App extends Component {
                     <Resource name="options" />
                     <Resource name="upload" />
                     <Resource name="templates" {...TemplateBuilder} />
+
                 
             </Admin>
         )
