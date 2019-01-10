@@ -27,7 +27,7 @@
 
 # Loge in to the DB on 
 bash in to the container
-* `docker exec -it  moe_employee-db_1 /bin/sh`
+* `docker exec -it  e8af840a8593_e8af840a8593_e8af840a8593_e8af840a8593_moe_employee-db_1 /bin/sh`
 * mysql -uroot -p
 * pw:  my_secret_pw_shh
 * use edu
