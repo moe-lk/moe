@@ -55,6 +55,8 @@ class LetterShow extends Component {
                     <DateField className={this.props.classes.left} source="duty_date" label="First Date attend for the Duty" />
                     <DateField className={this.props.classes.left} source="psc_letter_date" label="PSC Letter Date" />
                     <DateField className={this.props.classes.left} source="psc_letter_no" label="PSC Letter No" />
+                    <DateField className={this.props.classes.left} source="off_letter_no" label="Officer Reference No" />
+                    <DateField className={this.props.classes.left} source="grade" label="Grade" />
 
                     <TemplateRender {...this.props}  >
                     </TemplateRender>
