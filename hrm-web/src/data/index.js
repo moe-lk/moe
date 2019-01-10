@@ -1,8 +1,4 @@
 export default {
-
-
-
-
     working_places: {
         sleas: [
             { id: 3, name: 'Department of Education Publication' },
@@ -183,6 +179,17 @@ export default {
         { id: 'slts', name: 'SLTS' },
         { id: 'cs', name: 'CS' },
         { id: 'non-cs', name: 'Non-CS' },
+
+    ],
+    service:[
+        { id: 'ict_service', name:'ICT Service'},
+        { id: 'translators_service', name:'Translators’ Service'},
+        { id: 'librarians_service', name:'Librarians Service '},
+        { id: 'development_service', name:'Development Officers’ '},
+        { id: 'pma_service', name:'Public Management Assistant Service'},
+        { id: 'drivers_service', name:'Drivers’ Service'},
+        { id: 'off_emp_service', name:'Office Employee Service'},
+
     ],
     service_mode: [
         { id: 1, name: 'First appointment' },
@@ -194,6 +201,12 @@ export default {
         { id: 7, name: 'Releasement' },
         { id: 8, name: 'Acting Duty' },
         { id: 9, name: 'Performing Duty' }
+    ],
+    class:[
+        { id: 'one', name: '1' },
+        { id: 'two', name: '2' },
+        { id: 'three', name: '3' }
+
     ],
     grade: [
         { id: 'Special', name: 'Special' },
@@ -228,6 +241,12 @@ export default {
         { id: 5, name: 'Malay' },
         { id: 6, name: 'Other' }
     ],
+    religion: [
+        { id: 0, name: 'Buddhists' },
+        { id: 1, name: 'Christians' },
+        { id: 2, name: 'Islam' },
+        { id: 3, name: 'Hindus' }
+    ],
     qualification_type:[
         { id: 1, name: 'Educational Qualification' },
         { id: 2, name: 'Professional Qualification' }
@@ -250,12 +269,21 @@ export default {
         {id:7,office_branch:'English and Foreign Languages'},
         {id:8,office_branch:'Mathematics'},
         {id:9,office_branch:'National Languages and Humanities Education Unit'},
+
         {id:10,office_branch:'National Schools'},
         {id:11,office_branch:'Piriven Education'},
         {id:12,office_branch:'Oriental Studies Society'},
         {id:13,office_branch:'Religious and Value Education'},
         {id:14,office_branch:'School Activities'},
         {id:15,office_branch:'Health & Nutrition'},
+
+        {id:10,office_branch: 'National Schools'},
+        {id:11,office_branch: 'Piriven Education'},
+        {id:12,office_branch: 'Oriental Studies Society'},
+        {id:13,office_branch: 'Religious and Value Education'},
+        {id:14,office_branch: 'School Activities'},
+        {id:15,office_branch: 'Health & Nutrition'},
+
         {id:16,office_branch: 'Science'},
         {id:17,office_branch:'Teacher Education Administration'},
         {id:18,office_branch: 'Teacher Transfer Unit'},
@@ -336,6 +364,4 @@ export default {
        
 
     ]
-
-    
 }

@@ -35,9 +35,9 @@ import Designation from './plugins/designation';
 import WorkingBranch from './plugins/workingBranch';
 import respectiveLetterNoLable from './plugins/lables/respectiveLetterNoLable';
 import respectiveLetterNo from './plugins/respectiveLetterNo';
-import nicNo from './plugins/nic';
-import grade from './plugins/grade';
-import title from './plugins/title';
+import  nicNo from './plugins/nic';
+import  grade from './plugins/grade';
+import  title from './plugins/title';
 
 // import { Inline } from 
 require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
@@ -74,6 +74,8 @@ const plugins = {
         nicNo,
         grade,
         title,
+        WorkingBranch,
+
 
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() }),

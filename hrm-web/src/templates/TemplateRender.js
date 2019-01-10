@@ -31,9 +31,6 @@ import WorkingPlace from './plugins/workingPlace';
 import Designation from './plugins/designation';
 import WorkingBranch from './plugins/workingBranch';
 import respectiveLetterNo from './plugins/respectiveLetterNo';
-import nicNo from './plugins/nic';
-import grade from './plugins/grade';
-import title from './plugins/title';
 
 
 // Load some exemplary plugins:
@@ -62,10 +59,6 @@ const EditorPlugins = {
         Designation,
         WorkingBranch,
         respectiveLetterNo,
-        nicNo,
-        grade,
-        title,
-        
         // black
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() })], // Define plugins for layout cells
