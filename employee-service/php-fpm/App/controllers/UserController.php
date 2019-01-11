@@ -295,6 +295,7 @@ class UserController extends ApiController
                     'gender' => ['required'
                     , $validator('in', ['M', 'F'])],
                     'civil_status' => 'required|numeric',
+                    'religion'=> 'numeric',
                 ]);
                 $validation->setAliases([
                     'f_name' => 'First Name',
@@ -390,12 +391,12 @@ class UserController extends ApiController
             $validator = new Validator;
             $validation = $validator->make((array) $general_service, [
                 'date_join' => 'required|date:Y-m-d',
-                // 'way_join' => 'required|numeric',
+                'way_join' => 'numeric',
                 'cadre' => ['required'
                     , $validator('in', ['General Cadre', 'Special Cadre'])],
-                'grade_join' => 'alpha',
+                // 'grade_join' => 'alpha',
                 'entrance_exam_rank' => 'numeric',
-                'grade' => 'alpha',
+                'grade' => 'numeric',
                 'subject' => 'numeric|min:1',
                 'medium' => 'required|numeric',
                 'confirm' => 'required|numeric',
@@ -413,6 +414,7 @@ class UserController extends ApiController
                 'status' => 'alpha',
                 'deactivate_type_id' => 'numeric',
                 'deactivate_date' => 'date:Y-m-d',
+                'class'=> 'numeric',
             ]);
 
             $validation->setAliases([
@@ -507,7 +509,6 @@ class UserController extends ApiController
 
     private function setSpouseDetails()
     {
-
         if (array_key_exists('Spouse_Details', (array) $this->_inputs)) {
             $spouse_details = $this->_inputs['Spouse_Details'];
             $validator = new Validator;
@@ -529,28 +530,25 @@ class UserController extends ApiController
                         'ethinicity' => 'required|numeric',
                         'gender' => ['required'
                         , $validator('in', ['M', 'F'])],
+                        'religion'=> 'numeric',
+
                     ]);
                     $validation->validate();
 
-                    if ($validation->fails()) {
-                        $errors = $validation->errors();
-                        $this->_error['Spouse_Details'][$key] = $errors->firstOfAll();
-                    } else {
-                        $this->Spouse_Details[$key] = (array) $spouse;
-                    }
-                }
+            if ($validation->fails()) {
+                $errors = $validation->errors();
+                $this->_error['Spouse_Details'] = $errors->firstOfAll();
+            } else {
+                $this->spouse_details = (array) $spouse_details;
             }
-
         } else {
             $this->_error['Spouse_Details'] = 'Spouse Details Required';
-
         }
-       
     }
 
     private function getSpouseDetails()
     {
-        return $this->Spouse_Details;
+        return $this->children_details;
     }
 
     public function put()

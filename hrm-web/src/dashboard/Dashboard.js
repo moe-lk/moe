@@ -135,7 +135,7 @@ class Dashboard extends Component {
         } = this.state;
         return (
             <Fragment>
-                <Title title="Posters Galore Admin" />
+                <Title title="MoE HRM" />
                 <Responsive
                     xsmall={
                         <div>

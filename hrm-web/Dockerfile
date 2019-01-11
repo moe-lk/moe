@@ -4,6 +4,7 @@ FROM node:9.6.1
 RUN mkdir /usr/app
 WORKDIR /usr/app
 
+COPY . /usr/app 
 COPY package.json /usr/app/package.json
 COPY package-lock.json /usr/app/package-lock.json
 

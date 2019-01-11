@@ -17,6 +17,17 @@
 # Run migration
 * `docker exec -it moe_employee-service_1  php ./vendor/bin/phinx migrate -e development`
 
+
+# Run Seeder
+* docker exec -it moe_employee-service_1 php ./vendor/bin/phinx seed:run -e development
+
+
 # Loge in to the DB on 
 bash in to the container
 * `docker exec -it  moe_employee-db_1 /bin/sh`
+
+# Create Migration
+* docker exec -it moe_employee-service_1 php ./vendor/bin/phinx create #name
+
+# Create Seeder
+* docker exec -it moe_employee-service_1 php ./vendor/bin/phinx seed:create AddPrefixData 
