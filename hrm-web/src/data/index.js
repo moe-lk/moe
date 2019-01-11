@@ -113,7 +113,7 @@ export default {
             { id: 34, name: 'OES Posts' },
         ],
         ncs: [
-            { id: 1, name: 'Development  Assistant' },
+            { id: 1, name: 'Development  Assista1nt' },
             { id: 2, name: 'Document  Assistant' },
             { id: 3, name: 'Superintendent' },
             { id: 4, name: 'Assistant Superintendent' },
@@ -151,9 +151,9 @@ export default {
 
     ],
     medium: [
-        { id: 1, name: 'Sinhala' },
-        { id: 2, name: 'Tamil' },
-        { id: 3, name: 'English' }
+        { id: '1', name: 'Sinhala' },
+        { id: '2', name: 'Tamil' },
+        { id: '3', name: 'English' }
     ],
     cadre: [
         { id: 'General Cadre', name: 'General Cadre' },
@@ -203,16 +203,16 @@ export default {
         { id: 9, name: 'Performing Duty' }
     ],
     class:[
-        { id: 'one', name: '1' },
-        { id: 'two', name: '2' },
-        { id: 'three', name: '3' }
+        { id: 1, name: '1' },
+        { id: 2, name: '2' },
+        { id: 3, name: '3' }
 
     ],
     grade: [
-        { id: 'Special', name: 'Special' },
-        { id: 'Grade III', name: 'Grade III' },
-        { id: 'Grade II', name: 'Grade II' },
-        { id: 'Grade I', name: 'Grade I' }
+        { id: '1', name: 'Special' },
+        { id: '2', name: 'Grade III'},
+        { id: '3', name: 'Grade II'},
+        { id: '4', name: 'Grade I'}
     ],
     user_level: [
         { id: 0, name: 'User' },
@@ -242,10 +242,10 @@ export default {
         { id: 6, name: 'Other' }
     ],
     religion: [
-        { id: 0, name: 'Buddhists' },
-        { id: 1, name: 'Christians' },
-        { id: 2, name: 'Islam' },
-        { id: 3, name: 'Hindus' }
+        { id: '0', name: 'Buddhism' },
+        { id: '1', name: 'Hinduism' },
+        { id: '2', name: 'Islam' },
+        { id: '3', name: 'Christianity' }
     ],
     qualification_type:[
         { id: 1, name: 'Educational Qualification' },
@@ -340,7 +340,7 @@ export default {
         {id:68,office_branch:'Classical /Foreign Languages & Bilingual Education'},
         {id:69,office_branch:'Electronic Dissemination'},
         {id:70,office_branch:'Guidance & Counseling '},
-        {id:71,office_branch:' Open School '},
+        {id:71,office_branch:'Open School'},
         {id:72,office_branch:'Teacher Education'},
         {id:73,office_branch:'Institutional Development'},
         {id:74,office_branch:'Administration'},

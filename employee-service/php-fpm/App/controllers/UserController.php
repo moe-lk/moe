@@ -295,6 +295,7 @@ class UserController extends ApiController
                     'gender' => ['required'
                     , $validator('in', ['M', 'F'])],
                     'civil_status' => 'required|numeric',
+                    'religion'=> 'numeric',
                 ]);
                 $validation->setAliases([
                     'f_name' => 'First Name',
@@ -390,12 +391,12 @@ class UserController extends ApiController
             $validator = new Validator;
             $validation = $validator->make((array) $general_service, [
                 'date_join' => 'required|date:Y-m-d',
-                // 'way_join' => 'required|numeric',
+                'way_join' => 'numeric',
                 'cadre' => ['required'
                     , $validator('in', ['General Cadre', 'Special Cadre'])],
-                'grade_join' => 'alpha',
+                // 'grade_join' => 'alpha',
                 'entrance_exam_rank' => 'numeric',
-                'grade' => 'alpha',
+                'grade' => 'numeric',
                 'subject' => 'numeric|min:1',
                 'medium' => 'required|numeric',
                 'confirm' => 'required|numeric',
@@ -413,6 +414,7 @@ class UserController extends ApiController
                 'status' => 'alpha',
                 'deactivate_type_id' => 'numeric',
                 'deactivate_date' => 'date:Y-m-d',
+                'class'=> 'numeric',
             ]);
 
             $validation->setAliases([
@@ -529,6 +531,8 @@ class UserController extends ApiController
                         'ethinicity' => 'required|numeric',
                         'gender' => ['required'
                         , $validator('in', ['M', 'F'])],
+                        'religion'=> 'numeric',
+
                     ]);
                     $validation->validate();
 

@@ -191,7 +191,7 @@ class Employee extends Model
                 $this->setPersonId($person_id);
                 $this->generalService->update();
                 if ($this->spouse->_data !== null) {
-                    $this->spouse->update();
+                    $this->spouse->updateMultiple();
                 }
                 if ($this->children->_data !== null) {
                     $this->children->updateMultiple();
@@ -249,7 +249,7 @@ class Employee extends Model
             $this->generalService->_data->person_id = $person_id;
             $this->user->_data['person_id'] = $person_id;
             if ($this->spouse->_data !== null) {
-                $this->spouse->_data['person_id'] = $person_id;
+                $this->spouse->_data = setValues($this->spouse->_data, 'person_id', $person_id);
             }
 
         } catch (Exception $e) {
@@ -284,7 +284,7 @@ class Employee extends Model
             $this->general_service = $this->generalService->findByPerson($personID);
             $this->current_service = $this->currentService->findAllByPerson($personID);
             $this->children_details = $this->children->findAllByPerson($personID);
-            $this->spouse_details = $this->spouse->findByPerson($personID);
+            $this->spouse_details = $this->spouse->findAllByPerson($personID);
             // if ($query->count() >= 1) {
 
             //     $this->displayData = $query->get();

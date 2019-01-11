@@ -51,7 +51,6 @@ class AddNewColomns extends AbstractMigration
         $table4 = $this->table('Service');
         $table4->addColumn('class', 'integer');
         $table4->update();
-
     }
 
     public function down()
