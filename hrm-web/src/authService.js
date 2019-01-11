@@ -2,7 +2,7 @@ import decode from 'jwt-decode';
 export default class AuthService {
     // Initializing important variables
     constructor(domain) {
-        this.domain = domain || 'http://localhost/v2/user' // API server domain
+        this.domain = domain || 'https://localhost:8243' // API server domain
         this.fetch = this.fetch.bind(this) // React binding stuff
         this.login = this.login.bind(this)
         this.getProfile = this.getProfile.bind(this)
@@ -12,12 +12,16 @@ export default class AuthService {
     login(username, password) {
         console.log(username, password)
         // Get a token from api server using the fetch api
-        return this.fetch(`${this.domain}/login`, {
+        return this.fetch(`${this.domain}/authorize`, {
             method: 'POST',
-            body: JSON.stringify({
-                username,
-                password
-            })
+            headers:{
+                'Authorization': 'Basic UlhFTHR6Ulh1cnNzYjlnTUVkT09XWnc4Z0dvYTp0ejBUcDhXbUdmeG1mRHpPbm9MZzJvRUlDX2Nh'
+            },
+            body: {
+                username:username,
+                password:password,
+                grant_type:'password'
+            }
         }).then(res => {
             
             localStorage.setItem('username', username);
@@ -79,9 +83,9 @@ export default class AuthService {
     fetch(url, options) {
         // performs api calls sending the required authentication headers
         const headers = {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Access-Control-Expose-Headers':'Content-Length,Content-Range,X-Total-Count',
+            'Authorization': 'Basic UlhFTHR6Ulh1cnNzYjlnTUVkT09XWnc4Z0dvYTp0ejBUcDhXbUdmeG1mRHpPbm9MZzJvRUlDX2Nh',
+            'Content-Type':'application/x-www-form-urlencoded',
+            'Access-Control-Expose-Headers':'Authorization,Content-Length,Content-Range,X-Total-Count',
             'Access-Control-Allow-Methods':'PUT,POST,GET,DELETE'
         }
 

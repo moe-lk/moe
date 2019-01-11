@@ -137,7 +137,8 @@ class PersonalDetails extends Component {
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.in_name"
-                            label="Name with Initials in English"
+                            label="Name in English"
+                            placeholder="Ex: M.M Nizar"
                             // validate={checkCharacter}
                         />
                     </Grid>

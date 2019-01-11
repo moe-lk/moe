@@ -33,6 +33,8 @@ class LoginController extends Controller
                 'password' => 'required',
             ]);
 
+            
+
             $validation->validate();
             if ($validation->fails()) {
                 // handling errors
