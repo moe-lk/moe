@@ -220,6 +220,12 @@ export default {
         { id: 5, name: 'Malay' },
         { id: 6, name: 'Other' }
     ],
+    religion: [
+      { id: 0, name: 'Buddhism' },
+      { id: 1, name: 'Islam' },
+      { id: 2, name: 'Hinduism' },
+      { id: 3, name: 'Chistianity' },
+  ],
     qualification_type: [
         { id: 1, name: 'Educational Qualification' },
         { id: 2, name: 'Professional Qualification' }
