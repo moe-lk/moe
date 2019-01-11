@@ -32,16 +32,15 @@ import fullNameInTa from './plugins/fullNameInTa';
 import fullNameInEn from './plugins/fullNameInEn';
 import WorkingPlace from './plugins/workingPlace';
 import PCSLetterNo from './plugins/PSCLetterNo';
-import grade from './plugins/grade';
-import WorkingBranch from './plugins/workingbranch';
 import nationalschool from './plugins/nationalschool';
 import schoolProvince from './plugins/schoolProvince';
 import schoolDistrict from './plugins/schoolDistrict';
 import schoolDivision from './plugins/schoolDivision';
 import schoolZone from './plugins/schoolZone';
-
 import nicNo from './plugins/nic';
+import grade from './plugins/grade';
 import title from './plugins/title';
+import workingbranch from './plugins/workingbranch';
 
 // import { Inline } from 
 require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
@@ -72,7 +71,7 @@ const plugins = {
         Footer,
         PCSLetterNo,
         WorkingPlace,
-        WorkingBranch,
+        workingbranch,
         PCSLetterNo,
         nicNo,
         grade,
@@ -82,6 +81,7 @@ const plugins = {
         schoolDistrict,
         schoolDivision,
         schoolZone
+
 
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
     layout: [parallax({ defaultPlugin: newSlate() }),
