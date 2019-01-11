@@ -41,15 +41,15 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                 />
             </Grid>
             <DependentInput dependsOn="General_Service.service_sector" value="cs">
-            <Grid item xs={3}>
-           
-                <SelectInput
-                    source="General_Service.service"
-                    label="Service"
-                    choices={data.service}
-                />
-              
-            </Grid>
+                <Grid item xs={3}>
+            
+                    <SelectInput
+                        source="General_Service.service"
+                        label="Service"
+                        choices={data.service}
+                    />
+                
+                </Grid>
             </DependentInput>
             <Grid item xs={3}>
                 <DateInput
@@ -93,6 +93,15 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
             </Grid>
             <Grid item xs={3}>
                 <SelectInput
+                    source="General_Service.class"
+                    formClassName={classes.left}
+                    maxWidth={true}
+                    alignItems="row"
+                    label="Class"
+                    choices={data.class} />
+            </Grid>
+            <Grid item xs={3}>
+                <SelectInput
                     source="General_Service.grade_join"
                     formClassName={classes.left}
                     maxWidth={true}
@@ -110,22 +119,6 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                     choices={data.confirm} />
             </Grid>
             <Grid item xs={3}>
-                <DependentInput dependsOn="General_Service.way_join" value={3}>
-                    <NumberInput
-                        source="General_Service.entrance_exam_rank"
-                        label="Entrance Exam Rank"
-                        validate={required()}
-                        formClassName={classes.left}
-                    />
-                </DependentInput>
-            </Grid>
-        </Grid>
-        <Grid
-            container
-            direction="row"
-            justify="flex-start"
-            alignItems="stretch">
-            <Grid item xs={3}>
                 <TextInput
                     source="General_Service.w_and_op"
                     label="W & OP Number"
@@ -139,7 +132,19 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                     formClassName={classes.left}
                 />
             </Grid>
+        
+            <Grid item xs={3}>
+                <DependentInput dependsOn="General_Service.way_join" value={3}>
+                    <NumberInput
+                        source="General_Service.entrance_exam_rank"
+                        label="Entrance Exam Rank"
+                        validate={required()}
+                        formClassName={classes.left}
+                    />
+                </DependentInput>
+            </Grid>
         </Grid>
+        
     </Grid>
 )
 

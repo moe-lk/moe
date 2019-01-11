@@ -98,7 +98,7 @@ services:
     ports:
       - "7443:443"
     command: --max_allowed_packet=32505856
-    volumes:  
+    volumes:
       - ./simplesamlphp/config:/var/simplesamlphp/config
       - ./simplesamlphp/metadata-templates:/var/simplesamlphp/metadata
   mssql-db:

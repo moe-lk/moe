@@ -105,7 +105,7 @@ export default {
             { id: 34, name: 'OES Posts' },
         ],
         ncs: [
-            { id: 1, name: 'Development  Assistant' },
+            { id: 1, name: 'Development  Assista1nt' },
             { id: 2, name: 'Document  Assistant' },
             { id: 3, name: 'Superintendent' },
             { id: 4, name: 'Assistant Superintendent' },
@@ -143,9 +143,9 @@ export default {
 
     ],
     medium: [
-        { id: 1, name: 'Sinhala' },
-        { id: 2, name: 'Tamil' },
-        { id: 3, name: 'English' }
+        { id: '1', name: 'Sinhala' },
+        { id: '2', name: 'Tamil' },
+        { id: '3', name: 'English' }
     ],
     cadre: [
         { id: 'General Cadre', name: 'General Cadre' },
@@ -194,11 +194,17 @@ export default {
         { id: 8, name: 'Acting Duty' },
         { id: 9, name: 'Performing Duty' }
     ],
+    class:[
+        { id: 1, name: '1' },
+        { id: 2, name: '2' },
+        { id: 3, name: '3' }
+
+    ],
     grade: [
-        { id: 'Special', name: 'Special' },
-        { id: 'Grade III', name: 'Grade III' },
-        { id: 'Grade II', name: 'Grade II' },
-        { id: 'Grade I', name: 'Grade I' }
+        { id: '1', name: 'Special' },
+        { id: '2', name: 'Grade III'},
+        { id: '3', name: 'Grade II'},
+        { id: '4', name: 'Grade I'}
     ],
     user_level: [
         { id: 0, name: 'User' },
@@ -227,7 +233,13 @@ export default {
         { id: 5, name: 'Malay' },
         { id: 6, name: 'Other' }
     ],
-    qualification_type: [
+    religion: [
+        { id: '0', name: 'Buddhism' },
+        { id: '1', name: 'Hinduism' },
+        { id: '2', name: 'Islam' },
+        { id: '3', name: 'Christianity' }
+    ],
+    qualification_type:[
         { id: 1, name: 'Educational Qualification' },
         { id: 2, name: 'Professional Qualification' }
     ],
@@ -330,9 +342,6 @@ export default {
         { id: 89, office_branch: 'Evaluation' },
         { id: 90, office_branch: 'Confidential & Organization Evaluation Results' },
         { id: 91, office_branch: 'Not Applicable' }
-
-
-
     ], 
     province_list:
         [
