@@ -3,7 +3,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class ProvincePrefix extends AbstractMigration
+class AddReligion extends AbstractMigration
 {
     /**
      * Change Method.
@@ -30,20 +30,8 @@ class ProvincePrefix extends AbstractMigration
      * Remember to call "create()" or "update()" and NOT "save()" when working
      * with the Table class.
      */
+    public function change()
+    {
 
-//     public function up()
-//     {
-//         $table = $this->table('Province_List');
-//         $table->addColumn('prefix', 'string',['limit'=>3]);
-//         $table->update();
-       
-
-//     }
-//     public function down()
-//     {
-//         $table = $this->table('Province_List');
-//         $table->removeColumn('prefix');
-//         $table->update();
-
-//     }
-// }
+    }
+}
