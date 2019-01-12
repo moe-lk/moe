@@ -143,7 +143,7 @@ export default {
     way_of_join: [
         { id: 1, name: 'Open' },
         { id: 2, name: 'Limited' },
-        { id: 3, name: 'Merit'},
+        { id: 3, name: 'Exam' },
         { id: 4, name: 'Supper Numeral(PVC)' },
         { id: 5, name: 'Interview' },
         { id: 6, name: 'Graduate' },
@@ -184,8 +184,8 @@ export default {
     service:[
         { id: 'ict_service', name:'ICT Service'},
         { id: 'translators_service', name:'Translators’ Service'},
-        { id: 'librarians_service', name:'Librarians Service '},
-        { id: 'development_service', name:'Development Officers’ '},
+        { id: 'librarians_service', name:'Librarians Service'},
+        { id: 'development_service', name:'Development Officers'},
         { id: 'pma_service', name:'Public Management Assistant Service'},
         { id: 'drivers_service', name:'Drivers’ Service'},
         { id: 'off_emp_service', name:'Office Employee Service'},
