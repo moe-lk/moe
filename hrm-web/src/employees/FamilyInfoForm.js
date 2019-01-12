@@ -53,40 +53,39 @@ class FamilyInfoForm extends Component {
                     // validate={validateNIC}
                 />
                 <TextInput
-                    source="Spouse_Details.f_name"
-                    label="First Name"
+                    source="Spouse_Details.full_name"
+                    label="Full Name"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
+                    inputProps={{placeholder:'Arachige Roshan Mohan Rathnayake '}}
+                            validate={required()}
                    
                 />
-                <TextInput
-                    source="Spouse_Details.m_name"
-                    label="Middle Name"
-                    formClassName={this.props.classes.right}
-                    // validate={checkCharacter}
-                />
-                <TextInput
-                    source="Spouse_Details.l_name"
-                    label="Last Name"
-                    formClassName={this.props.classes.left}
-                    // validate={checkCharacter}
-                />
+             
                 <TextInput
                     source="Spouse_Details.in_name"
                     label="Name with Initials in English"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
+                    inputProps={{placeholder:'A.R.M. Rathnayaka'}}
+                            validate={required()}
+                    
                    
                 />
                 <TextInput
                     source="Spouse_Details.si_in_name"
                     label="Name with Initials in Sinhala"
                     formClassName={this.props.classes.left}
+                    inputProps={{placeholder:'ආර්.ආර්.රත්නායක'}}
+                            style = {{width:300}}
+                            validate={required()}
                 />
                 <TextInput
                     source="Spouse_Details.ta_in_name"
                     label="Name with Initials in Tamil"
                     formClassName={this.props.classes.left}
+                    inputProps={{placeholder:'எ.ர்.எம்.ரத்நாயக்க'}}
+                            style = {{width:300}}
                 />
                 <RadioButtonGroupInput
                     source="Spouse_Details.gender"
