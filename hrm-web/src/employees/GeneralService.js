@@ -51,6 +51,17 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                 
                 </Grid>
             </DependentInput>
+            <DependentInput dependsOn="General_Service.service_sector" value="all_is">
+                <Grid item xs={3}>
+            
+                    <SelectInput
+                        source="General_Service.ai_service"
+                        label="Service"
+                        choices={data.ai_service}
+                    />
+                
+                </Grid>
+            </DependentInput>
             <Grid item xs={3}>
                 <DateInput
                     source="General_Service.f_appoint_date"
@@ -64,15 +75,18 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                     validate={required()}
                 />
             </Grid>
-            <Grid item xs={3}>
-                <WayOfJoinSelectInput dependsOn="General_Service.service_sector" />
-            </Grid>
+            
         </Grid>
         <Grid
             container
             direction="row"
             justify="flex-start"
             alignItems="stretch">
+
+            <Grid item xs={3}>
+                <WayOfJoinSelectInput dependsOn="General_Service.service_sector" />
+            </Grid>
+            
             <Grid item xs={3}>
                 <SelectInput
                     source="General_Service.medium"

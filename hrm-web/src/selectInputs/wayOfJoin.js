@@ -69,6 +69,9 @@ class WayOfJoinSelectInput extends Component {
                 case 'non-cs':
                     this.state.way_of_join.splice(2, 2)
                     break;
+                case 'all_is':
+                    this.state.way_of_join.splice(4, 3)
+                    break;
                 default:
                     break;
             }
