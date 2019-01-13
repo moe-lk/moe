@@ -80,6 +80,15 @@ class DesignationsSelectInput extends Component {
                             choices={data.designations.ncs}
                         />
                     </DependentInput>
+                    <DependentInput dependsOn="service_sector" value="all_is">
+                        <AutocompleteInput
+                            source="designation_id"
+                            label="Designation"
+                            validate={required()}
+                            choices={data.designations.all_is}
+                        />
+                        </DependentInput>
+                    
                 </Grid>
             </Grid>
         )
