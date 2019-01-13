@@ -50,6 +50,9 @@ class LetterShow extends Component {
                     <ReferenceField className={this.props.classes.left} source="work_branch_id" label="Working Branch" reference="workbranch" linkType={false} >
                         <TextField source="office_branch" />
                     </ReferenceField>
+                    <ReferenceField className={this.props.classes.left} source="service_id" label="Service" reference="service" linkType={false} >
+                        <TextField source="service" />
+                    </ReferenceField>
                     <SelectField className={this.props.classes.left} choices={data.service_mode} source="service_mode" label="Mode of Service" />
                     <DateField className={this.props.classes.left} source="appoint_date" label="Date of Appoitment" />
                     <DateField className={this.props.classes.left} source="duty_date" label="First Date attend for the Duty" />
