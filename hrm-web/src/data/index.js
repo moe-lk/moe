@@ -151,9 +151,9 @@ export default {
 
     ],
     medium: [
-        { id: '1', name: 'Sinhala' },
-        { id: '2', name: 'Tamil' },
-        { id: '3', name: 'English' }
+        { id: 1, name: 'Sinhala' },
+        { id: 2, name: 'Tamil' },
+        { id: 3, name: 'English' }
     ],
     cadre: [
         { id: 'General Cadre', name: 'General Cadre' },

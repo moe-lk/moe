@@ -220,7 +220,7 @@ class PersonalDetails extends Component {
                     </Grid>
                     <Grid item xs={3}>
                         <BooleanInput
-                            label="Inactive/Active"
+                            label="Active/Inactive"
                             source="Personal_Details.active" />
                     </Grid>
                 </Grid>

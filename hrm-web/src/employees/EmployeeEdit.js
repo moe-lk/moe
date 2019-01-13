@@ -104,13 +104,14 @@ class EmployeeEdit extends Component {
                     <FormTab label="Qualifications" autoComplete="off" path="">
                        <Qualification {...this.props}></Qualification>
                     </FormTab>
-                    <FormTab label="User Account Details" autoComplete="off" path="">
-                        <AccountSettings></AccountSettings>
-                    </FormTab>
                     <FormTab label="Family Details" disabled={this.state.familyTab < 2} autoComplete="off" path="" >
                         <FamilyInfoForm>
                         </FamilyInfoForm>
                     </FormTab>
+                    <FormTab label="User Account Details" autoComplete="off" path="">
+                        <AccountSettings></AccountSettings>
+                    </FormTab>
+                    
                 </TabbedForm>
             </Edit>
         )
