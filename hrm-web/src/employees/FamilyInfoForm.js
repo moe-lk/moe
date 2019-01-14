@@ -7,7 +7,7 @@
  * ********************************************************************
  * 
  */
-import { Grid,withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
 import {
     ArrayInput,
@@ -23,9 +23,7 @@ import {
     SimpleFormIterator,
     TextInput,
     required,
-    regex,
-    
-    
+    regex
 } from 'react-admin';
 
 import data from '../data';
@@ -36,34 +34,23 @@ const styles = theme => ({
     right: { display: 'inline-block', marginRight: 36 },
 });
 
-
+/*Form Validations*--START*/
 // const validatePhoneno = [number('Must be number'), minLength(10,'Must be 10 Digits'),regex(/^\d{10}$/,'Must be 10 Digits')];
-const validateNIC=[regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format : "9 Digits with V or 12 Digits"')];
-//  const checkCharacter=[regex(/^[a-zA-Z]*$/,'Must be letters')];
-
+// const validateNIC=[regex(/(^\w{9}(V))|(^\w{12})$/,'Allowed format : "9 Digits with V or 12 Digits"')];
+// const checkCharacter=[regex(/^[a-zA-Z]*$/,'Must be letters')];
+/*Form Validations*--END*/
 
 class FamilyInfoForm extends Component {
 
 
     render() {
         return (
-            <Grid
-            container
-              direction="row"
-              justify="flex-start"
-              alignItems="flex-start"
-            >
-             
-           
-
-                <ArrayInput source="Spouse_Details" label="Spouse Details" >
-                    <SimpleFormIterator >
-                   
+            <FormTab>
                 <TextInput
                     source="Spouse_Details.nic"
                     label="NIC Number"
                     formClassName={this.props.classes.right}
-                    validate={validateNIC}
+                    // validate={validateNIC}
                 />
                 <TextInput
                     source="Spouse_Details.f_name"
@@ -148,11 +135,7 @@ class FamilyInfoForm extends Component {
                     formClassName={this.props.classes.left}
                     // validate={validatePhoneno}
                 />
-                </SimpleFormIterator>
-                </ArrayInput>
-                
-                
-                <FormTab>
+
                 <ArrayInput source="Children_Details" label="Children Details" >
                     <SimpleFormIterator >
                         <TextInput
@@ -177,11 +160,7 @@ class FamilyInfoForm extends Component {
                         </ImageInput>
                     </SimpleFormIterator>
                 </ArrayInput>
-                
-                </FormTab>
-                
-            
-                </Grid>
+            </FormTab>
         )
     }
 

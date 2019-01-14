@@ -1,9 +1,10 @@
-    import { withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
 import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField , GET_ONE } from 'react-admin';
 import data from '../data';
 import TemplateRender from '../templates/TemplateRender';
 import dataProvider from '../dataProvider'
+import { DependentField } from 'aor-dependent-input';
 
 const styles = theme => ({
     left: { display: 'inline-block', marginRight: 36, minWidth: 192 },
@@ -20,6 +21,16 @@ class LetterShow extends Component {
             data: null
         };
     }
+
+    // updateProps(data) {
+    //     if (data !== undefined) {
+    //         dataProvider(GET_ONE, 'templates', { id: data.template })
+    //             .then(response => response.data.body)
+    //             .then(template => {
+    //                 this.state.template = JSON.parse(template)
+    //             })
+    //     }
+    // }
 
     componentWillMount() {
         dataProvider(GET_ONE, 'placement', { id: this.props.id })
@@ -47,9 +58,11 @@ class LetterShow extends Component {
                     <ReferenceField className={this.props.classes.left} source="work_place_id" label="Working Place" reference="workplace" linkType={false} >
                         <TextField source="work_place" />
                     </ReferenceField>
-                    <ReferenceField className={this.props.classes.left} source="work_branch_id" label="Working Branch" reference="workbranch" linkType={false} >
-                        <TextField source="office_branch" />
-                    </ReferenceField>
+                    <DependentField dependsOn="work_branch_id">
+                        <ReferenceField className={this.props.classes.left} source="work_branch_id" label="Working Branch" reference="workbranch" linkType={false} >
+                            <TextField source="office_branch" />
+                        </ReferenceField>
+                    </DependentField>
                     <SelectField className={this.props.classes.left} choices={data.service_mode} source="service_mode" label="Mode of Service" />
                     <DateField className={this.props.classes.left} source="appoint_date" label="Date of Appoitment" />
                     <DateField className={this.props.classes.left} source="duty_date" label="First Date attend for the Duty" />
@@ -57,7 +70,6 @@ class LetterShow extends Component {
                     <DateField className={this.props.classes.left} source="psc_letter_no" label="PSC Letter No" />
                     <DateField className={this.props.classes.left} source="off_letter_no" label="Officer Reference No" />
                     <DateField className={this.props.classes.left} source="grade" label="Grade" />
-
                     <TemplateRender {...this.props}  >
                     </TemplateRender>
                 </SimpleShowLayout>

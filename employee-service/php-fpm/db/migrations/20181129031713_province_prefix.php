@@ -31,19 +31,19 @@ class ProvincePrefix extends AbstractMigration
      * with the Table class.
      */
 
-    public function up()
-    {
-        $table = $this->table('Province_List');
-        $table->addColumn('prefix', 'string',['limit'=>3]);
-        $table->update();
+//     public function up()
+//     {
+//         $table = $this->table('Province_List');
+//         $table->addColumn('prefix', 'string',['limit'=>3]);
+//         $table->update();
        
 
-    }
-    public function down()
-    {
-        $table = $this->table('Province_List');
-        $table->removeColumn('prefix');
-        $table->update();
+//     }
+//     public function down()
+//     {
+//         $table = $this->table('Province_List');
+//         $table->removeColumn('prefix');
+//         $table->update();
 
-    }
-}
+//     }
+// }

@@ -3,7 +3,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class AddCloumnsToServiceTable extends AbstractMigration
+class AddSchooDataFieldToServiceDetails extends AbstractMigration
 {
     /**
      * Change Method.
@@ -30,22 +30,19 @@ class AddCloumnsToServiceTable extends AbstractMigration
      * Remember to call "create()" or "update()" and NOT "save()" when working
      * with the Table class.
      */
-        
     public function up()
     {
         $table = $this->table('Service');
-        $table->addColumn('psc_letter_no', 'string',['limit'=>15]);
-        $table->addColumn('psc_letter_date', 'datetime', ['null' => true]);
+        $table->addColumn('school_data', 'json');
         $table->update();
-    }
+       
 
-   
+    }
     public function down()
     {
         $table = $this->table('Service');
-        $table->removeColumn('psc_letter_no');
-        $table->removeColumn('psc_letter_date');
+        $table->removeColumn('school_data');
         $table->update();
-    }
 
+    }
 }
