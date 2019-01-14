@@ -188,10 +188,10 @@ export default {
         { id: 9, name: 'Performing Duty' }
     ],
     grade: [
-        { id: 'Special', name: 'Special' },
-        { id: 'Grade III', name: 'Grade III' },
-        { id: 'Grade II', name: 'Grade II' },
-        { id: 'Grade I', name: 'Grade I' }
+        { id: 1, name: 'Special' },
+        { id: 2, name: 'Grade III' },
+        { id: 3, name: 'Grade II' },
+        { id: 4, name: 'Grade I' }
     ],
     user_level: [
         { id: 0, name: 'User' },
