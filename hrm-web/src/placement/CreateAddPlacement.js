@@ -55,12 +55,19 @@ const CreateAddPlacements = ({ permissions, classes, formData, ...props }) => (
                   />
               </Grid>
             <Grid item xs={3}>
-              <DateInput
-                      source="psc_letter_date"
-                      label="PSC Letter Date"
-                      validate={required()}
-                  />
+                <SelectInput
+                    source="class"
+                    label="Present Class"
+                    choices={data.class}
+                />
             </Grid>
+            <Grid item xs={3}>
+            <DateInput
+                    source="psc_letter_date"
+                    label="PSC Letter Date"
+                    validate={required()}
+                />
+                </Grid>
             <Grid item xs={3}>
                 <DesignationsSelectInput></DesignationsSelectInput>
             </Grid>

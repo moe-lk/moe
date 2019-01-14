@@ -65,6 +65,14 @@ class WorkingPlacesSelectInput extends Component {
                             choices={data.working_places.cs}
                         />
                     </DependentInput>
+                    <DependentInput dependsOn="service_sector" value="all_is">
+                        <AutocompleteInput
+                            source="work_place_id"
+                            label="Working Place"
+                            validate={required()}
+                            choices={data.working_places.all_is}
+                        />
+                    </DependentInput>
                     <DependentInput dependsOn="service_sector" value="non-cs">
                         <AutocompleteInput
                             source="work_place_id"
