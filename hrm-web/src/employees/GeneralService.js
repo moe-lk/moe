@@ -40,6 +40,17 @@ const PersonalDetails = ({ permissions, classes, formData, ...props }) => (
                     choices={data.sector}
                 />
             </Grid>
+            <DependentInput dependsOn="General_Service.service_sector" value="cs">
+            <Grid item xs={3}>
+           
+                <SelectInput
+                    source="General_Service.service"
+                    label="Service"
+                    choices={data.service}
+                />
+              
+            </Grid>
+            </DependentInput>
             <Grid item xs={3}>
                 <DateInput
                     source="General_Service.f_appoint_date"
