@@ -394,9 +394,8 @@ class UserController extends ApiController
                 'way_join' => 'numeric',
                 'cadre' => ['required'
                     , $validator('in', ['General Cadre', 'Special Cadre'])],
-                // 'grade_join' => 'alpha',
+                'grade_join' => 'numeric',
                 'entrance_exam_rank' => 'numeric',
-                'grade' => 'numeric',
                 'subject' => 'numeric|min:1',
                 'medium' => 'required|numeric',
                 'confirm' => 'required|numeric',
@@ -530,7 +529,7 @@ class UserController extends ApiController
                         'ethinicity' => 'required|numeric',
                         'gender' => ['required'
                         , $validator('in', ['M', 'F'])],
-                        'religion'=> 'numeric',
+                        'religion'=> 'alpha',
 
                     ]);
                     $validation->validate();
