@@ -530,7 +530,6 @@ class UserController extends ApiController
                         'gender' => ['required'
                         , $validator('in', ['M', 'F'])],
                         'religion'=> 'alpha',
-
                     ]);
                     $validation->validate();
 

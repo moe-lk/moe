@@ -5,6 +5,7 @@ import { DateInput, FileInput, required, SelectInput, TextInput } from 'react-ad
 import data from '../data';
 import DesignationsSelectInput from '../selectInputs/designations';
 import WorkingPlaceSelectInput from '../selectInputs/workingPlaces';
+import ServiceSelectInput from '../selectInputs/service';
 
 
 const styles = theme => ({
@@ -68,6 +69,10 @@ const CreateAddPlacements = ({ permissions, classes, formData, ...props }) => (
                     validate={required()}
                 />
                 </Grid>
+                <Grid item xs={3}>
+               
+               <ServiceSelectInput></ServiceSelectInput>
+           </Grid>
             <Grid item xs={3}>
                 <DesignationsSelectInput></DesignationsSelectInput>
             </Grid>
