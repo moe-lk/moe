@@ -57,7 +57,7 @@ class FamilyInfoForm extends Component {
                     label="Full Name"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
-                    inputProps={{placeholder:'Arachige Roshan Mohan Rathnayake '}}
+                    inputProps={{placeholder:'Arachige Mohan Rathnayake '}}
                             validate={required()}
                    
                 />
@@ -159,5 +159,5 @@ class FamilyInfoForm extends Component {
 
 
 }
-
+/** */
 export default withStyles(styles)(FamilyInfoForm);

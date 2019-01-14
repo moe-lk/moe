@@ -41,6 +41,7 @@ class ChangeSpouseDetails extends AbstractMigration
     }
 
     /**
+     * 
      * Migrate Down.
      */
     public function down()
