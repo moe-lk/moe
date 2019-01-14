@@ -51,53 +51,61 @@ class FamilyInfoForm extends Component {
                     label="NIC Number"
                     formClassName={this.props.classes.right}
                     // validate={validateNIC}
-                />
-                <TextInput
-                    source="Spouse_Details.f_name"
-                    label="First Name"
-                    formClassName={this.props.classes.left}
-                    // validate={checkCharacter}
-                   
-                />
-                <TextInput
-                    source="Spouse_Details.m_name"
-                    label="Middle Name"
-                    formClassName={this.props.classes.right}
-                    // validate={checkCharacter}
-                />
-                <TextInput
-                    source="Spouse_Details.l_name"
-                    label="Last Name"
-                    formClassName={this.props.classes.left}
-                    // validate={checkCharacter}
+                    style = {{width:300}}
                 />
                 <TextInput
                     source="Spouse_Details.in_name"
                     label="Name with Initials in English"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
+                    style = {{width:300}}
+                    inputProps={{ placeholder: 'C.Amarasinghe'}}
                    
                 />
                 <TextInput
-                    source="Spouse_Details.si_in_name"
-                    label="Name with Initials in Sinhala"
+                    source="Spouse_Details.en_in_fullname"
+                    label="Full Name in English"
+                    formClassName={this.props.classes.right}
+                    // validate={checkCharacter}
+                    style = {{width:300}}
+                    inputProps={{ placeholder: 'Chamalie Amarasinghe'}}
+                />
+            
+                <TextInput
+                    source="Spouse_Details.si_in_na"
+                    label="Name with initials in Sinhala"
                     formClassName={this.props.classes.left}
+                    // validate={checkCharacter}
+                    style = {{width:300}}
+                    inputProps={{ placeholder: 'සී.අමරසිංහ'}}
                 />
                 <TextInput
                     source="Spouse_Details.ta_in_name"
                     label="Name with Initials in Tamil"
                     formClassName={this.props.classes.left}
+                    // validate={checkCharacter}
+                    style = {{width:300}}
+                    inputProps={{ placeholder: 'சி. அமரசிங்க'}}
+                   
                 />
                 <RadioButtonGroupInput
                     source="Spouse_Details.gender"
                     formClassName={this.props.classes.right}
                     label="Gender"
                     choices={data.gender} />
+
                 <SelectInput
                     source="Spouse_Details.ethinicity"
                     label="Ethnicity"
                     formClassName={this.props.classes.right}
                     choices={data.ethinicity}
+                />
+            
+                <SelectInput
+                            source="Personal_Details.religion"
+                            label="Religon"
+                            formClassName={this.props.classes.right}
+                            choices={data.religion}
                 />
                 <DateInput
                     source="Spouse_Details.dob"
