@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d06e10d0c1cf0bb01f491de91b82eb0f",
+    "content-hash": "be79703ce98658f8534faf4e53dcd177",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1899,6 +1899,54 @@
             "time": "2018-06-11T23:09:50+00:00"
         },
         {
+            "name": "odan/phinx-migrations-generator",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/odan/phinx-migrations-generator.git",
+                "reference": "9de55019ecc0994aec99d175706037c81cc3c9de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/odan/phinx-migrations-generator/zipball/9de55019ecc0994aec99d175706037c81cc3c9de",
+                "reference": "9de55019ecc0994aec99d175706037c81cc3c9de",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "riimu/kit-phpencoder": "^2.4",
+                "robmorgan/phinx": "^0.10",
+                "symfony/console": "^2.8|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "bin": [
+                "./bin/phinx-migrations"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Odan\\Migration\\": "src/Migration/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Migration generator for Phinx",
+            "homepage": "https://github.com/odan/phinx-migrations-generator",
+            "keywords": [
+                "database",
+                "generator",
+                "migration",
+                "migrations",
+                "mysql",
+                "phinx"
+            ],
+            "time": "2018-12-24T22:32:27+00:00"
+        },
+        {
             "name": "phar-io/manifest",
             "version": "1.0.3",
             "source": {
@@ -2550,6 +2598,57 @@
                 "xunit"
             ],
             "time": "2018-10-05T04:05:24+00:00"
+        },
+        {
+            "name": "riimu/kit-phpencoder",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Riimu/Kit-PHPEncoder.git",
+                "reference": "7e876d25019c3f6c23321ab5ac1a55c72fcd0933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Riimu/Kit-PHPEncoder/zipball/7e876d25019c3f6c23321ab5ac1a55c72fcd0933",
+                "reference": "7e876d25019c3f6c23321ab5ac1a55c72fcd0933",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.2 || ^6.5 || ^5.7"
+            },
+            "suggest": {
+                "ext-gmp": "To convert GMP numbers into PHP code"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Riimu\\Kit\\PHPEncoder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Riikka Kalliomäki",
+                    "email": "riikka.kalliomaki@gmail.com",
+                    "homepage": "http://riimu.net"
+                }
+            ],
+            "description": "Highly customizable alternative to var_export for PHP code generation",
+            "homepage": "http://kit.riimu.net",
+            "keywords": [
+                "code",
+                "encoder",
+                "export",
+                "generator",
+                "variable"
+            ],
+            "time": "2018-07-03T12:46:23+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

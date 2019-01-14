@@ -10,7 +10,7 @@
 import { Grid, withStyles } from '@material-ui/core';
 import { DependentInput } from 'aor-dependent-input';
 import React from 'react';
-import { AutocompleteArrayInput, ReferenceArrayInput, SelectInput } from 'react-admin';
+import {  ReferenceArrayInput, SelectInput } from 'react-admin';
 
 import data from '../data';
 
@@ -49,9 +49,9 @@ const AccountSettings = ({ permissions, classes, formData, ...props }) => (
             </Grid>
             <Grid item xs={3}>
                 <DependentInput dependsOn="Account_Details.level" value={1}>
-                    <ReferenceArrayInput label="Nominator" reference="employees" source="Account_Details.nominators" filter={{ active: 1, user_level: 2 }} allowDuplicates={false}
+                    <ReferenceArrayInput label="Nominator" reference="employees" source="Account_Details.nominators" filter={{ active: 1, user_level: 1 }} allowDuplicates={false}
                         filterToQuery={searchText => ({ in_name: searchText })}> 
-                        <AutocompleteArrayInput optionValue="id" optionText={optionRenderer} />
+                        <SelectInput optionValue="id" optionText={optionRenderer} />
                     </ReferenceArrayInput>
                 </DependentInput>
             </Grid>

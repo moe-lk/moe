@@ -14,7 +14,7 @@ const httpClient = (url, options = {}) => {
     return fetchUtils.fetchJson(url, options);
 }
 
-const dataProvider = simpleRestProvider('https://api.moe.gov.com/v2', httpClient);
+const dataProvider = simpleRestProvider('http://localhost:8380/v2', httpClient);
 const uploadCapableClient = addUploadCapabilities(dataProvider);
 
 

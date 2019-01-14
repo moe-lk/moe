@@ -7,11 +7,7 @@ services:
       - '443:443'
     environment:
       STAGE: local
-      DOMAINS: '
-      example.com, api.moe.gov.com -> http://employee-service:80 ,
-      web.moe.gov.com -> http://hrm-web:3000 , 
-      saml.moe.gov.com -> http://saml-moe:443,
-      apim.moe.gov.com -> http://api-manager:9443'
+      DOMAINS: 'example.com, api.moe.gov.com -> http://employee-service:80 , web.moe.gov.com -> http://hrm-web:3000' # saml.moe.gov.com -> http://saml-moe:443, apim.moe.gov.com -> http://api-manager:9443
   mysql:
     image: mysql:5.7.19
     ports:
@@ -19,7 +15,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./mysql/scripts:/docker-entrypoint-initdb.d
+      - ./apim/mysql/scripts:/docker-entrypoint-initdb.d
     command: [--ssl=0]
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-uroot", "-proot"]
@@ -42,7 +38,7 @@ services:
       mysql:
         condition: service_healthy
     volumes:
-      - ./apim-analytics:/home/wso2carbon/wso2-config-volume
+      - ./apim/apim-analytics:/home/wso2carbon/wso2-config-volume
   is-as-km:
     image: moelk/wso2is:5.7.0-alpine
     healthcheck:
@@ -57,7 +53,7 @@ services:
       # am-analytics:
       #   condition: service_healthy
     volumes:
-      - ./is-as-km:/home/wso2carbon/wso2-config-volume
+      - ./apim/is-as-km:/home/wso2carbon/wso2-config-volume
     ports:
       - "9765:9763"
       - "9445:9443"
@@ -101,15 +97,15 @@ services:
     volumes:
       - ./simplesamlphp/config:/var/simplesamlphp/config
       - ./simplesamlphp/metadata-templates:/var/simplesamlphp/metadata
-  mssql-db:
-    image: microsoft/mssql-server-linux
-    ports:
-      - '1433:1433'
-    volumes:
-      - './employee-service/database:/home/dump'
-    environment:
-      ACCEPT_EULA:  "Y"
-      SA_PASSWORD:  "Nizar0756"
+  # mssql-db:
+  #   image: microsoft/mssql-server-linux
+  #   ports:
+  #     - '1433:1433'
+  #   volumes:
+  #     - './employee-service/database:/home/dump'
+  #   environment:
+  #     ACCEPT_EULA:  "Y"
+  #     SA_PASSWORD:  "Nizar0756"
   employee-service:
     healthcheck:
       test: ["CMD", "curl", "-k", "-f", "https://localhost/v2"]

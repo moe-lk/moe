@@ -1,11 +1,9 @@
 <?php
 
-
 $router = new Phroute\RouteCollector(new Phroute\RouteParser);
 
+$router->group(['prefix' => 'v2'], function ($router) {
 
-$router->group( ['prefix'=>'v2'],  function($router){
-    
     $router->post('v2/user/login', function () {
         $login = new \Controllers\LoginController();
         return $login->post();
@@ -16,15 +14,13 @@ $router->group( ['prefix'=>'v2'],  function($router){
         return ($api->get('test'));
     });
 
-    $router->post('v2/user/register',function(){
+    $router->post('v2/user/register', function () {
         $user = new \Controllers\UserController();
         return $user->post();
     });
-    /** 
+    /**
      * Swagger documentation
      */
-    
- 
 
     $router->filter('auth', function () {
         $auth = new Lib\Auth();
@@ -33,13 +29,16 @@ $router->group( ['prefix'=>'v2'],  function($router){
         }
     });
 
-        
-        $router->get('v2/employees?id_like={ids}', function ($ids) {
+    $router->get('v2/employees?id_like={ids}', function ($ids) {
+        $user = new Controllers\UserController();
+        return $user->listByIds();
+    })
+        ->get('v2/employees?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}', function ($end, $order, $sort, $start, $filter) {
             $user = new Controllers\UserController();
-            return $user->listByIds();
+            return $user->list();
         })
-        ->get('v2/employees?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}', function ($end,$order,$sort,$start,$filter) {
-            $user = new Controllers\UserController();
+        ->get('v2/new-employees?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}', function ($end, $order, $sort, $start, $filter) {
+            $user = new Controllers\NewUserController();
             return $user->list();
         })
         ->post('v2/employees', function () {
@@ -66,12 +65,12 @@ $router->group( ['prefix'=>'v2'],  function($router){
             $user = new Controllers\UserController();
             return $user->generalService();
         })
-      
+
         ->get('v2/user', function () {
             $user = new Controllers\LoginController();
             return $user->get();
         })
-        ->get('v2/options?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}',function($end,$order,$sort,$start,$filter){
+        ->get('v2/options?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}', function ($end, $order, $sort, $start, $filter) {
             $controller = new Controllers\OptionsController();
             return $controller->get($filter);
 
@@ -140,7 +139,7 @@ $router->group( ['prefix'=>'v2'],  function($router){
             $controller = new Controllers\LetterTemplateController();
             return $controller->put($id);
         })
-         ->get('v2/placement?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}', function ($end,$order,$sort,$start,$filter) {
+        ->get('v2/placement?_end={end}?&_order={order}?&_sort={sort}?&_start={start}?&{filter}', function ($end, $order, $sort, $start, $filter) {
             $services = new Controllers\ServiceController();
             return $services->list();
         })
@@ -166,4 +165,3 @@ $router->group( ['prefix'=>'v2'],  function($router){
         });
 
 });
-
