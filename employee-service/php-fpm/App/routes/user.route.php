@@ -32,8 +32,7 @@ $router->group( ['prefix'=>'v2'],  function($router){
             return 1;
         }
     });
-    
-    $router->group(array('before' => 'auth'), function ($router) {
+
         
         $router->get('v2/employees?id_like={ids}', function ($ids) {
             $user = new Controllers\UserController();
@@ -156,17 +155,15 @@ $router->group( ['prefix'=>'v2'],  function($router){
         ->post('v2/placement', function () {
             $controller = new Controllers\ServiceController();
             return $controller->post();
+        })
+        ->put('v2/placement/{id}', function () {
+            $controller = new Controllers\ServiceController();
+            return $controller->put();
+        })
+        ->get('v2/schools/{id}', function ($id) {
+            $schools = new Controllers\InstituteController();
+            return $schools->get($id);
         });
-    });
-
- 
-    // $router->group(array('before' => 'auth'), function ($router) {
-    //     $router->get('v2/workbranch?_end={filter}?&_order={range}?&_sort={sort}?&_start={start}?', function ($option) {
-    //         $controller = new Controllers\MasterDataController();
-    //         return $controller->get('workbranch');
-    //     });
-    // });
-
 
 });
 

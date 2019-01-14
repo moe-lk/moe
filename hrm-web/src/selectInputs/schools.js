@@ -63,7 +63,7 @@ class SchoolSelectInput extends Component {
                     <DependentInput resolve={this.switchSector}>
                         <ReferenceInput
                             label="Provice"
-                            source="province"
+                            source="school_data.province"
                             reference="options"
                             filter={{ table: 'Province_List', filter: ['id,!=,0'] }}>
                             <SelectInput
@@ -76,8 +76,8 @@ class SchoolSelectInput extends Component {
                     <DependentInput resolve={this.switchSector}>
                         <FormDataConsumer>
                             {({ formData, ...rest }) =>
-                                formData ? formData.province &&
-                                    <ReferenceInput label="District" source="district" reference="options" filter={{ table: 'District_List', filter: ['province_id,=,' + formData.province] }}>
+                                formData.school_data ? formData.school_data.province &&
+                                    <ReferenceInput label="District" source="school_data.district" reference="options" filter={{ table: 'District_List', filter: ['province_id,=,' + formData.school_data.province] }}>
                                         <SelectInput optionText="district" {...rest} />
                                     </ReferenceInput>
                                     : ''
@@ -89,8 +89,8 @@ class SchoolSelectInput extends Component {
                     <DependentInput resolve={this.switchSector}>
                         <FormDataConsumer>
                             {({ formData, ...rest }) =>
-                                formData ? formData.district &&
-                                    <ReferenceInput label="Zone" source="zone" reference="options" filter={{ table: 'Zone_List', filter: ['dist_id,=,' + formData.district] }}>
+                                formData.school_data ? formData.school_data.district &&
+                                    <ReferenceInput label="Zone" source="school_data.zone" reference="options" filter={{ table: 'Zone_List', filter: ['dist_id,=,' + formData.school_data.district] }}>
                                         <SelectInput optionText="zone" optionValue="zone_id" {...rest} />
                                     </ReferenceInput>
                                     : ''
@@ -102,8 +102,8 @@ class SchoolSelectInput extends Component {
                     <DependentInput resolve={this.switchSector}>
                         <FormDataConsumer>
                             {({ formData, ...rest }) =>
-                                formData ? formData.zone &&
-                                    <ReferenceInput label="Division" source="division" reference="options" filter={{ table: 'Division_List', filter: ['zone_id,=,' + formData.zone] }}>
+                                formData.school_data ? formData.school_data.zone &&
+                                    <ReferenceInput label="Division" source="school_data.division" reference="options" filter={{ table: 'Division_List', filter: ['zone_id,=,' + formData.school_data.zone] }}>
                                         <SelectInput optionText="division_name" optionValue="div_id"  {...rest} />
                                     </ReferenceInput>
                                     : ''
@@ -115,18 +115,18 @@ class SchoolSelectInput extends Component {
                     <DependentInput resolve={this.switchSector}>
                         <FormDataConsumer>
                             {({ formData, ...rest }) =>
-                                formData ? formData.division &&
+                                formData.school_data ? formData.school_data.division &&
                                     <ReferenceInput
                                         label="School"
-                                        source="work_branch_id"
+                                        source="school_data.institute_id"
                                         reference="options"
                                         filter={    
                                             {
                                                 table: 'Institute',
-                                                filter: ['div_id,=,' + formData.division],
+                                                filter: ['div_id,=,' + formData.school_data.division],
                                                 work_place: ['workplace_id,=,' + formData.work_place_id]
                                             }
-                                        }><AutocompleteInput optionText="institute_name" {...rest} />
+                                        }><AutocompleteInput optionText="institute_name" optionValue="institute_id" {...rest} />
                                     </ReferenceInput>
                                     : ''
                             }

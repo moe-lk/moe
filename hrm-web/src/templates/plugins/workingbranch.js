@@ -1,38 +1,49 @@
 import cloneDeep from 'clone-deep';
 import { actions } from 'ory-editor-core/lib/actions';
 import React, { Component } from 'react';
-import data from '../../data';
-import { func } from 'prop-types';
+import data from './../../data';
+
 class Workingbranch extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            placement: {
-                work_branch_id: 'Work Branch',
-            }
-        };
-    }
-    componentWillMount() {
+
+    state = {
+        placement: {
+            work_branch_id: 'Working Branch',
+          
+            
+        }
+    };
+
+    componentWillReceiveProps() {
         console.log(this);
         var placement = localStorage.getItem('placement');
-        console.log(placement); 
-        if (placement !== null) {
+        console.log(placement);
+        if (placement !== undefined) {
             this.state.placement = cloneDeep(JSON.parse(placement));
         }
     }
+
     filterPlaces(sectorData) {
         return sectorData.filter(function (data) {
             var placement = localStorage.getItem('placement');
-            return data.id = JSON.parse(placement).id
+            return data.id == JSON.parse(placement).work_branch_id
         })
     }
-    
+
     render() {
+        const {
+            placement
+        } = this.state;
         return (
-             this.filterPlaces(data.working_branches)[0].office_branch
+            typeof (this.state.placement.work_branch_id) == 'number' ? (this.filterPlaces(data.working_branches)[0].office_branch) : this.state.placement.work_branch_id
+
         )
     }
+
+
+
 }
+
+
 export default {
     Component: Workingbranch,
     isInlineable: true,
