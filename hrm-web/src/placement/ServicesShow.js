@@ -58,14 +58,19 @@ class LetterShow extends Component {
                     <ReferenceField className={this.props.classes.left} source="work_place_id" label="Working Place" reference="workplace" linkType={false} >
                         <TextField source="work_place" />
                     </ReferenceField>
-                    <DependentField dependsOn="work_branch_id">
-                        <ReferenceField className={this.props.classes.left} source="work_branch_id" label="Working Branch" reference="workbranch" linkType={false} >
-                            <TextField source="office_branch" />
-                        </ReferenceField>
-                    </DependentField>
+                    <ReferenceField className={this.props.classes.left} source="work_branch_id" label="Working Branch" reference="workbranch" linkType={false} >
+                        <TextField source="office_branch" />
+                    </ReferenceField>
+                    <ReferenceField className={this.props.classes.left} source="service_id" label="Service" reference="service" linkType={false} >
+                        <TextField source="service" />
+                    </ReferenceField>
                     <SelectField className={this.props.classes.left} choices={data.service_mode} source="service_mode" label="Mode of Service" />
                     <DateField className={this.props.classes.left} source="appoint_date" label="Date of Appoitment" />
                     <DateField className={this.props.classes.left} source="duty_date" label="First Date attend for the Duty" />
+                    <DateField className={this.props.classes.left} source="psc_letter_date" label="PSC Letter Date" />
+                    <DateField className={this.props.classes.left} source="psc_letter_no" label="PSC Letter No" />
+                    <DateField className={this.props.classes.left} source="off_letter_no" label="Officer Reference No" />
+                    <DateField className={this.props.classes.left} source="grade" label="Grade" />
                     <TemplateRender {...this.props}  >
                     </TemplateRender>
                 </SimpleShowLayout>

@@ -124,6 +124,7 @@ class EmployeeShow extends Component {
                         <SelectField className={this.props.classes.left} choices={data.gender} source="Personal_Details.gender" label="Gender" />
                         <SelectField className={this.props.classes.left} choices={data.civil_status} source="Personal_Details.civil_status" label="Civil Status" />
                         <SelectField className={this.props.classes.left} choices={data.ethinicity} source="Personal_Details.ethinicity" label="Ethnicity" />
+                        <SelectField className={this.props.classes.left} choices={data.religion} source="Personal_Details.religion" label="Religion" />
                         <DateField source="Personal_Details.dob" className={this.props.classes.left} label="Date of Birth" />
                     </Tab>
                     <Tab label="Contact Details">
@@ -165,10 +166,12 @@ class EmployeeShow extends Component {
                         <DateField className={this.props.classes.left} source="General_Service.f_appoint_date" label="Pensionable Date" />
                         <SelectField className={this.props.classes.left} choices={data.way_of_join} source="General_Service.way_join" label="Way Of Joined" />
                         <SelectField className={this.props.classes.left} choices={data.medium} source="General_Service.medium" label="Medium" />
-                        <SelectField className={this.props.classes.left} choices={data.grade} source="General_Service.grade" label="Grade" />
+                        <SelectField className={this.props.classes.left} choices={data.grade} source="General_Service.grade_join" label="Grade" />
+                        <SelectField className={this.props.classes.left} choices={data.class} source="General_Service.class" label="Class" />
                         <SelectField className={this.props.classes.left} choices={data.cadre} source="General_Service.cadre" label="Cardre When Joining" />
                         <SelectField className={this.props.classes.left} choices={data.confirm} source="General_Service.confirm" label="Confirm" />
                         <DateField className={this.props.classes.left} source="General_Service.confirm_date" label="Date of Confirmation" />
+                        <TextField source="General_Service.w_and_op" className={this.props.classes.left} label="W AND OP Number" />
 
                     </Tab>
                     <Tab label="Service History">

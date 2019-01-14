@@ -42,6 +42,13 @@ export default {
             { id: 16, name: 'National School' },
             { id: 10, name: 'Teachers Training College' },
             { id: 11, name: 'Teaching Center' }
+        ],
+        all_is: [
+            { id: 1, name: 'Ministry Of Education' },
+            { id: 16, name: 'National School' },
+            { id: 10, name: 'Teacher Training College' },
+            { id: 11, name: 'Teachers Center' },
+            { id: 9, name: 'National College of Education' }
         ]
     },
     designations: {
@@ -69,43 +76,51 @@ export default {
             { id: 13, name: 'Principal' }
         ],
         cs: [
+            { id: 1, name: 'Assistant Director (ICT)' },
+            { id: 2, name: 'Information & Communication Technology Officer' },
+            { id: 3, name: 'Information & Communication Technology Assistant' },
+            { id: 4, name: 'Administrative Officer' },
+            { id: 5, name: 'Registrar' },
+            { id: 6, name: 'Public management Assistant' },
+            { id: 7, name: 'Translator' },
+            { id: 8, name: 'Development Officer' },
+            { id: 9, name: 'Librarian' },
+            { id: 10, name: 'Driver' },
+            { id: 11, name: 'Office Assistant' },
+            { id: 12, name: 'Building Administrator' },
+            { id: 13, name: 'Building Inspector' },
+            { id: 14, name: 'Technical Officer(කාර්මික නිලධාරී)' },
+            { id: 15, name: 'Technical Officer (තාක්ෂණ නිලධාරී)' },
+            { id: 16, name: 'Draftman' },
+            { id: 17, name: 'Audio Video Assistant' },
+            { id: 18, name: 'Transport Officer' },
+            { id: 19, name: 'Legal Officer' },
+           
+        ],
+        all_is: [
             { id: 1, name: 'Secretary' },
             { id: 2, name: 'Additional Secretary' },
-            { id: 3, name: 'Chief Finance Officer' },
-            { id: 4, name: 'Director General (Accounts & Finance)' },
-            { id: 5, name: 'Senior Assistant Secretary' },
-            { id: 6, name: 'Chief Accountant' },
-            { id: 7, name: 'Chief Internal Auditor' },
-            { id: 8, name: 'Accountant' },
-            { id: 9, name: 'Chief Commissioner (Teachers Education)' },
-            { id: 10, name: 'Director (School Building)' },
-            { id: 11, name: 'Additional Director (School Building)' },
+            { id: 3, name: 'Senior Assistant Secretary' },
+            { id: 4, name: 'Assistant Secretary' },
+            { id: 5, name: 'Director General (Accounts & Finance)' },
+            { id: 6, name: 'Chief Finance Officer' },
+            { id: 7, name: 'Chief Accountant' },
+            { id: 8, name: 'Chief Internal Auditor' },
+            { id: 9, name: 'Accountant' },
+            { id: 10, name: 'Internal Auditor' },
+            { id: 11, name: 'Director General (Planning)' },
             { id: 12, name: 'Director (Planning)' },
-            { id: 13, name: 'Assistant Secretary' },
-            { id: 14, name: 'Internal Auditor' },
-            { id: 15, name: 'Engineer (Electric)' },
-            { id: 16, name: 'Engineer (Civil)' },
-            { id: 17, name: 'Deputy/ Assistant Director (Planning)' },
-            { id: 18, name: 'Architect' },
-            { id: 19, name: 'Assistant Director (ICT)' },
-            { id: 20, name: 'Legal Officer' },
-            { id: 21, name: 'Administrative Officer' },
-            { id: 22, name: 'Building Administrator' },
-            { id: 23, name: 'Translator' },
-            { id: 24, name: 'Information & Communication Technology Officer' },
-            { id: 25, name: 'Development Officer' },
-            { id: 26, name: 'Building Inspector' },
-            { id: 27, name: 'Technical Officer' },
-            { id: 28, name: 'Draftman' },
-            { id: 29, name: 'Librarian' },
-            { id: 30, name: 'Transport Officer' },
-            { id: 31, name: 'Public management Assistant' },
-            { id: 32, name: 'Information & Communication Technology Assistant' },
-            { id: 33, name: 'Driver' },
-            { id: 34, name: 'OES Posts' },
+            { id: 13, name: 'Deputy/ Assistant Director (Planning)' },
+            { id: 14, name: 'Director General (Engineer )' },
+            { id: 15, name: 'Director (School Building)' },
+            { id: 16, name: 'Additional Director (School Building)' },
+            { id: 17, name: 'Engineer (Electric)' },
+            { id: 18, name: 'Engineer (Civil)' },
+            { id: 19, name: 'Architect' },
+            
         ],
         ncs: [
-            { id: 1, name: 'Development  Assistant' },
+            { id: 1, name: 'Development  Assista1nt' },
             { id: 2, name: 'Document  Assistant' },
             { id: 3, name: 'Superintendent' },
             { id: 4, name: 'Assistant Superintendent' },
@@ -143,9 +158,9 @@ export default {
 
     ],
     medium: [
-        { id: 1, name: 'Sinhala' },
-        { id: 2, name: 'Tamil' },
-        { id: 3, name: 'English' }
+        { id: '1', name: 'Sinhala' },
+        { id: '2', name: 'Tamil' },
+        { id: '3', name: 'English' }
     ],
     cadre: [
         { id: 'General Cadre', name: 'General Cadre' },
@@ -165,24 +180,35 @@ export default {
         { id: 1, name: 'Active' }
     ],
     sector: [
-        { id: 'sleas', name: 'SLEAS' },
-        { id: 'sltes', name: 'SLTES' },
-        { id: 'slps', name: 'SLPS' },
-        { id: 'slts', name: 'SLTS' },
-        { id: 'cs', name: 'CS' },
-        { id: 'non-cs', name: 'Non-CS' },
+        { id: 'all_is', name:'All Island Services'},
+        { id: 'cs', name: 'Combined Service' },
+        { id: 'sleas', name: 'Sri Lanka Education Administrative Service' },
+        { id: 'slps', name: 'Sri Lanka Principal Service' },
+        { id: 'sltes', name: 'Sri Lanka Teacher Education Service' },
+        { id: 'non-cs', name: 'Non-Combined Service' },
+        { id: 'slts', name: 'Sri Lanka Teacher Service' },
 
     ],
     service:[
         { id: 'ict_service', name:'ICT Service'},
         { id: 'translators_service', name:'Translators’ Service'},
-        { id: 'librarians_service', name:'Librarians Service '},
-        { id: 'development_service', name:'Development Officers’ '},
+        { id: 'librarians_service', name:'Librarians Service'},
+        { id: 'development_service', name:'Development Officers'},
         { id: 'pma_service', name:'Public Management Assistant Service'},
         { id: 'drivers_service', name:'Drivers’ Service'},
         { id: 'off_emp_service', name:'Office Employee Service'},
 
     ],
+    ai_service:[
+        
+        { id: 'sl_ad_service', name:'Sri Lanka Administrative Service'},
+        { id: 'sl_acc_service', name:'Sri Lanka Accountants Service'},
+        { id: 'sl_planning_service', name:'Sri Lanka Planning Service'},
+        { id: 'sl_eng_service', name:'Sri Lanka Engineering Service'},
+        { id: 'sl_archi_service', name:'Sri Lanka Architectural Service'},
+        
+    ],
+
     service_mode: [
         { id: 1, name: 'First appointment' },
         { id: 2, name: 'Promotion' },
@@ -193,6 +219,12 @@ export default {
         { id: 7, name: 'Releasement' },
         { id: 8, name: 'Acting Duty' },
         { id: 9, name: 'Performing Duty' }
+    ],
+    class:[
+        { id: 1, name: '1' },
+        { id: 2, name: '2' },
+        { id: 3, name: '3' }
+
     ],
     grade: [
         { id: 1, name: 'Special' },
@@ -228,12 +260,12 @@ export default {
         { id: 6, name: 'Other' }
     ],
     religion: [
-      { id: 0, name: 'Buddhism' },
-      { id: 1, name: 'Islam' },
-      { id: 2, name: 'Hinduism' },
-      { id: 3, name: 'Chistianity' },
-  ],
-    qualification_type: [
+        { id: '0', name: 'Buddhism' },
+        { id: '1', name: 'Hinduism' },
+        { id: '2', name: 'Islam' },
+        { id: '3', name: 'Christianity' }
+    ],
+    qualification_type:[
         { id: 1, name: 'Educational Qualification' },
         { id: 2, name: 'Professional Qualification' }
     ],
@@ -336,9 +368,6 @@ export default {
         { id: 89, office_branch: 'Evaluation' },
         { id: 90, office_branch: 'Confidential & Organization Evaluation Results' },
         { id: 91, office_branch: 'Not Applicable' }
-
-
-
     ], 
     province_list:
         [
@@ -2982,6 +3011,4 @@ export default {
               "zone": "DEHIOWITA"
             }
           ]
-
-
 }

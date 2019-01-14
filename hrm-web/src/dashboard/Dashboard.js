@@ -110,7 +110,7 @@ class Dashboard extends Component {
                         this.setState({ pendingReviewsCustomers: customers })
                     );
 
-                dataProvider(GET_LIST, 'employees', {
+                dataProvider(GET_LIST, 'new-employees', {
                     filter: {
                         approved: 0
                     },

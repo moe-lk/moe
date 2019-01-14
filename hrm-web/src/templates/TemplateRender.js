@@ -38,6 +38,7 @@ import schoolProvince from './plugins/schoolProvince';
 import schoolDistrict from './plugins/schoolDistrict';
 import schoolDivision from './plugins/schoolDivision';
 import schoolZone from './plugins/schoolZone';
+import workingbranch from './plugins/workingbranch';
 
 // Load some exemplary plugins:
 // import black from './Layout/black';

@@ -137,7 +137,8 @@ class PersonalDetails extends Component {
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.in_name"
-                            label="Name with Initials in English"
+                            label="Name in English"
+                            placeholder="Ex: M.M Nizar"
                             // validate={checkCharacter}
                         />
                     </Grid>
@@ -181,6 +182,13 @@ class PersonalDetails extends Component {
                         />
                     </Grid>
                     <Grid item xs={3}>
+                        <SelectInput
+                            source="Personal_Details.religion"
+                            label="Religion"
+                            choices={data.religion}
+                        />
+                    </Grid>
+                    <Grid item xs={3}>
                         <RadioButtonGroupInput
                             source="Personal_Details.gender"
                             label="Gender"
@@ -213,7 +221,7 @@ class PersonalDetails extends Component {
                     </Grid>
                     <Grid item xs={3}>
                         <BooleanInput
-                            label="Active/Inactive"
+                            label="Inactive/Active"
                             source="Personal_Details.active" />
                     </Grid>
                 </Grid>

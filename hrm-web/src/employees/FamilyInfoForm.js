@@ -100,7 +100,6 @@ class FamilyInfoForm extends Component {
                     formClassName={this.props.classes.right}
                     choices={data.ethinicity}
                 />
-            
                 <SelectInput
                             source="Personal_Details.religion"
                             label="Religon"

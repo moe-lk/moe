@@ -295,6 +295,7 @@ class UserController extends ApiController
                     'gender' => ['required'
                     , $validator('in', ['M', 'F'])],
                     'civil_status' => 'required|numeric',
+                    'religion'=> 'numeric',
                 ]);
                 $validation->setAliases([
                     //'f_name' => 'First Name',
@@ -391,12 +392,11 @@ class UserController extends ApiController
             $validator = new Validator;
             $validation = $validator->make((array) $general_service, [
                 'date_join' => 'required|date:Y-m-d',
-                // 'way_join' => 'required|numeric',
+                'way_join' => 'numeric',
                 'cadre' => ['required'
                     , $validator('in', ['General Cadre', 'Special Cadre'])],
                 'grade_join' => 'numeric',
                 'entrance_exam_rank' => 'numeric',
-                'grade' => 'alpha',
                 'subject' => 'numeric|min:1',
                 'medium' => 'required|numeric',
                 'confirm' => 'required|numeric',
@@ -414,6 +414,7 @@ class UserController extends ApiController
                 'status' => 'alpha',
                 'deactivate_type_id' => 'numeric',
                 'deactivate_date' => 'date:Y-m-d',
+                'class'=> 'numeric',
             ]);
 
             $validation->setAliases([
@@ -523,17 +524,18 @@ class UserController extends ApiController
                 , $validator('in', ['M', 'F'])],
             ]);
             $validation->validate();
-
             if ($validation->fails()) {
                 $errors = $validation->errors();
                 $this->_error['Spouse_Details'] = $errors->firstOfAll();
             } else {
                 $this->spouse_details = (array) $spouse_details;
             }
+        }
         } else {
             $this->_error['Spouse_Details'] = 'Spouse Details Required';
         }
     }
+}
 
     private function getSpouseDetails()
     {

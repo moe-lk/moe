@@ -65,7 +65,7 @@ const NewEmployees = ({ visitors = [], nb,permissions, translate, classes }) => 
                     >
                         
                         <ListItemText
-                            primary={`${record.f_name} ${record.l_name}`}
+                            primary={`${record.en_fullname}`}
                             className={classes.listItemText}
                         />
                     </ListItem>
