@@ -63,7 +63,6 @@ const EditorPlugins = {
         Footer,
         PCSLetterNo,
         WorkingPlace,
-        workingbranch,
         nicNo,
         grade,
         title,

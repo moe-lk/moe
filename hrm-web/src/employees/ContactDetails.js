@@ -78,7 +78,6 @@ const ContactDetails = ({ permissions, ...props, classes }) => (
                     type="email"
                     // validate={validateEmail} 
                     />
-
             </SimpleFormIterator>
         </ArrayInput>
     </Grid>

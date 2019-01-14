@@ -13,4 +13,5 @@ class WorkPlace extends BaseModel
         parent::__construct();
         $this->_table = 'Work_Place';
     }
+
 }

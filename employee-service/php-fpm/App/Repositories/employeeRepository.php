@@ -443,6 +443,7 @@ class Employee extends Model
         }
     }
 
+
     public function statusUpdate($data)
     {
         try {

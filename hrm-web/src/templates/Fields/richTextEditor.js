@@ -3,7 +3,6 @@ import RichTextInput from 'ra-input-rich-text';
 
 
 
-
 class RichTextEditor extends Component {
 
     render() {

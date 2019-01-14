@@ -89,7 +89,20 @@ class PersonalDetails extends Component {
         console.log(this.state)
         this.setState({ familyTab: value })
     };
-
+    
+   /* validateUserCreation = (values) => {
+        const errors = {};
+        if (!values.Personal_Details.in_name) {
+            errors.Personal_Details.in_name= ['The firstName is required'];
+        }
+       if (!values.age) {
+            errors.age = ['The age is required'];
+        } else if (values.age < 18) {
+            errors.age = ['Must be over 18'];
+        }
+        return errors
+    };
+    */
 
     render() {
         return (
@@ -109,23 +122,23 @@ class PersonalDetails extends Component {
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
-                            source="Personal_Details.f_name"
-                            label="First Name"
-                            // validate={checkCharacter}
+                            source="Personal_Details.in_name"
+                            label="Name with Initials in English"
+                            style = {{width:300}}
+                            //validate={checkCharacter}
+                            inputProps={{ placeholder: 'A.R.M.Rathnayaka'}}
+                            validate={required()}
+
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
-                            source="Personal_Details.m_name"
-                            label="Middle Name"
+                            source="Personal_Details.en_fullname"
+                            label="Full Name in English"
+                            style = {{width:300}}
+                            inputProps={{ placeholder: 'Arachige Roshan Mohan Rathnayake'}}
+                            validate={required()}
                             // validate={checkCharacter1}
-                        />
-                    </Grid>
-                    <Grid item xs={3}>
-                        <TextInput
-                            source="Personal_Details.l_name"
-                            label="Last Name"
-                            // validate={checkCharacter}
                         />
                     </Grid>
                 </Grid>
@@ -136,21 +149,21 @@ class PersonalDetails extends Component {
                     alignItems="stretch">
                     <Grid item xs={3}>
                         <TextInput
-                            source="Personal_Details.in_name"
-                            label="Name with Initials in English"
-                            // validate={checkCharacter}
-                        />
-                    </Grid>
-                    <Grid item xs={3}>
-                        <TextInput
                             source="Personal_Details.si_in_name"
                             label="Name with Initials in Sinhala"
+                            style = {{width:300}}
+                            inputProps={{ placeholder: 'ආර්.ආර්.රත්නායක'}}
+                            
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <TextInput
                             source="Personal_Details.ta_in_name"
                             label="Name with Initials in Tamil"
+                            style = {{width:300}}
+                            inputProps={{ placeholder: 'எ.ர்.எம்.ரத்நாயக்க '}}
+                            // validate={checkCharacter}
+  
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -158,6 +171,7 @@ class PersonalDetails extends Component {
                             source="Personal_Details.dob"
                             label="Date of Birth"
                             // validate={required()}
+                            validate={required()}
                         />
                     </Grid>
                 </Grid>
@@ -171,6 +185,7 @@ class PersonalDetails extends Component {
                             source="Personal_Details.NIC"
                             label="NIC Number"
                             // validate={validateNIC}
+                            validate={required()}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -178,13 +193,23 @@ class PersonalDetails extends Component {
                             source="Personal_Details.ethinicity"
                             label="Ethnicity"
                             choices={data.ethinicity}
+                            validate={required()}
+                        />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <SelectInput
+                            source="Personal_Details.religion"
+                            label="Religion"
+                            choices={data.religion}
+                            validate={required()}
                         />
                     </Grid>
                     <Grid item xs={3}>
                         <RadioButtonGroupInput
                             source="Personal_Details.gender"
                             label="Gender"
-                            choices={data.gender} />
+                            choices={data.gender}
+                            validate={required()} />
                     </Grid>
                     <Grid item xs={3}>
                         <Provider familyTab={this.state.familyTab}>
@@ -192,7 +217,8 @@ class PersonalDetails extends Component {
                                 source="Personal_Details.civil_status"
                                 label="Civil Status"
                                 choices={data.civil_status}
-                                onChange={this.handleChange} />
+                                onChange={this.handleChange}
+                                validate={required()}/>
                         </Provider>
                     </Grid>
                 </Grid>
