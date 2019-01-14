@@ -2,7 +2,7 @@ import decode from 'jwt-decode';
 export default class AuthService {
     // Initializing important variables
     constructor(domain) {
-        this.domain = domain || 'https://api.moe.gov.com/v2/user' // API server domain
+        this.domain = domain || 'http://localhost:8380/v2/user' // API server domain
         this.fetch = this.fetch.bind(this) // React binding stuff
         this.login = this.login.bind(this)
         this.getProfile = this.getProfile.bind(this)
@@ -12,16 +12,15 @@ export default class AuthService {
     login(username, password) {
         console.log(username, password)
         // Get a token from api server using the fetch api
-        return this.fetch(`${this.domain}/authorize`, {
+        return this.fetch(`${this.domain}/login`, {
             method: 'POST',
-            headers:{
-                'Authorization': 'Basic UlhFTHR6Ulh1cnNzYjlnTUVkT09XWnc4Z0dvYTp0ejBUcDhXbUdmeG1mRHpPbm9MZzJvRUlDX2Nh'
-            },
-            body: {
-                username:username,
-                password:password,
-                grant_type:'password'
-            }
+            // headers:{
+            //     'Authorization': 'Basic UlhFTHR6Ulh1cnNzYjlnTUVkT09XWnc4Z0dvYTp0ejBUcDhXbUdmeG1mRHpPbm9MZzJvRUlDX2Nh'
+            // },
+            body: JSON.stringify({
+                username,
+                password
+            })
         }).then(res => {
             
             localStorage.setItem('username', username);

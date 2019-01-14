@@ -20,14 +20,12 @@ class UseProfileTable extends AbstractSeed
         $this->faker = Factory::create('en_US');
         $this->faker_si = Factory::create('en_US');
         $data = [];
-        for ($i=0; $i < 50 ; $i++) { 
+        for ($i=0; $i < 2 ; $i++) { 
             # code...
             $data[] = [
                 'NIC' => $this->faker->numberBetween(800000000,999999999),
                 'title' => $this->faker->title,
-                'f_name' => $this->faker->firstName,
-                'l_name' => $this->faker->lastName,
-                'm_name' => $this->faker->name,
+                'en_fullname' => $this->faker->lastName .' '.$this->faker->firstName,
                 'in_name' => $this->faker->lastName .' '.$this->faker->firstName,
                 'si_in_name' => 'ආර්. එම්. පී. එම්. රත්නායක',
                 'ta_in_name' => 'ஆர்.எம்.பி.எம்.ரத்நாயக்க',
@@ -39,11 +37,12 @@ class UseProfileTable extends AbstractSeed
                 'f_appoint_type' => $this->faker->numberBetween(1,10),
                 'active' => $this->faker->numberBetween(0,1),
                 'profile_pic' => 'string',
-                'user_updated'=>'piumi2'
+                'user_updated'=>'piumi2',
+                'religion'=>  $this->faker->numberBetween(0,3),
             ];
             
         }
-        $this->table('Personal_Details')->insert($data)->save();
+        $this->table('Tmp_Personal_Details')->insert($data)->save();
        
 
     }

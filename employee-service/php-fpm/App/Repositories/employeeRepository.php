@@ -427,6 +427,7 @@ class Employee extends Model
     public function approveReject($data)
     {
         try {
+            //TODO:: DO the logic here or move this to mode after-update event
             log_message('info', json_encode($data));
             $query = $this->db::table('Personal_Details')->where('ID', $data['ID']);
             // return $query->count();

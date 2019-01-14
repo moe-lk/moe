@@ -539,10 +539,12 @@ class UserController extends ApiController
             } else {
                 $this->spouse_details = (array) $spouse_details;
             }
+        }
         } else {
             $this->_error['Spouse_Details'] = 'Spouse Details Required';
         }
     }
+}
 
     private function getSpouseDetails()
     {
