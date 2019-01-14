@@ -1,8 +1,88 @@
-# ./docker-compose.yml
-
-version: '2'
-
+version: '2.3'
 services:
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      STAGE: local
+      DOMAINS: '
+      example.com, api.moe.gov.com -> http://employee-service:80 ,
+      web.moe.gov.com -> http://hrm-web:3000 , 
+      saml.moe.gov.com -> http://saml-moe:443,
+      apim.moe.gov.com -> http://api-manager:9443'
+  mysql:
+    image: mysql:5.7.19
+    ports:
+      - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./mysql/scripts:/docker-entrypoint-initdb.d
+    command: [--ssl=0]
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-uroot", "-proot"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 80s
+  am-analytics:
+    image: moelk/wso2am-analytics-base:2.6.0-alpine
+    ports:
+      - "9091:9091"
+      - "9444:9444"
+    healthcheck:
+      test: ["CMD", "nc", "-z","localhost", "9091"]
+      interval: 10s
+      timeout: 120s
+      start_period: 80s
+      retries: 10
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./apim-analytics:/home/wso2carbon/wso2-config-volume
+  is-as-km:
+    image: moelk/wso2is:5.7.0-alpine
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9443/carbon/"]
+      interval: 10s
+      timeout: 120s
+      start_period: 100s
+      retries: 15
+    depends_on:
+      mysql:
+        condition: service_healthy
+      # am-analytics:
+      #   condition: service_healthy
+    volumes:
+      - ./is-as-km:/home/wso2carbon/wso2-config-volume
+    ports:
+      - "9765:9763"
+      - "9445:9443"
+  api-manager:
+    image: moelk/wso2am:2.6.0-alpine
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:9443/carbon/admin/login.jsp"]
+      interval: 10s
+      timeout: 120s
+      start_period: 100s
+      retries: 5
+    depends_on:
+      mysql:
+        condition: service_healthy
+      # am-analytics:
+      #   condition: service_healthy
+      # is-as-km:
+      #   condition: service_healthy
+    volumes:
+      - ./apim:/home/wso2carbon/wso2-config-volume
+    ports:
+      - "9763:9763"
+      - "9443:9443"
+      - "8280:8280"
+      - "8243:8243"
   employee-db:
     build: ./employee-service/database
     environment:
@@ -11,41 +91,51 @@ services:
       MYSQL_USER: devuser
       MYSQL_PASSWORD: devpass
     ports:
-      - "9906:3306"
-    command: --max_allowed_packet=32505856    
+      - "3306:3306"
+    command: --max_allowed_packet=32505856
+  saml-is:
+    image: moelk/ssp-base:1.16.1
+    ports:
+      - "7443:443"
+    command: --max_allowed_packet=32505856
+    volumes:
+      - ./simplesamlphp/config:/var/simplesamlphp/config
+      - ./simplesamlphp/metadata-templates:/var/simplesamlphp/metadata
+  mssql-db:
+    image: microsoft/mssql-server-linux
+    ports:
+      - '1433:1433'
+    volumes:
+      - './employee-service/database:/home/dump'
+    environment:
+      ACCEPT_EULA:  "Y"
+      SA_PASSWORD:  "Nizar0756"
   employee-service:
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost/v2"]
+      interval: 10s
+      timeout: 120s
+      start_period: 100s
+      retries: 5
     build: ./employee-service/php-fpm
     volumes:
       - ./employee-service/php-fpm:/var/www/html
     ports:
-      - 80:80
-    links:
-      - employee-db
+      - "8380:80"
+    environment:
+      VIRTUAL_HOST: api.moe.gov.com
+      VIRTUAL_PORT: '8380'
     depends_on:
       - employee-db
     restart: always
   hrm-web:
     build: ./hrm-web
-    hostname: www
-    domainname: hrm-web.dev
+    environment:
+      VIRTUAL_HOST: web.moe.gov.com
+      VIRTUAL_PORT: '3000'
     working_dir: /usr/app
     volumes:
       - './hrm-web:/usr/app'
     ports:
-      - 3000:3000
-    links:
-      - employee-service
-    environment:
-      - NODE_ENV=development
-    restart: always 
-  sleas-swagger:
-    image: swaggerapi/swagger-ui
-    environment:
-      - SWAGGER_JSON=./sleas-api/www/swagger.json
-      - API_URL=http://localhost/v2
+      - "3000:3000"
     restart: always
-    ports:   ["1337:8080"]
-  
-
-  # ## By default this config uses default local driver,
-  # ## For custom volumes replace with volume driver configuration.

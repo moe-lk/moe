@@ -1,9 +1,10 @@
-    import { withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
 import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField , GET_ONE } from 'react-admin';
 import data from '../data';
 import TemplateRender from '../templates/TemplateRender';
 import dataProvider from '../dataProvider'
+import { DependentField } from 'aor-dependent-input';
 
 const styles = theme => ({
     left: { display: 'inline-block', marginRight: 36, minWidth: 192 },
@@ -20,6 +21,16 @@ class LetterShow extends Component {
             data: null
         };
     }
+
+    // updateProps(data) {
+    //     if (data !== undefined) {
+    //         dataProvider(GET_ONE, 'templates', { id: data.template })
+    //             .then(response => response.data.body)
+    //             .then(template => {
+    //                 this.state.template = JSON.parse(template)
+    //             })
+    //     }
+    // }
 
     componentWillMount() {
         dataProvider(GET_ONE, 'placement', { id: this.props.id })
@@ -60,7 +71,6 @@ class LetterShow extends Component {
                     <DateField className={this.props.classes.left} source="psc_letter_no" label="PSC Letter No" />
                     <DateField className={this.props.classes.left} source="off_letter_no" label="Officer Reference No" />
                     <DateField className={this.props.classes.left} source="grade" label="Grade" />
-
                     <TemplateRender {...this.props}  >
                     </TemplateRender>
                 </SimpleShowLayout>

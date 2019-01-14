@@ -31,13 +31,16 @@ import fullNameInSi from './plugins/fullNameInSi';
 import fullNameInTa from './plugins/fullNameInTa';
 import fullNameInEn from './plugins/fullNameInEn';
 import WorkingPlace from './plugins/workingPlace';
-import Designation from './plugins/designation';
-import WorkingBranch from './plugins/workingBranch';
-import respectiveLetterNoLable from './plugins/lables/respectiveLetterNoLable';
-import respectiveLetterNo from './plugins/respectiveLetterNo';
-import  nicNo from './plugins/nic';
-import  grade from './plugins/grade';
-import  title from './plugins/title';
+import PCSLetterNo from './plugins/PSCLetterNo';
+import nationalschool from './plugins/nationalschool';
+import schoolProvince from './plugins/schoolProvince';
+import schoolDistrict from './plugins/schoolDistrict';
+import schoolDivision from './plugins/schoolDivision';
+import schoolZone from './plugins/schoolZone';
+import nicNo from './plugins/nic';
+import grade from './plugins/grade';
+import title from './plugins/title';
+import workingbranch from './plugins/workingbranch';
 
 // import { Inline } from 
 require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
@@ -66,15 +69,18 @@ const plugins = {
         nameInTa,
         Header,
         Footer,
+        PCSLetterNo,
         WorkingPlace,
-        Designation,
-        respectiveLetterNoLable,
-        respectiveLetterNo,
-        WorkingBranch,
+        workingbranch,
+        PCSLetterNo,
         nicNo,
         grade,
         title,
-        WorkingBranch,
+        nationalschool,
+        schoolProvince,
+        schoolDistrict,
+        schoolDivision,
+        schoolZone
 
 
     ], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]

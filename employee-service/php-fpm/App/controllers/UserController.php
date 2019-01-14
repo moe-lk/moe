@@ -508,7 +508,6 @@ class UserController extends ApiController
 
     private function setSpouseDetails()
     {
-
         if (array_key_exists('Spouse_Details', (array) $this->_inputs)) {
             $spouse_details = $this->_inputs['Spouse_Details'];
             $validator = new Validator;
@@ -531,29 +530,23 @@ class UserController extends ApiController
                         'gender' => ['required'
                         , $validator('in', ['M', 'F'])],
                         'religion'=> 'alpha',
-
                     ]);
                     $validation->validate();
 
-                    if ($validation->fails()) {
-                        $errors = $validation->errors();
-                        $this->_error['Spouse_Details'][$key] = $errors->firstOfAll();
-                    } else {
-                        $this->Spouse_Details[$key] = (array) $spouse;
-                    }
-                }
+            if ($validation->fails()) {
+                $errors = $validation->errors();
+                $this->_error['Spouse_Details'] = $errors->firstOfAll();
+            } else {
+                $this->spouse_details = (array) $spouse_details;
             }
-
         } else {
             $this->_error['Spouse_Details'] = 'Spouse Details Required';
-
         }
-       
     }
 
     private function getSpouseDetails()
     {
-        return $this->Spouse_Details;
+        return $this->children_details;
     }
 
     public function put()

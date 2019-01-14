@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 
 use Phinx\Seed\AbstractSeed;
@@ -27,4 +27,4 @@ class AddPrefixData extends AbstractSeed
         $this->table('Province_List')->insert(['prifix'=>'SGP'])->where('id','=','P09')->save();
         
     }
-}
+} -->

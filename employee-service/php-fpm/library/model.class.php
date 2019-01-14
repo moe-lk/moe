@@ -93,12 +93,11 @@ class Model extends QB
         log_message('info', $this->_table . ' :Insert ' . json_encode($this->_data));
         try {
             $row = $this->db::table($this->_table)
-                ->insert((array) $this->_data);
-
+                ->insert((array)$this->_data);
             return $row;
         } catch (Exception $e) {
             // throw ($e);
-            log_message('error', $e);
+            log_message('info', $e);
         }
 
     }

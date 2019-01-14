@@ -14,7 +14,7 @@ class PersonalDetails extends BaseModel
         $this->_table = 'Personal_Details';
         self::dbAuth();
     }
-
+        // to get the 
     public function filter($filter)
     {
         $results = $this->db::table($this->_table)
