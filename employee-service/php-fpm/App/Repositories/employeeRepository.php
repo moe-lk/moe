@@ -182,6 +182,7 @@ class Employee extends Model
 
     public function updateEmployee($data)
     {
+        // die(json_encode($data));
         $this->setEmployee($data);
         $this->setNIC();
         $this->res = 0;
@@ -237,6 +238,7 @@ class Employee extends Model
     private function setPersonId($person_id)
     {
         try {
+            // json_decode($this->spouse->_data);
             if ($this->contact->_data !== null) {
                 $this->contact->_data = setValues($this->contact->_data, 'person_id', $person_id);
             }
