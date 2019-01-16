@@ -32,13 +32,13 @@ import fullNameInTa from './plugins/fullNameInTa';
 import fullNameInEn from './plugins/fullNameInEn';
 import WorkingPlace from './plugins/workingPlace';
 import PCSLetterNo from './plugins/PSCLetterNo';
+import grade from './plugins/grade';
 import nationalschool from './plugins/nationalschool';
 import schoolProvince from './plugins/schoolProvince';
 import schoolDistrict from './plugins/schoolDistrict';
 import schoolDivision from './plugins/schoolDivision';
 import schoolZone from './plugins/schoolZone';
 import nicNo from './plugins/nic';
-import grade from './plugins/grade';
 import title from './plugins/title';
 import workingbranch from './plugins/workingbranch';
 

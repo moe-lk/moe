@@ -3,7 +3,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class ProvincePrefix extends AbstractMigration
+class ChangeSpouseDetails extends AbstractMigration
 {
     /**
      * Change Method.
@@ -30,20 +30,28 @@ class ProvincePrefix extends AbstractMigration
      * Remember to call "create()" or "update()" and NOT "save()" when working
      * with the Table class.
      */
+    public function up()
+    {
+        $table = $this->table('Spouse_Details');
+        $table->addColumn('full_name',   'string', ['limit' => 255]);
+        $table->removeColumn('f_name');
+        $table->removeColumn('l_name');
+        $table->removeColumn('m_name');
+        $table->update();
+    }
 
-//     public function up()
-//     {
-//         $table = $this->table('Province_List');
-//         $table->addColumn('prefix', 'string',['limit'=>3]);
-//         $table->update();
-       
-
-//     }
-//     public function down()
-//     {
-//         $table = $this->table('Province_List');
-//         $table->removeColumn('prefix');
-//         $table->update();
-
-//     }
-// }
+    /**
+     * 
+     * Migrate Down.
+     */
+    public function down()
+    {
+        $table = $this->table('Spouse_Details');
+        $table->removeColumn('full_name');
+        $table->addColumn('l_name',   'string', ['limit' => 255]);
+        $table->addColumn('f_name',   'string', ['limit' => 255]);
+        $table->addColumn('m_name',   'string', ['limit' => 255]);
+        $table->update();
+        
+    }
+}

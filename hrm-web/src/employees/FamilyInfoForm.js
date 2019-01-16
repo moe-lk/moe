@@ -47,14 +47,14 @@ class FamilyInfoForm extends Component {
         return (
             <FormTab>
                 <TextInput
-                    source="Spouse_Details.nic"
+                    source="nic"
                     label="NIC Number"
                     formClassName={this.props.classes.right}
                     // validate={validateNIC}
                     style = {{width:300}}
                 />
                 <TextInput
-                    source="Spouse_Details.in_name"
+                    source="in_name"
                     label="Name with Initials in English"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
@@ -63,7 +63,7 @@ class FamilyInfoForm extends Component {
                    
                 />
                 <TextInput
-                    source="Spouse_Details.en_in_fullname"
+                    source="en_in_fullname"
                     label="Full Name in English"
                     formClassName={this.props.classes.right}
                     // validate={checkCharacter}
@@ -72,7 +72,7 @@ class FamilyInfoForm extends Component {
                 />
             
                 <TextInput
-                    source="Spouse_Details.si_in_na"
+                    source="si_in_na"
                     label="Name with initials in Sinhala"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
@@ -80,7 +80,7 @@ class FamilyInfoForm extends Component {
                     inputProps={{ placeholder: 'සී.අමරසිංහ'}}
                 />
                 <TextInput
-                    source="Spouse_Details.ta_in_name"
+                    source="ta_in_name"
                     label="Name with Initials in Tamil"
                     formClassName={this.props.classes.left}
                     // validate={checkCharacter}
@@ -89,49 +89,49 @@ class FamilyInfoForm extends Component {
                    
                 />
                 <RadioButtonGroupInput
-                    source="Spouse_Details.gender"
+                    source="gender"
                     formClassName={this.props.classes.right}
                     label="Gender"
                     choices={data.gender} />
 
                 <SelectInput
-                    source="Spouse_Details.ethinicity"
+                    source="ethinicity"
                     label="Ethnicity"
                     formClassName={this.props.classes.right}
                     choices={data.ethinicity}
                 />
                 <SelectInput
-                            source="Personal_Details.religion"
+                            source="religion"
                             label="Religon"
                             formClassName={this.props.classes.right}
                             choices={data.religion}
                 />
                 <DateInput
-                    source="Spouse_Details.dob"
+                    source="dob"
                     formClassName={this.props.classes.left}
                     label="Date of Birth"
                    
                 >
                 </DateInput>
                 <TextInput
-                    source="Spouse_Details.address"
+                    source="address"
                     label="Address"
                     formClassName={this.props.classes.left}
                 />
                 <TextInput
-                    source="Spouse_Details.occupation"
+                    source="occupation"
                     label="Occupation"
                     formClassName={this.props.classes.left}
 
                 />
 
                 <TextInput
-                    source="Spouse_Details.office_address"
+                    source="office_address"
                     label="Office Address"
                     formClassName={this.props.classes.left}
                 />
                 <TextInput
-                    source="Spouse_Details.telephone"
+                    source="telephone"
                     label="Telephone Number"
                     formClassName={this.props.classes.left}
                     // validate={validatePhoneno}

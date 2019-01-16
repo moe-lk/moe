@@ -32,7 +32,7 @@ class SpouseDetailsTable extends AbstractMigration
      */
     public function up()
     {
-        $$this->table("Spouse_Details", [
+        $this->table("Spouse_Details", [
             'id' => false,
             'primary_key' => ['id'],
             'engine' => 'InnoDB',
