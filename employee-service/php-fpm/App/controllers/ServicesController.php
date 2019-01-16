@@ -74,9 +74,12 @@ class ServiceController extends ApiController{
                 'work_branch_id' => 'numeric',
                 'work_division_id' => 'numeric',
                 'designation_id' => 'required|numeric',
+                'psc_letter_date'=> 'required|date:Y-m-d',
                 'appoint_date' => 'required|date:Y-m-d',
                 'duty_date' => 'required|date:Y-m-d',
                 'off_letter_no' => 'required',
+                'psc_letter_no' => 'required',
+                'class'=>'numeric',
                 'barcode' => [
                     'required', 
                     $validator('unique')->table('Service')->column('barcode')->message('barcode Alredy Registerd'),

@@ -34,6 +34,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "webthink/guzzle-jwt": "^0.4.0",
         "brianium/paratest": "^2.0",
-        "fzaninotto/faker": "^1.8"
+        "fzaninotto/faker": "^1.8",
+        "odan/phinx-migrations-generator": "^4.0"
     }
 }

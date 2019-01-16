@@ -5,7 +5,6 @@ import data from './../../data';
 import { func } from 'prop-types';
 // import dataProvider from '../dataProvider';
 import { DateField, ReferenceField, SelectField, Show, SimpleShowLayout, TextField, GET_ONE } from 'react-admin';
-
 class Workingplace extends Component {
 
 
@@ -38,7 +37,6 @@ class Workingplace extends Component {
             return data.id == JSON.parse(placement).work_place_id
         })
     }
-
     
     // setInstitutes(){
     //     dataProvider(GET_ONE, 'institutes', { id_like: this.props.id })

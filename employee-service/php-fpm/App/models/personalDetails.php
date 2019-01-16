@@ -14,7 +14,7 @@ class PersonalDetails extends BaseModel
         $this->_table = 'Personal_Details';
         self::dbAuth();
     }
-
+        // to get the 
     public function filter($filter)
     {
         $results = $this->db::table($this->_table)
@@ -28,9 +28,22 @@ class PersonalDetails extends BaseModel
         if (key_exists('approved', $filter)) {
             $results->where('approved', $filter['approved']);
         }
-        // if (key_exists('user_level', $filter)) {
-        //     $results->where('user_level', $filter['user_level']);
-        // }
+        if (key_exists('user_level', $filter)) {
+            $results
+            // ->join('User', function($table)
+            // {
+            //     // die($table);
+            //     $table->orOn('User.person_id', '=', 'Personal_Details.id');
+            //     // $table->on('another_table.person_id2', '=', 'my_table.id2');
+            //     // $table->orOn('another_table.age', '>', QB::raw(1));
+            // });            // {
+            // //     $table->On('User.person_id', '=', 'Personal_Details.Id');
+            // //     // $table->on('another_table.person_id2', '=', 'my_table.id2');
+            // //     // $table->orOn('User.level', '=', QB::raw(1));
+            // // });
+            ->leftJoin('User', 'User.person_id', '=','Personal_Details.id');
+            // ->where('user_level', $filter['user_level']);
+        }
         if (key_exists('f_name', $filter)) {
             $results->where('f_name', 'LIKE', '%' . $filter['f_name'] . '%');
         }

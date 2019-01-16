@@ -182,6 +182,7 @@ class Employee extends Model
 
     public function updateEmployee($data)
     {
+        // die(json_encode($data));
         $this->setEmployee($data);
         $this->setNIC();
         $this->res = 0;
@@ -191,7 +192,7 @@ class Employee extends Model
                 $this->setPersonId($person_id);
                 $this->generalService->update();
                 if ($this->spouse->_data !== null) {
-                    $this->spouse->update();
+                    $this->spouse->updateMultiple();
                 }
                 if ($this->children->_data !== null) {
                     $this->children->updateMultiple();
@@ -237,6 +238,7 @@ class Employee extends Model
     private function setPersonId($person_id)
     {
         try {
+            // json_decode($this->spouse->_data);
             if ($this->contact->_data !== null) {
                 $this->contact->_data = setValues($this->contact->_data, 'person_id', $person_id);
             }
@@ -249,7 +251,7 @@ class Employee extends Model
             $this->generalService->_data->person_id = $person_id;
             $this->user->_data['person_id'] = $person_id;
             if ($this->spouse->_data !== null) {
-                $this->spouse->_data['person_id'] = $person_id;
+                $this->spouse->_data = setValues($this->spouse->_data, 'person_id', $person_id);
             }
 
         } catch (Exception $e) {
@@ -284,7 +286,7 @@ class Employee extends Model
             $this->general_service = $this->generalService->findByPerson($personID);
             $this->current_service = $this->currentService->findAllByPerson($personID);
             $this->children_details = $this->children->findAllByPerson($personID);
-            $this->spouse_details = $this->spouse->findByPerson($personID);
+            $this->spouse_details = $this->spouse->findAllByPerson($personID);
             // if ($query->count() >= 1) {
 
             //     $this->displayData = $query->get();
@@ -427,6 +429,7 @@ class Employee extends Model
     public function approveReject($data)
     {
         try {
+            //TODO:: DO the logic here or move this to mode after-update event
             log_message('info', json_encode($data));
             $query = $this->db::table('Personal_Details')->where('ID', $data['ID']);
             // return $query->count();

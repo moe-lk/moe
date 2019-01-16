@@ -32,7 +32,6 @@ import WorkingBranch from './plugins/workingbranch';
 import nicNo from './plugins/nic';
 import grade from './plugins/grade';
 import title from './plugins/title';
-
 import PCSLetterNo from './plugins/PSCLetterNo';
 import nationalschool from './plugins/nationalschool';
 import schoolProvince from './plugins/schoolProvince';

@@ -124,6 +124,7 @@ class EmployeeShow extends Component {
                         <SelectField className={this.props.classes.left} choices={data.gender} source="Personal_Details.gender" label="Gender" />
                         <SelectField className={this.props.classes.left} choices={data.civil_status} source="Personal_Details.civil_status" label="Civil Status" />
                         <SelectField className={this.props.classes.left} choices={data.ethinicity} source="Personal_Details.ethinicity" label="Ethnicity" />
+                        <SelectField className={this.props.classes.left} choices={data.religion} source="Personal_Details.religion" label="Religion" />
                         <DateField source="Personal_Details.dob" className={this.props.classes.left} label="Date of Birth" />
                     </Tab>
                     <Tab label="Contact Details">
@@ -140,40 +141,24 @@ class EmployeeShow extends Component {
                             </Datagrid>
                         </ArrayField>
                     </Tab>
-                    <Tab label="Family Details">
-                        <TextField source="Spouse_Details.in_name" className={this.props.classes.left} label="Full name with initials" />
-                        <TextField source="Spouse_Details.si_in_name" className={this.props.classes.left} label="Full name with initials In Sinhala" />
-                        <TextField source="Spouse_Details.ta_in_name" className={this.props.classes.left} label="Full name with initials In Tamil" />
-                        <TextField source="Spouse_Details.f_name" className={this.props.classes.left} label="First name" />
-                        <TextField source="Spouse_Details.m_name" className={this.props.classes.left} label="Middle name" />
-                        <TextField source="Spouse_Details.l_name" className={this.props.classes.left} label="Last name" />
-                        <TextField source="Spouse_Details.nic" className={this.props.classes.left} label="NIC" />
-                        <SelectField className={this.props.classes.left} choices={data.gender} source="Spouse_Details.gender" label="Gender" />
-                        <SelectField className={this.props.classes.left} choices={data.ethinicity} source="Spouse_Details.ethinicity" label="Ethnicity" />
-                        <DateField source="Spouse_Details.dob" className={this.props.classes.left} label="Date of Birth" />
-                        <ArrayField source="Children_Details" >
-                            <Datagrid>
-                                <TextField source="name" label="Name of the Child" />
-                                <SelectField className={this.props.classes.left} choices={data.gender} source="gender" label="Gender" />
-                                <TextField source="dob" label="Date of Birth" />
-                            </Datagrid>
-                        </ArrayField>
-                    </Tab>
+                    
                     <Tab label="General Service Details">
                         <SelectField className={this.props.classes.left} choices={data.sector} source="General_Service.service_sector" label="Service Sector" />
                         <DateField className={this.props.classes.left} source="General_Service.date_join" label="Date Joined" />
                         <DateField className={this.props.classes.left} source="General_Service.f_appoint_date" label="Pensionable Date" />
                         <SelectField className={this.props.classes.left} choices={data.way_of_join} source="General_Service.way_join" label="Way Of Joined" />
                         <SelectField className={this.props.classes.left} choices={data.medium} source="General_Service.medium" label="Medium" />
-                        <SelectField className={this.props.classes.left} choices={data.grade} source="General_Service.grade" label="Grade" />
+                        <SelectField className={this.props.classes.left} choices={data.grade} source="General_Service.grade_join" label="Grade" />
+                        <SelectField className={this.props.classes.left} choices={data.class} source="General_Service.class" label="Class" />
                         <SelectField className={this.props.classes.left} choices={data.cadre} source="General_Service.cadre" label="Cardre When Joining" />
                         <SelectField className={this.props.classes.left} choices={data.confirm} source="General_Service.confirm" label="Confirm" />
                         <DateField className={this.props.classes.left} source="General_Service.confirm_date" label="Date of Confirmation" />
+                        <TextField source="General_Service.w_and_op" className={this.props.classes.left} label="W AND OP Number" />
 
                     </Tab>
                     <Tab label="Service History">
                         <ArrayField source="Current_Service">
-                            <Datagrid>
+                        <Datagrid>
                                 <SelectField choices={data.sector} source="service_sector" label="Sector" />
                                 <SelectField choices={data.service_mode} source="service_mode" label="Mode of Service" />
                                 <ReferenceField source="work_place_id" label="Working Place" reference="workplace" linkType={false} >
@@ -182,7 +167,7 @@ class EmployeeShow extends Component {
                                 <DateField source="appoint_date" label="Date of Appoitment" />
                                 <DateField source="duty_date" label="First Date attend for the Duty" />
                                 <PlacementButton />
-                            </Datagrid>
+                                </Datagrid>
                         </ArrayField>
                     </Tab>
                     <Tab label="Qualifications">
@@ -194,6 +179,27 @@ class EmployeeShow extends Component {
                                 <TextField source="qualification_grade" label="Grade" />
                                 <TextField source="qualified_institute" label="Institute" />
                                 <ImageField source="certificate_path" label="Certification" />
+                            </Datagrid>
+                        </ArrayField>
+                    </Tab>
+                    <Tab label="Family Details">
+                         <ArrayField source="Spouse_Details" >
+                         <Datagrid>
+                        <TextField source="in_name" label="Full name with initials" />
+                        <TextField source="si_in_name"  label="Full name with initials In Sinhala" />
+                        <TextField source="ta_in_name"  label="Full name with initials In Tamil" />
+                        <TextField source="f_name" label="First name" />
+                        <TextField source="nic" label="NIC" />
+                        <SelectField source="gender" choices={data.gender} label="Gender" />
+                        <SelectField source="ethinicity" choices={data.ethinicity} label="Ethnicity" />
+                        <DateField source="dob"  label="Date of Birth" />
+                        </Datagrid>
+                        </ArrayField>
+                        <ArrayField source="Children_Details" >
+                            <Datagrid>
+                                <TextField source="name" label="Name of the Child" />
+                                <SelectField className={this.props.classes.left} choices={data.gender} source="gender" label="Gender" />
+                                <TextField source="dob" label="Date of Birth" />
                             </Datagrid>
                         </ArrayField>
                     </Tab>

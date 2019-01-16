@@ -14,6 +14,9 @@ export default class AuthService {
         // Get a token from api server using the fetch api
         return this.fetch(`${this.domain}/login`, {
             method: 'POST',
+            // headers:{
+            //     'Authorization': 'Basic UlhFTHR6Ulh1cnNzYjlnTUVkT09XWnc4Z0dvYTp0ejBUcDhXbUdmeG1mRHpPbm9MZzJvRUlDX2Nh'
+            // },
             body: JSON.stringify({
                 username,
                 password
@@ -79,9 +82,9 @@ export default class AuthService {
     fetch(url, options) {
         // performs api calls sending the required authentication headers
         const headers = {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Access-Control-Expose-Headers':'Content-Length,Content-Range,X-Total-Count',
+            'Authorization': 'Basic UlhFTHR6Ulh1cnNzYjlnTUVkT09XWnc4Z0dvYTp0ejBUcDhXbUdmeG1mRHpPbm9MZzJvRUlDX2Nh',
+            'Content-Type':'application/x-www-form-urlencoded',
+            'Access-Control-Expose-Headers':'Authorization,Content-Length,Content-Range,X-Total-Count',
             'Access-Control-Allow-Methods':'PUT,POST,GET,DELETE'
         }
 
