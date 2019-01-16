@@ -103,17 +103,7 @@ const CreateAddPlacements = ({ permissions, classes, formData, ...props }) => (
                 ></TextInput>
             </Grid>
         </Grid>
-        <Grid
-            container
-            direction="row"
-            justify="flex-start"
-            alignItems="stretch">
-            <FileInput
-                source="off_letter"
-                label="Offer Letter"
-                formClassName={classes.left} >
-            </FileInput>
-        </Grid>
+    
     </Grid>
 )
 
