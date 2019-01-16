@@ -512,9 +512,11 @@ class UserController extends ApiController
         if (array_key_exists('Spouse_Details', (array) $this->_inputs)) {
             $spouse_details = $this->_inputs['Spouse_Details'];
             $validator = new Validator;
-            if (count($spouse_details) > 0) {
+            if (count((array) $spouse_details) > 0) {
                 foreach ($spouse_details as $key => $spouse) {
-                    $validation = $validator->make((array) $spouse, [
+                    //TODO:die spouse debug, 
+                    // die(json_encode($spouse));
+                    $validation = $validator->make( (array) $spouse, [
                         'nic' => 'required|min:10|alpha_num',
                         'f_name' => 'required|min:2',
                         'l_name' => 'required|min:2',
@@ -530,7 +532,7 @@ class UserController extends ApiController
                         'ethinicity' => 'required|numeric',
                         'gender' => ['required'
                         , $validator('in', ['M', 'F'])],
-                        'religion'=> 'alpha',
+                        'religion'=> 'numeric',
 
                     ]);
                     $validation->validate();
@@ -539,7 +541,7 @@ class UserController extends ApiController
                         $errors = $validation->errors();
                         $this->_error['Spouse_Details'][$key] = $errors->firstOfAll();
                     } else {
-                        $this->Spouse_Details[$key] = (array) $spouse;
+                        $this->spouse_details[$key] = (array) $spouse;
                     }
                 }
             }

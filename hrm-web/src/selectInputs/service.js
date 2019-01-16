@@ -42,7 +42,7 @@ class ServiceSelectInput extends Component {
                             source="cs_service"
                             label="Service"
                             validate={required()}
-                            choices={data.service.cs}
+                            choices={data.service}
                         />
                     </DependentInput>
                    

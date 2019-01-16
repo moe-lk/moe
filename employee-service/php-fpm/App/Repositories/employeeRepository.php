@@ -182,6 +182,7 @@ class Employee extends Model
 
     public function updateEmployee($data)
     {
+        // die(json_encode($data));
         $this->setEmployee($data);
         $this->setNIC();
         $this->res = 0;
@@ -191,6 +192,7 @@ class Employee extends Model
                 $this->setPersonId($person_id);
                 $this->generalService->update();
                 if ($this->spouse->_data !== null) {
+                    // die(json_decode($this->spouse->_data));
                     $this->spouse->updateMultiple();
                 }
                 if ($this->children->_data !== null) {
@@ -237,6 +239,7 @@ class Employee extends Model
     private function setPersonId($person_id)
     {
         try {
+            // json_decode($this->spouse->_data);
             if ($this->contact->_data !== null) {
                 $this->contact->_data = setValues($this->contact->_data, 'person_id', $person_id);
             }
@@ -250,6 +253,7 @@ class Employee extends Model
             $this->user->_data['person_id'] = $person_id;
             if ($this->spouse->_data !== null) {
                 $this->spouse->_data = setValues($this->spouse->_data, 'person_id', $person_id);
+                // die (json_decode($this->spouse->_data));
             }
 
         } catch (Exception $e) {
