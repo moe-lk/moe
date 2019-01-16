@@ -189,6 +189,7 @@ export default {
         { id: 'slts', name: 'Sri Lanka Teacher Service' },
 
     ],
+
     service:[
         { id: 'ict_service', name:'ICT Service'},
         { id: 'translators_service', name:'Translators’ Service'},

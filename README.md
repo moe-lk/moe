@@ -17,6 +17,9 @@
 # Run migration
 * `docker exec -it moe_employee-service_1  php ./vendor/bin/phinx migrate -e development`
 
+# Run rollback
+* `docker exec -it moe_employee-service_1  php ./vendor/bin/phinx rollback -e development`
+
 
 # Run Seeder
 * docker exec -it moe_employee-service_1 php ./vendor/bin/phinx seed:run -e development
@@ -24,7 +27,10 @@
 
 # Loge in to the DB on 
 bash in to the container
-* `docker exec -it  moe_employee-db_1 /bin/sh`
+* `docker exec -it  e8af840a8593_e8af840a8593_e8af840a8593_e8af840a8593_moe_employee-db_1 /bin/sh`
+* mysql -uroot -p
+* pw:  my_secret_pw_shh
+* use edu
 
 # Create Migration
 * docker exec -it moe_employee-service_1 php ./vendor/bin/phinx create #name

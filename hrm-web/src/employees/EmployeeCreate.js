@@ -62,7 +62,7 @@ class EmployeeCreate extends Component {
                     <FormTab label="Qualifications" autoComplete="off" path="">
                         <Qualification></Qualification>
                     </FormTab>
-                    <FormTab label="Family Details" disabled={this.state.familyTab < 2} autoComplete="off" path="" >
+                    <FormTab label="Family Details" disabled={this.state.familyTab = 0} autoComplete="off" path="" >
                         <FamilyInfoForm>
                         </FamilyInfoForm>
                     </FormTab>
