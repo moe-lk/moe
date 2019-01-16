@@ -238,9 +238,9 @@ class UserController extends ApiController
                 $account_details['level'] = 2;
                 //  (array) $this->_inputs['Account_Details']->level[0];
 
-                $account_details['user_name'] = substr(str_replace(' ', '', strtolower($this->personal_details->l_name)), 0, 5) . rand(1, 3);
+                $account_details['user_name'] = substr(str_replace(' ', '', strtolower($this->personal_details->en_fullname)), 0, 5) . rand(1, 3);
                 $account_details['passwd'] = password_hash(randomPassword(), PASSWORD_DEFAULT) ;
-                $account_details['name'] = $this->personal_details->f_name.' '.$this->personal_details->l_name;
+                $account_details['name'] = $this->personal_details->en_fullname.' '.$this->personal_details->en_fullname;
                 $validator = new Validator;
                 $validator->addValidator('unique', new UniqueRule());
 
@@ -284,9 +284,9 @@ class UserController extends ApiController
                 $validation = $validator->make((array) $personal_details, [
                     'NIC' => 'required|min:9|alpha_num',
                     'title' => 'required',
-                    'f_name' => 'required|min:2',
-                    'l_name' => 'required|min:2',
-                    'm_name' => 'min:2',
+                    //'f_name' => 'required|min:2',
+                    //'l_name' => 'required|min:2',
+                    'en_fullname' => 'min:2',
                     'in_name' => 'min:2',
                     'si_in_name' => 'min:2',
                     'ta_in_name' => 'min:2',
@@ -298,9 +298,10 @@ class UserController extends ApiController
                     'religion'=> 'numeric',
                 ]);
                 $validation->setAliases([
-                    'f_name' => 'First Name',
-                    'l_name' => 'Last Name',
-                    'm_name' => 'Middle Name',
+                    //'f_name' => 'First Name',
+                    //'l_name' => 'Last Name',
+                    //'m_name' => 'Middle Name',
+                    'en_fullname' => 'Full Name in English',
                     'in_name' => 'Name with Initial',
                     'si_in_name' => 'Name In Sinhala',
                     'ta_in_name' => 'Name In Tamil',
@@ -394,9 +395,8 @@ class UserController extends ApiController
                 'way_join' => 'numeric',
                 'cadre' => ['required'
                     , $validator('in', ['General Cadre', 'Special Cadre'])],
-                // 'grade_join' => 'alpha',
+                'grade_join' => 'numeric',
                 'entrance_exam_rank' => 'numeric',
-                'grade' => 'numeric',
                 'subject' => 'numeric|min:1',
                 'medium' => 'required|numeric',
                 'confirm' => 'required|numeric',
@@ -512,29 +512,18 @@ class UserController extends ApiController
         if (array_key_exists('Spouse_Details', (array) $this->_inputs)) {
             $spouse_details = $this->_inputs['Spouse_Details'];
             $validator = new Validator;
-            if (count($spouse_details) > 0) {
-                foreach ($spouse_details as $key => $spouse) {
-                    $validation = $validator->make((array) $spouse, [
-                        'nic' => 'required|min:10|alpha_num',
-                        'f_name' => 'required|min:2',
-                        'l_name' => 'required|min:2',
-                        'm_name' => 'min:2',
-                        'in_name' => 'min:2',
-                        'si_in_name' => 'min:2',
-                        'ta_in_name' => 'min:2',
-                        'dob' => 'required|date:Y-d-m',
-                        'address' => 'required',
-                        'occupation' => 'required',
-                        'office_address' => 'required',
-                        'telephone' => 'required|numeric',
-                        'ethinicity' => 'required|numeric',
-                        'gender' => ['required'
-                        , $validator('in', ['M', 'F'])],
-                        'religion'=> 'numeric',
-
-                    ]);
-                    $validation->validate();
-
+            $validation = $validator->make((array) $spouse_details, [
+                'nic' => 'required|min:10|alpha_num',
+                'en_in_fullname' => 'min:2',
+                'in_name' => 'min:2',
+                'si_in_name' => 'min:2',
+                'ta_in_name' => 'min:2',
+                'dob' => 'required|date:Y-d-m',
+                'ethinicity' => 'required|numeric',
+                'gender' => ['required'
+                , $validator('in', ['M', 'F'])],
+            ]);
+            $validation->validate();
             if ($validation->fails()) {
                 $errors = $validation->errors();
                 $this->_error['Spouse_Details'] = $errors->firstOfAll();
