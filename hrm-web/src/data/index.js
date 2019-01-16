@@ -273,7 +273,10 @@ export default {
         { id: 1, name: 'G.C.E. O/L English' },
         { id: 2, name: 'G.C.E. O/L Tamil' },
         { id: 3, name: 'Diploma' },
-        { id: 4, name: 'Degree' }
+        { id: 4, name: 'Degree' },
+        { id: 5, name: 'Post Graduate Programmes'}
+
+
     ],
     working_branches: [
 
