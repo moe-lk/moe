@@ -50,6 +50,7 @@ const styles = theme => ({
     root: {
         flexGrow: 1,
     },
+
     left: { display: 'inline-block' },
     right: { display: 'inline-block' },
     radio: { display: 'inline-block', marginRight: 36 },
@@ -125,7 +126,7 @@ class PersonalDetails extends Component {
                             source="Personal_Details.in_name"
                             label="Name with Initials in English"
                             style = {{width:300}}
-                            //validate={checkCharacter}
+                             //validate={checkCharacter}
                             inputProps={{ placeholder: 'A.R.M.Rathnayaka'}}
                             validate={required()}
 
@@ -138,7 +139,7 @@ class PersonalDetails extends Component {
                             style = {{width:300}}
                             inputProps={{ placeholder: 'Arachige Roshan Mohan Rathnayake'}}
                             validate={required()}
-                            // validate={checkCharacter1}
+                             //validate={checkCharacter1}
                         />
                     </Grid>
                 </Grid>
